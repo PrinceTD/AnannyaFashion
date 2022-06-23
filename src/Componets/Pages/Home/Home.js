@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
 
-        <Navbar></Navbar>
+       
         <Banner></Banner>
         <Title></Title>
         <Footer></Footer>
