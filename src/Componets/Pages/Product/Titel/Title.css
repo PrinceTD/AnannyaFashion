@@ -1,12 +1,5 @@
-.card{
-    overflow: hidden;
-}
-.intro{
-    display: flex;
-    justify-content: center;
-    padding-right: 100px;
-    border-radius: 20px;
-    background-color: rgb(27, 27, 27, 27);
-    position: absolute;
-    bottom: 40px;
-}
+/* .card:hover{
+    transform: translateY(0.5s);
+    width: 110%;
+    height: 110%;
+} */

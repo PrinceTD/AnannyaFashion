@@ -10,7 +10,7 @@ export default function Navbar() {
         <Note></Note>
          <div className='container-fluid'>
            
-           <nav className="navbar navbar-expand-lg navbar-light bg-light">
+           <nav className="navbar navbar-expand-lg navbar-light bgColorB">
                <div className="container">
                    <a className="navbar-brand" href="#"><img src={logo} width='80px'></img></a>
                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

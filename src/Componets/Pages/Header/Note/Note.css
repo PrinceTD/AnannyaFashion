@@ -2,5 +2,6 @@ body{
     margin: 0;
 }
 .colorBg{
-    border-bottom: 1px solid #3c3c3c;
+    background-color: rgb(13,53,54);
+    color: white;
 }
