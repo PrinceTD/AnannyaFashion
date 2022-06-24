@@ -6,6 +6,7 @@ import Instagram from '../SocialMedia/Instagram'
 import Title from '../Product/Titel/Title'
 import './Home.css'
 import Facebook from '../SocialMedia/Facebook'
+import Socialmedia from '../SocialMedia/Socialmedia'
 
 export default function Home() {
   return (
@@ -14,8 +15,7 @@ export default function Home() {
        
         <Banner></Banner>
         <Title></Title>
-        <Instagram></Instagram>
-        <Facebook></Facebook>
+       <Socialmedia></Socialmedia>
         <Footer></Footer>
 
     </div>
