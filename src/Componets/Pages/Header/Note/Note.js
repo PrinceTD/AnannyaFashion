@@ -14,7 +14,7 @@ export default function Note() {
                     </small>
                 </div>
                 <div>
-                    <small><FontAwesomeIcon icon={faRightToBracket} /> login</small>
+                    <button type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LOGIN / REGISTER</small></button>
                 </div>
             </div>
         </div>
