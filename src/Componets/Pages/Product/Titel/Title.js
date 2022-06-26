@@ -15,7 +15,7 @@ export default function Title() {
                                 <img src={mukti} class="card-img-top" alt="..." />
                                 <div class="card-img-overlay">
                                     <h1 class="card-title">WOMEN</h1>
-                                    <button>Shop Now</button>
+                                    <a href='/women'><button>Shop Now</button></a>
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@ export default function Title() {
                                 <div class="card-img-overlay title  d-flex align-items-end">
                                     <div>
                                         <h1 class="card-title">MAN</h1>
-                                        <button>Shop Now</button>
+                                        <a href='/men'><button>Shop Now</button></a>
                                     </div>
                                 </div>
                             </div>

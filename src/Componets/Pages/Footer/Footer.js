@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import logoAnannya from '../../../images/logo.png'
+import logoAnannya from '../../../images/anannya.png'
 import fb from '../../../icons/facebook.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faRightToBracket, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
