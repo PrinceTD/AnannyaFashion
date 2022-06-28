@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Women.css'
 import imgC from '../../../../images/mukti.jpg'
+import { Link } from 'react-router-dom'
 
 export default function Women() {
   return (
@@ -14,7 +15,7 @@ export default function Women() {
             <div class="card border-0 h-100 text-center shadow ">
               <img src={imgC} class="card-img-top" alt="..." />
               <div class="card-body">
-                <h1 class="card-title txt">Saree</h1>
+                <Link to={"/women/saree"}><h1 class="card-title txt">SAREE</h1></Link>
 
               </div>
 

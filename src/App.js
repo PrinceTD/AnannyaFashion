@@ -7,6 +7,11 @@ import About from './Componets/Pages/About/About';
 import Women from './Componets/Pages/Product/Women/Women';
 import Error from './Componets/Error/Error';
 import Pant from './Componets/Pages/Product/Women/womenCatagory/Pant/Pant';
+import Pants from './Componets/Pages/Product/Women/womenCatagory/Pant/Pants';
+import SinglePant from './Componets/Pages/Product/Women/womenCatagory/Pant/SinglePant';
+import Saree from './Componets/Pages/Product/Women/womenCatagory/saree/Saree';
+import SingleSalawr from './Componets/Pages/Product/Women/womenCatagory/SalawrKameez/SingleSalawr';
+import SingleSaree from './Componets/Pages/Product/Women/womenCatagory/saree/SingleSaree';
 
 function App() {
   return (
@@ -21,6 +26,9 @@ function App() {
           <Route path='/about' element={<About></About>}></Route>
           <Route path='/women' element={<Women></Women>}></Route>
           <Route path='/women/pant' element={<Pant></Pant>}></Route>
+          <Route path='/women/pant/:serviceId' element={<SinglePant></SinglePant>}></Route>
+          <Route path='/women/saree' element={<Saree></Saree>}></Route>
+          <Route path='/women/saree/:serviceId' element={<SingleSaree></SingleSaree>}></Route>
           
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>

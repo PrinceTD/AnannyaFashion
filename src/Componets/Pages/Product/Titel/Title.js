@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import mukti from '../../../../images/mukti.jpg'
 import './Title.css'
 
@@ -9,23 +10,23 @@ export default function Title() {
 
             <div className=''>
                 <div className=''>
-                    <div class=" row row-cols-1 row-cols-md-2 g-2 wrapper">
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src={mukti} class="card-img-top" alt="..." />
-                                <div class="card-img-overlay">
-                                    <h1 class="card-title">WOMEN</h1>
+                    <div className=" row row-cols-1 row-cols-md-2 g-2 wrapper">
+                        <div className="col">
+                            <div className="card h-100">
+                                <img src={mukti} className="card-img-top" alt="..." />
+                                <div className="card-img-overlay">
+                                    <h1 className="card-title">WOMEN</h1>
                                     <a href='/women'><button>Shop Now</button></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <img src={mukti} class="card-img-top" alt="..." />
-                                <div class="card-img-overlay title  d-flex align-items-end">
+                        </div> 
+                        <div className="col">
+                            <div className="card h-100">
+                                <img src={mukti} className="card-img-top" alt="..." />
+                                <div className="card-img-overlay title  d-flex align-items-end">
                                     <div>
-                                        <h1 class="card-title">MAN</h1>
-                                        <a href='/men'><button>Shop Now</button></a>
+                                        <h1 className="card-title">MAN</h1>
+                                        <Link to={'/men'}><button>Shop Now</button></Link>
                                     </div>
                                 </div>
                             </div>

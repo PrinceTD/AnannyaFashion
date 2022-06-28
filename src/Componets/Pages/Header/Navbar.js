@@ -31,7 +31,7 @@ export default function Navbar() {
                                         Women
                                     </a>
                                     <ul className="dropdown-menu Menu " aria-labelledby="navbarDropdown">
-                                        <li><a className="dropdown-item" href="#">Saree</a></li>
+                                        <li><a className="dropdown-item" href="/women/saree">Saree</a></li>
                                         <li><a className="dropdown-item" href="#">Top</a></li>
                                         <li><a className="dropdown-item" href="#">Kurti</a></li>
                                         <li><a className="dropdown-item" href="#">Frock</a></li>
