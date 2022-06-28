@@ -92,7 +92,7 @@ export default function Women() {
           </div>
           <div class="col">
             <div class="card border-0 h-100 text-center shadow">
-              <a href='#' className='teg'>
+              <a href='/women/pant' className='teg'>
                 <img src={imgC} class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h1 class="card-title txt">PANT</h1>

@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import Note from './Note/Note'
 import logo from '../../../images/logo.png'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
@@ -9,11 +10,10 @@ export default function Navbar() {
         <div>
             <Note></Note>
             <div className='container-fluid'>
-
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container">
 
-                        <a className="navbar-brand" href="#"><img src={logo} width='100px'></img></a>
+                        <a className="navbar-brand" href="/home"><img src={logo} width='100px'></img></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -38,7 +38,7 @@ export default function Navbar() {
                                         <li><a className="dropdown-item" href="#">Salwar Kameez</a></li>
                                         <li><a className="dropdown-item" href="#">Blouse</a></li>
                                         <li><a className="dropdown-item" href="#">Orna</a></li>
-                                        <li><a className="dropdown-item" href="#">Pant</a></li>
+                                        <li><a className="dropdown-item" href="/women/pant">Pant</a></li>
                                         <li><a className="dropdown-item" href="#">Shawl</a></li>
                                     </ul>
                                 </li>

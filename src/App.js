@@ -6,6 +6,7 @@ import Navbar from './Componets/Pages/Header/Navbar';
 import About from './Componets/Pages/About/About';
 import Women from './Componets/Pages/Product/Women/Women';
 import Error from './Componets/Error/Error';
+import Pant from './Componets/Pages/Product/Women/womenCatagory/Pant/Pant';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           <Route path='/home' element={<Home></Home>}>   </Route>
           <Route path='/about' element={<About></About>}></Route>
           <Route path='/women' element={<Women></Women>}></Route>
-          <Route path='/women:product' element={<Women></Women>}></Route>
+          <Route path='/women/pant' element={<Pant></Pant>}></Route>
+          
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </BrowserRouter>
