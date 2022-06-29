@@ -16,7 +16,7 @@ export default function Home() {
         <Banner></Banner>
         <Title></Title>
        <Socialmedia></Socialmedia>
-        <Footer></Footer>
+        
 
     </div>
   )

@@ -7,11 +7,13 @@ import About from './Componets/Pages/About/About';
 import Women from './Componets/Pages/Product/Women/Women';
 import Error from './Componets/Error/Error';
 import Pant from './Componets/Pages/Product/Women/womenCatagory/Pant/Pant';
-import Pants from './Componets/Pages/Product/Women/womenCatagory/Pant/Pants';
 import SinglePant from './Componets/Pages/Product/Women/womenCatagory/Pant/SinglePant';
 import Saree from './Componets/Pages/Product/Women/womenCatagory/saree/Saree';
 import SingleSalawr from './Componets/Pages/Product/Women/womenCatagory/SalawrKameez/SingleSalawr';
 import SingleSaree from './Componets/Pages/Product/Women/womenCatagory/saree/SingleSaree';
+import Login from './Componets/Pages/Login/Login/Login';
+import Footer from './Componets/Pages/Footer/Footer';
+import Register from './Componets/Pages/Login/Register/Register';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path='/' element={<Home></Home>}>   </Route>
           <Route path='/home' element={<Home></Home>}>   </Route>
           <Route path='/about' element={<About></About>}></Route>
+          <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/register' element={<Register></Register>}></Route>
           <Route path='/women' element={<Women></Women>}></Route>
           <Route path='/women/pant' element={<Pant></Pant>}></Route>
           <Route path='/women/pant/:serviceId' element={<SinglePant></SinglePant>}></Route>
@@ -33,6 +37,7 @@ function App() {
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </BrowserRouter>
+      <Footer></Footer>
     </div>
   );
 }
