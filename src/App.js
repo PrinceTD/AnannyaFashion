@@ -14,30 +14,33 @@ import SingleSaree from './Componets/Pages/Product/Women/womenCatagory/saree/Sin
 import Login from './Componets/Pages/Login/Login/Login';
 import Footer from './Componets/Pages/Footer/Footer';
 import Register from './Componets/Pages/Login/Register/Register';
+import AuthProvider from './context/AuthProvider/AuthProvider';
 
 function App() {
   return (
     <div className="">
-      <Navbar></Navbar>
+      <AuthProvider>
+        <Navbar></Navbar>
 
-      <BrowserRouter>
+        <BrowserRouter>
 
-        <Routes>
-          <Route path='/' element={<Home></Home>}>   </Route>
-          <Route path='/home' element={<Home></Home>}>   </Route>
-          <Route path='/about' element={<About></About>}></Route>
-          <Route path='/login' element={<Login></Login>}></Route>
-          <Route path='/register' element={<Register></Register>}></Route>
-          <Route path='/women' element={<Women></Women>}></Route>
-          <Route path='/women/pant' element={<Pant></Pant>}></Route>
-          <Route path='/women/pant/:serviceId' element={<SinglePant></SinglePant>}></Route>
-          <Route path='/women/saree' element={<Saree></Saree>}></Route>
-          <Route path='/women/saree/:serviceId' element={<SingleSaree></SingleSaree>}></Route>
-          
-          <Route path='*' element={<Error></Error>}></Route>
-        </Routes>
-      </BrowserRouter>
-      <Footer></Footer>
+          <Routes>
+            <Route path='/' element={<Home></Home>}>   </Route>
+            <Route path='/home' element={<Home></Home>}>   </Route>
+            <Route path='/about' element={<About></About>}></Route>
+            <Route path='/login' element={<Login></Login>}></Route>
+            <Route path='/register' element={<Register></Register>}></Route>
+            <Route path='/women' element={<Women></Women>}></Route>
+            <Route path='/women/pant' element={<Pant></Pant>}></Route>
+            <Route path='/women/pant/:serviceId' element={<SinglePant></SinglePant>}></Route>
+            <Route path='/women/saree' element={<Saree></Saree>}></Route>
+            <Route path='/women/saree/:serviceId' element={<SingleSaree></SingleSaree>}></Route>
+
+            <Route path='*' element={<Error></Error>}></Route>
+          </Routes>
+        </BrowserRouter>
+        <Footer></Footer>
+      </AuthProvider>
     </div>
   );
 }
