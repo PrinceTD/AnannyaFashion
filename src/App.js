@@ -9,17 +9,15 @@ import Error from './Componets/Error/Error';
 import Pant from './Componets/Pages/Product/Women/womenCatagory/Pant/Pant';
 import SinglePant from './Componets/Pages/Product/Women/womenCatagory/Pant/SinglePant';
 import Saree from './Componets/Pages/Product/Women/womenCatagory/saree/Saree';
-import SingleSalawr from './Componets/Pages/Product/Women/womenCatagory/SalawrKameez/SingleSalawr';
 import SingleSaree from './Componets/Pages/Product/Women/womenCatagory/saree/SingleSaree';
-import Login from './Componets/Pages/Login/Login/Login';
 import Footer from './Componets/Pages/Footer/Footer';
-import Register from './Componets/Pages/Login/Register/Register';
-import AuthProvider from './context/AuthProvider/AuthProvider';
+import Login from './Componets/Login/Login';
+import Register from './Componets/Login/Register';
 
 function App() {
   return (
     <div className="">
-      <AuthProvider>
+ 
         <Navbar></Navbar>
 
         <BrowserRouter>
@@ -40,7 +38,7 @@ function App() {
           </Routes>
         </BrowserRouter>
         <Footer></Footer>
-      </AuthProvider>
+    
     </div>
   );
 }

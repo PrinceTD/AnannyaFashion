@@ -2,7 +2,8 @@ import React from 'react'
 import './Note.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faRightToBracket } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom'
+
+
 
 
 export default function Note() {
@@ -16,7 +17,13 @@ export default function Note() {
                     </small>
                 </div>
                 <div>
-                   <a href='/login'><button type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LOGIN / REGISTER</small></button></a>
+                   
+                        
+                            {/* <button type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LogOut</small></button> */}
+                            
+
+                            <a href='/login'><button type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LOGIN / REGISTER</small></button></a>
+                   
                 </div>
             </div>
         </div>
