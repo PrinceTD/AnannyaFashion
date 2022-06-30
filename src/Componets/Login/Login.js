@@ -1,6 +1,7 @@
 import { Button, Container, Grid, TextField, Typography } from '@mui/material'
 import { width } from '@mui/system';
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Login() {
 
@@ -44,6 +45,13 @@ export default function Login() {
                             type='password'
                             variant="standard"
                         />
+                        <br/>
+                        <Link to='/register'>
+                            <Button>
+                                New User? Plase Register.
+                            </Button>
+                        </Link>
+                        <br/>
                         <Button
                             variant='contained'
                             type='submit'

@@ -13,11 +13,13 @@ import SingleSaree from './Componets/Pages/Product/Women/womenCatagory/saree/Sin
 import Footer from './Componets/Pages/Footer/Footer';
 import Login from './Componets/Login/Login';
 import Register from './Componets/Login/Register';
+import AuthProvider from './context/AuthProvider/AuthProvider';
 
 function App() {
   return (
     <div className="">
- 
+
+      <AuthProvider>
         <Navbar></Navbar>
 
         <BrowserRouter>
@@ -38,7 +40,8 @@ function App() {
           </Routes>
         </BrowserRouter>
         <Footer></Footer>
-    
+      </AuthProvider>
+
     </div>
   );
 }

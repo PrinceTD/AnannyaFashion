@@ -2,11 +2,13 @@ import React from 'react'
 import './Note.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faRightToBracket } from '@fortawesome/free-solid-svg-icons'
+import useAuth from '../../../../hooks/useAuth'
 
 
 
 
 export default function Note() {
+    const { user, logOut } = useAuth();
     return (
         <div className=' colorBg'>
             <div className='d-flex container align-items-center justify-content-between' >
@@ -17,13 +19,18 @@ export default function Note() {
                     </small>
                 </div>
                 <div>
-                   
-                        
-                            {/* <button type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LogOut</small></button> */}
-                            
 
+                    {
+                        user.email ?
+                            <button onClick={logOut} type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LogOut</small>
+                            </button> :
                             <a href='/login'><button type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LOGIN / REGISTER</small></button></a>
-                   
+
+                    }
+
+
+
+
                 </div>
             </div>
         </div>
