@@ -1,5 +1,5 @@
-import { Alert, Button, CircularProgress, Container, Grid, TextField, Typography } from '@mui/material'
-import { width } from '@mui/system';
+import { Alert, Button, CircularProgress, Container, Grid, TextField, Typography } from '@mui/material';
+import { display } from '@mui/system';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
@@ -9,8 +9,8 @@ export default function Login() {
     const { user, loginUser, isLoading, authError } = useAuth();
     const [loginData, setLogInData] = useState({})
 
-   
-    
+
+
 
 
 
@@ -29,7 +29,7 @@ export default function Login() {
     return (
         <Container>
             <Grid container spacing={2}>
-                <Grid item xs={12} md={12}>
+                <Grid  item xs={12} md={8}>
                     <Typography variant='body1'>
                         LogIn
                     </Typography>
@@ -63,11 +63,16 @@ export default function Login() {
                             type='submit'
                             sx={{ width: '75%', m: 1 }}
                         >Login</Button>
-                        <br/>
-                        {isLoading && <CircularProgress />}
+                        <br />
+                        {/* {isLoading && <CircularProgress />} */}
                         {user.email && <Alert severity="success">login successfull</Alert>}
                         {authError && <Alert severity="error">{authError}</Alert>}
                     </form>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                    <h1>
+
+                    </h1>
                 </Grid>
             </Grid>
 

@@ -7,6 +7,8 @@ import Title from '../Product/Titel/Title'
 import './Home.css'
 import Facebook from '../SocialMedia/Facebook'
 import Socialmedia from '../SocialMedia/Socialmedia'
+import CardC from '../carousel/CardC'
+import Products from '../Product/Titel/Products'
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
        
         <Banner></Banner>
         <Title></Title>
+        <Products></Products>
+        <CardC></CardC>
        <Socialmedia></Socialmedia>
         
 
