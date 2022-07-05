@@ -42,7 +42,7 @@ export default class CardC extends Component {
     
     return (
       <div className="container">
-        <h2> Responsive </h2>
+        <h2></h2>
         <Slider {...settings}>
           <div>
             <h3 className="border-2">1</h3>
