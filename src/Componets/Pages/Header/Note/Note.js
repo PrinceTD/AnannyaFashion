@@ -12,12 +12,12 @@ export default function Note() {
     return (
         <div className=' colorBg'>
             <div className='d-flex container align-items-center justify-content-between' >
-                <div>
+                {/* <div>
                     <small className='pe-3'> <FontAwesomeIcon className='pe-2' icon={faPhone} /><small> 01709247965</small></small>
                     <small>
                         <FontAwesomeIcon className='pe-2' icon={faEnvelope} /><small>anannya@gmail.com</small>
                     </small>
-                </div>
+                </div> */}
                 <div>
 
                     {

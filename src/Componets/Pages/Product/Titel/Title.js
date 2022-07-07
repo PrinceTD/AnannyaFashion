@@ -6,36 +6,42 @@ import './Title.css'
 export default function Title() {
     return (
         <div className='container mt-5 mb-5'>
-            <h1 className='pt-5 pb-4'>Our Collections</h1>
+            <h1 className='pt-5 pb-4'></h1>
 
-            <div className=''>
+            <div className='container'>
                 <div className=''>
-                    <div className=" row row-cols-1 row-cols-md-2 g-2 wrapper">
+                    <div className=" row row-cols-1 row-cols-md-2 g-4 wrapper">
                         <div className="col">
-                            <div className="card h-100">
-                                <img src={mukti} className="card-img-top" alt="..." />
-                                <div className="card-img-overlay">
-                                    <h1 className="card-title">WOMEN</h1>
-                                    <a href='/women'><button>Shop Now</button></a>
-                                </div>
-                            </div>
-                        </div> 
-                        <div className="col">
-                            <div className="card h-100">
-                                <img src={mukti} className="card-img-top" alt="..." />
-                                <div className="card-img-overlay title  d-flex align-items-end">
-                                    <div>
-                                        <h1 className="card-title">MAN</h1>
-                                        <Link to={'/men'}><button>Shop Now</button></Link>
+                            <div className="card border-0 h-100 photo-frame">
+                                <Link to={'/women'}>
+                                    <div className='photo'>
+                                        <img src={mukti} className="card-img-top" alt="" />
                                     </div>
-                                </div>
+                                    <div className="photo-detail">
+                                        <h1 className="title-photo">MEN</h1>
+                                        <button type="button" className='title-btn'>Shop Now</button>
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="col ">
+                            <div className="card border-0 h-100 photo-frame">
+                                <Link to={'/women'}>
+                                    <div className='photo'>
+                                        <img src={mukti} className="card-img-top" alt="" />
+                                    </div>
+                                    <div className="photo-detail">
+                                        <h1 className="title-photo">MEN</h1>
+                                        <button type="button" className='title-btn'>Shop Now</button>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
 
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }

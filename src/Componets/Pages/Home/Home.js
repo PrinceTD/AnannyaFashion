@@ -17,7 +17,7 @@ export default function Home() {
        
         <Banner></Banner>
         <Title></Title>
-        <CardC></CardC>
+        {/* <CardC></CardC> */}
        <Socialmedia></Socialmedia>
         
 
