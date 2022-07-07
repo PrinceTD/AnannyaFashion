@@ -26,11 +26,11 @@
     position: absolute;
     padding: 20px 30px;
     bottom: 0;
-    text-align: center;
+   
     
 }
 .photo-detail h1{
-    text-align: center;
+
 }
 
 .photo-frame:hover .title-btn {

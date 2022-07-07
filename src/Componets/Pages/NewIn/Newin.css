@@ -1,0 +1,15 @@
+.service-photo{
+    position: relative;
+}
+.service-photo-detail{
+    position: absolute;
+    top: 0;
+   
+}
+.service-title-photo{
+    padding: 5px 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #690f99;
+    color: #fff;
+}

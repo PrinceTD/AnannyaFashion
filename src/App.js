@@ -16,6 +16,9 @@ import Register from './Componets/Login/Register';
 import AuthProvider from './context/AuthProvider/AuthProvider';
 import Orna from './Componets/Pages/Product/Women/womenCatagory/Orna/Orna';
 import Contact from './Componets/Pages/Contact/Contact';
+import NewIn from './Componets/Pages/NewIn/NewIn';
+import SingleNewIn from './Componets/Pages/NewIn/SingleNewIn';
+import SingleOrna from './Componets/Pages/Product/Women/womenCatagory/Orna/SingleOrna';
 
 function App() {
   return (
@@ -29,17 +32,24 @@ function App() {
           <Routes>
             <Route path='/' element={<Home></Home>}>   </Route>
             <Route path='/home' element={<Home></Home>}>   </Route>
-            <Route path='/about' element={<About></About>}></Route>
+            <Route path='/about' element={<About></About>}></Route>            
             <Route path='/contact' element={<Contact></Contact>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/register' element={<Register></Register>}></Route>
+
             <Route path='/women' element={<Women></Women>}></Route>
+
             <Route path='/women/pant' element={<Pant></Pant>}></Route>
             <Route path='/women/pant/:serviceId' element={<SinglePant></SinglePant>}></Route>
+
             <Route path='/women/saree' element={<Saree></Saree>}></Route>
             <Route path='/women/saree/:serviceId' element={<SingleSaree></SingleSaree>}></Route>
+
             <Route path='/women/orna' element={<Orna></Orna>}></Route>
-            <Route path='/women/orna/:serviceId' element={<SingleSaree></SingleSaree>}></Route>
+            <Route path='/women/orna/:serviceId' element={<SingleOrna></SingleOrna>}></Route>
+
+            <Route path='/newin' element={<NewIn></NewIn>}></Route>
+            <Route path='/newin/:serviceId' element={<SingleNewIn></SingleNewIn>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
           </Routes>
