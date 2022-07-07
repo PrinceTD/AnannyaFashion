@@ -8,18 +8,20 @@ import './Home.css'
 import Facebook from '../SocialMedia/Facebook'
 import Socialmedia from '../SocialMedia/Socialmedia'
 import CardC from '../carousel/CardC'
+import useAuth from '../../../hooks/useAuth'
 
 
 export default function Home() {
+
   return (
     <div>
 
-       
-        <Banner></Banner>
-        <Title></Title>
-        {/* <CardC></CardC> */}
-       <Socialmedia></Socialmedia>
-        
+
+      <Banner></Banner>
+      <Title></Title>
+      {/* <CardC></CardC> */}
+      <Socialmedia></Socialmedia>
+
 
     </div>
   )

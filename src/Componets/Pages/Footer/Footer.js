@@ -1,11 +1,12 @@
 import React from 'react'
 import './footer.css'
 import logoAnannya from '../../../images/anannya.png'
-import fb from '../../../icons/facebook.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEnvelope, faRightToBracket, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
+import { faPhone, faEnvelope, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
+import useAuth from '../../../hooks/useAuth'
 
 export default function Footer() {
+    const {user} = useAuth();
     return (
         <div className='bgColor'>
             <div className='container mt-5 pb-5 pt-5'>
@@ -14,8 +15,8 @@ export default function Footer() {
                         <img src={logoAnannya} width='50%'></img>
 
                     </div>
-                    <div className='col '>
-                       
+                    <div className='col'>
+
                         <div>
                             <small>
                                 <FontAwesomeIcon className='pe-2' icon={faLocationArrow} />Shop-97, Block-C, Level-2, Bashundhara City Shopping Mall, Karwanbazar, Dhaka, Bangladesh
@@ -35,17 +36,23 @@ export default function Footer() {
                         </div>
 
                     </div>
-                    <div className=' col'>
-                    <p className='pt-3'>
-                    
-                            Welcome to Anannya. We are a Bangladesh based youth centric fabric brand. Feel free to contact us for further convenience.
-                       
-                        </p>
+
+                    <div className=' col d-flex justify-content-center'>
+                        <div>
+                            <p className='pt-3'>
+                                ABOUT ANANNYA
+                            </p>
+                            <a href='/about'>WHO WE ARE</a>
+                            <hr/>
+                            <p>SOCIAL LINKS</p>
+                           
+                        </div>
                     </div>
+
                 </div>
-                <hr/>
+                <hr />
                 <small>
-                ANANNYA © 2022 CREATED BY TEAM ANANNYA. PROUDLY MADE IN BANGLADESH.
+                    ANANNYA © 2022 CREATED BY TEAM ANANNYA. PROUDLY MADE IN BANGLADESH.
                 </small>
             </div>
         </div>

@@ -18,7 +18,7 @@ export default function Title() {
                                         <img src={mukti} className="card-img-top" alt="" />
                                     </div>
                                     <div className="photo-detail">
-                                        <h1 className="title-photo">MEN</h1>
+                                        <h1 className="title-photo">WOMEN</h1>
                                         <button type="button" className='title-btn'>Shop Now</button>
                                     </div>
                                 </Link>

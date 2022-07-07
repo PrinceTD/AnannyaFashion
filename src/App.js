@@ -14,6 +14,8 @@ import Footer from './Componets/Pages/Footer/Footer';
 import Login from './Componets/Login/Login';
 import Register from './Componets/Login/Register';
 import AuthProvider from './context/AuthProvider/AuthProvider';
+import Orna from './Componets/Pages/Product/Women/womenCatagory/Orna/Orna';
+import Contact from './Componets/Pages/Contact/Contact';
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
             <Route path='/' element={<Home></Home>}>   </Route>
             <Route path='/home' element={<Home></Home>}>   </Route>
             <Route path='/about' element={<About></About>}></Route>
+            <Route path='/contact' element={<Contact></Contact>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/register' element={<Register></Register>}></Route>
             <Route path='/women' element={<Women></Women>}></Route>
@@ -35,6 +38,8 @@ function App() {
             <Route path='/women/pant/:serviceId' element={<SinglePant></SinglePant>}></Route>
             <Route path='/women/saree' element={<Saree></Saree>}></Route>
             <Route path='/women/saree/:serviceId' element={<SingleSaree></SingleSaree>}></Route>
+            <Route path='/women/orna' element={<Orna></Orna>}></Route>
+            <Route path='/women/orna/:serviceId' element={<SingleSaree></SingleSaree>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
           </Routes>

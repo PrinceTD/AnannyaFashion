@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
 
 export default function SinglePant() {
+
     const [service, setService] = useState({});
     const { serviceId } = useParams();
     useEffect(() => {
@@ -11,24 +12,27 @@ export default function SinglePant() {
     }, []);
     return (
         <div className='container'>
-            <div className="d-flex justify-content-center">
-                <h2> {service._id}</h2>
-                
-                <p>{service.name}</p>
-                <div >
-                    {/* <div class="card" style={{ width: "30rem" }}>
-                        <img src={service?.img} alt="" />
-                        <h2 style={{ color: "coral" }}>{service?.name}</h2>
-                        <div class="card-body">
-                            <p class="card-text">{service?.details}</p>
-                            <h4>${service?.price}</h4>
+            <div className="">
+                <div class="card mb-3 border-0">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <img src={service.img} class="img-fluid rounded-start" alt="..." />
                         </div>
-                        <Link to='/home'>
-                            <button style={{ backgroundColor: "coral", padding: "5px 15px", color: "#fff" }} className="border-0 rounded-pill">Go Back</button>
-                        </Link>
-                    </div> */}
+                        <div class="col-md-6">
+                            <div class="">
+                                <small><Link to={"/home"}>Home</Link>/<Link to={"/women"}>Women</Link>/<Link to={"/man"}>Man</Link> </small>
+                                <div className=''>
+                                    <h2 class="pt-2">{service.name}</h2>
+                                    <h4 className='pt-2'>৳ {service.price}</h4>
+                                    <small><span className='pt-2 fst-normal'>{service.details}</span></small>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     )
 }

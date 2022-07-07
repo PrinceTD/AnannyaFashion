@@ -37,7 +37,7 @@ export default function Navbar() {
                                         <li><a className="dropdown-item" href="#">Frock</a></li>
                                         <li><a className="dropdown-item" href="#">Salwar Kameez</a></li>
                                         <li><a className="dropdown-item" href="#">Blouse</a></li>
-                                        <li><a className="dropdown-item" href="#">Orna</a></li>
+                                        <li><a className="dropdown-item" href="/women/orna">Orna</a></li>
                                         <li><a className="dropdown-item" href="/women/pant">Pant</a></li>
                                         <li><a className="dropdown-item" href="#">Shawl</a></li>
                                     </ul>
