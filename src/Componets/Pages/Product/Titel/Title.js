@@ -5,8 +5,8 @@ import './Title.css'
 
 export default function Title() {
     return (
-        <div className='container mt-5 mb-5'>
-            <h1 className='pt-5 pb-4'></h1>
+        <div className='container mt-1 mb-2'>
+            <h1 className='pt-2 pb-4'></h1>
 
             <div className='container'>
                 <div className=''>

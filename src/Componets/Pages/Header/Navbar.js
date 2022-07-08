@@ -2,13 +2,13 @@ import React from 'react'
 import './Navbar.css'
 import Note from './Note/Note'
 import logo from '../../../images/logo.png'
-import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
 
         <div>
             <Note></Note>
+        
             <div className='container-fluid'>
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container">
@@ -75,6 +75,6 @@ export default function Navbar() {
                     </div>
                 </nav>
             </div>
-        </div>
+        </div >
     )
 }

@@ -14,3 +14,9 @@ body{
     color: rgb(166, 159, 159);
    
 }
+.font-border{
+    border-left: 1px solid #fff;
+}
+.shoppingCart{
+    color: #fff;
+}
