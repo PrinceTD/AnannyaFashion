@@ -1,22 +1,28 @@
-body{
+body {
     margin: 0;
 }
-.colorBg{
-    background-color: rgb(13,53,54);
+
+.colorBg {
+    background-color: rgb(13, 53, 54);
     color: white;
 }
-.btn{
+
+.btn {
     background-color: none;
     color: white;
 }
-.btn:hover{
+
+.btn:hover {
     cursor: pointer;
     color: rgb(166, 159, 159);
-   
+
 }
-.font-border{
+
+.font-border {
     border-left: 1px solid #fff;
 }
-.shoppingCart{
+
+.shoppingCart {
     color: #fff;
 }
+

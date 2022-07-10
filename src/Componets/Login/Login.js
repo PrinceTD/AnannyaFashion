@@ -27,62 +27,64 @@ export default function Login() {
         e.preventDefault();
     }
     return (
-        <Container>
-            <Grid container spacing={2}>
-                <Grid item xs={12} md={6}>
-                    <Typography variant='body1'>
-                        LogIn
-                    </Typography>
-                    <form onSubmit={handleLoginSubmit}>
-                        <TextField
-                            sx={{ width: '75%', m: 1 }}
-                            id="standard-basic"
-                            label="Your email"
-                            name='email'
-                            onChange={handleOneChange}
-                            type='email'
-                            variant="standard" />
-                        <TextField
-                            sx={{ width: '75%', m: 1 }}
-                            id="standard-basic"
-                            label="Your password"
-                            name='password'
-                            onChange={handleOneChange}
-                            type='password'
-                            variant="standard"
-                        />
-                        <br />
+        <div className='pt-5 pb-5'>
+            <Container>
+                <Grid container spacing={2}>
+                    <Grid item xs={12} md={6}>
+                        <Typography variant='body1'>
+                            LogIn
+                        </Typography>
+                        <form onSubmit={handleLoginSubmit}>
+                            <TextField
+                                sx={{ width: '75%', m: 1 }}
+                                id="standard-basic"
+                                label="Your email"
+                                name='email'
+                                onChange={handleOneChange}
+                                type='email'
+                                variant="standard" />
+                            <TextField
+                                sx={{ width: '75%', m: 1 }}
+                                id="standard-basic"
+                                label="Your password"
+                                name='password'
+                                onChange={handleOneChange}
+                                type='password'
+                                variant="standard"
+                            />
+                            <br />
 
-                        <br />
-                        <Button
-                            variant='contained'
-                            type='submit'
-                            sx={{ width: '75%', m: 1 }}
-                        >Login</Button>
-                        <br />
-                        {user.email && <Alert severity="success">login successfull</Alert>}
-                        {authError && <Alert severity="error">{authError}</Alert>}
-                    </form>
-                </Grid>
-                <Grid item xs={12} md={6}>
-                    <div className='d-flex justify-content-center'>
-                        <div>
-                            <h3>
-                                REGISTER
-                            </h3>
-                            <p>
-                                Registering for this site allows you to access your order status and history. Just fill in the fields below, and we'll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.
-                            </p>
-                            <Link to='/register'>
-                                <Button>
-                                    Register.
-                                </Button>
-                            </Link>
+                            <br />
+                            <Button
+                                variant='contained'
+                                type='submit'
+                                sx={{ width: '75%', m: 1 }}
+                            >Login</Button>
+                            <br />
+                            {user.email && <Alert severity="success">login successfull</Alert>}
+                            {authError && <Alert severity="error">{authError}</Alert>}
+                        </form>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <div className='d-flex'>
+                            <div>
+                                <h3>
+                                    Login
+                                </h3>
+                                <p>
+                                    Registering for this site allows you to access your order status and history. Just fill in the fields below, and we'll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.
+                                </p>
+                                <Link to='/register'>
+                                    <Button>
+                                        Register.
+                                    </Button>
+                                </Link>
+                            </div>
                         </div>
-                    </div>
+                    </Grid>
                 </Grid>
-            </Grid>
 
-        </Container >
+            </Container >
+        </div>
     )
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import './Note.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEnvelope, faRightToBracket, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faRightToBracket, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import useAuth from '../../../../hooks/useAuth'
-import { Link } from 'react-router-dom'
-
+import FacebookIcon  from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 
@@ -13,10 +13,11 @@ export default function Note() {
     return (
         <div className=' colorBg'>
             <div className='d-flex container align-items-center justify-content-between' >
-                <div>
-                    <small className='pe-3'> <FontAwesomeIcon className='pe-2' icon={faPhone} /></small>
+                <div className='social'>
+                    <small className='pe-3 '> <InstagramIcon fontSize="small"></InstagramIcon></small>
                     <small>
-                        <FontAwesomeIcon className='pe-2' icon={faEnvelope} /></small>
+                       <FacebookIcon fontSize="small"/>
+                    </small>
                 </div>
                 <div className='d-flex'>
 

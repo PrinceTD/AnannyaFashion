@@ -66,9 +66,7 @@ export default function Navbar() {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Essence of Anannya</a>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">LogIn</a>
-                                </li>
+                               
                             </ul>
 
                         </div>
