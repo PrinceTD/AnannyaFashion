@@ -29,7 +29,7 @@ export default function Login() {
     return (
         <Container>
             <Grid container spacing={2}>
-                <Grid  item xs={12} md={8}>
+                <Grid item xs={12} md={6}>
                     <Typography variant='body1'>
                         LogIn
                     </Typography>
@@ -52,11 +52,7 @@ export default function Login() {
                             variant="standard"
                         />
                         <br />
-                        <Link to='/register'>
-                            <Button>
-                                New User? Plase Register.
-                            </Button>
-                        </Link>
+
                         <br />
                         <Button
                             variant='contained'
@@ -64,15 +60,26 @@ export default function Login() {
                             sx={{ width: '75%', m: 1 }}
                         >Login</Button>
                         <br />
-                        {/* {isLoading && <CircularProgress />} */}
                         {user.email && <Alert severity="success">login successfull</Alert>}
                         {authError && <Alert severity="error">{authError}</Alert>}
                     </form>
                 </Grid>
-                <Grid item xs={12} md={4}>
-                    <h1>
-
-                    </h1>
+                <Grid item xs={12} md={6}>
+                    <div className='d-flex justify-content-center'>
+                        <div>
+                            <h3>
+                                REGISTER
+                            </h3>
+                            <p>
+                                Registering for this site allows you to access your order status and history. Just fill in the fields below, and we'll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.
+                            </p>
+                            <Link to='/register'>
+                                <Button>
+                                    Register.
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
                 </Grid>
             </Grid>
 

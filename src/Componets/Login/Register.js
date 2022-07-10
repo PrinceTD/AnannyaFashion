@@ -1,11 +1,11 @@
-import { Alert, Button, CircularProgress, Container, Grid, TextField, Typography } from '@mui/material'
+import { Alert, Box, Button, CircularProgress, Container, Grid, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 export default function Register() {
     const [logInData, setLogInData] = useState({})
-    
+
 
     const { user, authError, registerUser, isLoading } = useAuth();
 
@@ -31,7 +31,7 @@ export default function Register() {
     return (
         <Container>
             <Grid container spacing={2}>
-                <Grid item xs={12} md={12}>
+                <Grid item xs={12} md={6}>
                     <Typography variant='body1'>
                         Register
                     </Typography>
@@ -64,11 +64,7 @@ export default function Register() {
                                 variant="standard"
                             />
                             <br />
-                            <Link to='/login'>
-                                <Button>
-                                    Already register? Plase Login.
-                                </Button>
-                            </Link>
+
                             <br />
                             <Button
                                 variant='contained'
@@ -79,7 +75,22 @@ export default function Register() {
                     }
                     {isLoading && <CircularProgress />}
                     {user.email && <Alert severity="success">user creted successfully</Alert>}
-                    {authError&& <Alert severity="error">{authError}</Alert>}
+                    {authError && <Alert severity="error">{authError}</Alert>}
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <Box>
+                        <h3>
+                            REGISTER
+                        </h3>
+                        <p>
+                            Registering for this site allows you to access your order status and history. Just fill in the fields below, and we'll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.
+                        </p>
+                        <Link to='/login'>
+                            <Button>
+                                Login
+                            </Button>
+                        </Link>
+                    </Box>
                 </Grid>
             </Grid>
 
