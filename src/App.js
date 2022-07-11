@@ -20,7 +20,8 @@ import NewIn from './Componets/Pages/NewIn/NewIn';
 import SingleNewIn from './Componets/Pages/NewIn/SingleNewIn';
 import SingleOrna from './Componets/Pages/Product/Women/womenCatagory/Orna/SingleOrna';
 import ShoppingCart from './Componets/Pages/ShoppingCart/ShoppingCart';
-import Account from './Componets/Pages/Account/Account';
+import DeshBoard from './Componets/Pages/Account/DeshBoard/DeshBoard';
+import Order from './Componets/Pages/Account/Order/Order';
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
             <Route path='/about' element={<About></About>}></Route>            
             <Route path='/contact' element={<Contact></Contact>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
-            <Route path='/myaccount' element={<Account></Account>}></Route>
+            
             <Route path='/register' element={<Register></Register>}></Route>
             <Route path='/shoppingcart' element={<ShoppingCart></ShoppingCart>}></Route>
 
@@ -54,6 +55,9 @@ function App() {
 
             <Route path='/newin' element={<NewIn></NewIn>}></Route>
             <Route path='/newin/:serviceId' element={<SingleNewIn></SingleNewIn>}></Route>
+
+            <Route path='/myaccount' element={<DeshBoard></DeshBoard>}></Route>
+            <Route path='/myaccount/order' element={<Order></Order>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
           </Routes>
