@@ -5,12 +5,15 @@ import useAuth from '../../hooks/useAuth';
 
 export default function Login() {
 
-    const { user, loginUser, isLoading, authError } = useAuth();
+    const { user, loginUser, isLoading, authError, signInWithGoogle } = useAuth();
     const [loginData, setLogInData] = useState({})
 
 
 
+    const handelGoogleSignIn = () => {
 
+        signInWithGoogle();
+    }
 
 
     const handleOneChange = e => {
@@ -63,6 +66,14 @@ export default function Login() {
                             {user.email && <Alert severity="success">login successfull</Alert>}
                             {authError && <Alert severity="error">{authError}</Alert>}
                         </form>
+                        <br />
+                        <div className=''>
+                            <p>-------------or--------------</p>
+                            <h2 >
+                                <Button onClick={handelGoogleSignIn} style={{ color: "coral" }} variant="outlined"><i className="pe-2 fab fa-google"></i>Sign In with Google</Button>
+                            </h2>
+                        </div>
+
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <div className='d-flex'>
