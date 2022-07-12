@@ -29,11 +29,11 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
 
-    const signInWithGoogle = () => {
+    const signInWithGoogle = (location, navigate) => {
         setIsLoading(true)
         signInWithPopup(auth, googleProvider)
             .then((result) => {
-
+                navigate('/myaccount');
                 setAuthError('')
 
             }).catch((error) => {
@@ -43,12 +43,13 @@ const useFirebase = () => {
         ;
     }
 
-    const loginUser = (email, password) => {
+    const loginUser = (email, password, location, navigate) => {
         setIsLoading(true)
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
 
 
+                navigate('/myaccount');
                 setAuthError('')
             })
             .catch((error) => {
@@ -74,9 +75,10 @@ const useFirebase = () => {
 
     const logOut = () => {
         signOut(auth).then(() => {
-            // Sign-out successful.
+
+
         }).catch((error) => {
-            // An error happened.
+
         })
             .finally(() => setIsLoading(false));
     }

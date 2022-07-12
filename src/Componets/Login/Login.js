@@ -1,6 +1,6 @@
 import { Alert, Button, CircularProgress, Container, Grid, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 export default function Login() {
@@ -8,11 +8,12 @@ export default function Login() {
     const { user, loginUser, isLoading, authError, signInWithGoogle } = useAuth();
     const [loginData, setLogInData] = useState({})
 
-
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handelGoogleSignIn = () => {
 
-        signInWithGoogle();
+        signInWithGoogle(location, navigate);
     }
 
 
@@ -25,7 +26,7 @@ export default function Login() {
     }
 
     const handleLoginSubmit = e => {
-        loginUser(loginData.email, loginData.password);
+        loginUser(loginData.email, loginData.password, location, navigate);
         e.preventDefault();
     }
     return (
@@ -67,13 +68,7 @@ export default function Login() {
                             {authError && <Alert severity="error">{authError}</Alert>}
                         </form>
                         <br />
-                        <div className=''>
-                            <p>-------------or--------------</p>
-                            <h2 >
-                                <Button onClick={handelGoogleSignIn} style={{ color: "coral" }} variant="outlined"><i className="pe-2 fab fa-google"></i>Sign In with Google</Button>
-                            </h2>
-                        </div>
-
+                        
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <div className='d-flex'>

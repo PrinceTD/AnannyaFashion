@@ -1,9 +1,11 @@
 import { Button } from '@mui/material';
 import React from 'react'
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import './account.css'
 
 function Account() {
+    const {user, logOut} = useAuth();
     return (
         <div className='container'>
             <div className=''>
@@ -26,13 +28,20 @@ function Account() {
                                 <th className='color-link' scope="row"><Link to='/myaccount/order'>Order</Link></th>
                             </tr>
                             <tr>
-                                <th className='color-link active' scope="row"><Link to="/myaccount/downloads">Downloads</Link></th>
+                                <th className='color-link active' scope="row"><Link to="/myaccount/download">Downloads</Link></th>
                             </tr>
                             <tr>
                                 <th className='color-link active' scope="row"><Link to="/myaccount/address">Address</Link></th>
                             </tr>
                             <tr>
-                                <th scope="row">Logout</th>
+                                <th scope="row"><Button 
+                                        onClick={logOut}
+                                        type='button'
+                                        sx={{ color: " black" }}
+                                         variant="text">
+                                            Logout
+                                            </Button>
+                                         </th>
                             </tr>
                         </tbody>
                     </table>

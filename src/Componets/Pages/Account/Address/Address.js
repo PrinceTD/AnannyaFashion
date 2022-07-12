@@ -1,4 +1,6 @@
+import { Alert } from '@mui/material'
 import React from 'react'
+import Account from '../Account'
 
 function Address() {
     return (
@@ -8,7 +10,10 @@ function Address() {
                     <div className='col-md-3'>
                         <Account></Account>
                     </div>
-                    <div className='col-md-9'>
+                    <div className='col-md-9 padding-site'>
+                        <Alert severity="success" color="info">
+                            The following addresses will be used on the checkout page by default.
+                        </Alert>
 
                     </div>
                 </div>

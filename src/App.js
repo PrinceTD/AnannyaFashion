@@ -23,6 +23,8 @@ import ShoppingCart from './Componets/Pages/ShoppingCart/ShoppingCart';
 import DeshBoard from './Componets/Pages/Account/DeshBoard/DeshBoard';
 import Order from './Componets/Pages/Account/Order/Order';
 import Admin from './Componets/Pages/Account/Admin/Admin';
+import Download from './Componets/Pages/Account/Download/Download';
+import Address from './Componets/Pages/Account/Address/Address';
 
 function App() {
   return (
@@ -34,12 +36,12 @@ function App() {
         <BrowserRouter>
 
           <Routes>
-            <Route path='/' element={<Home></Home>}>   </Route>
-            <Route path='/home' element={<Home></Home>}>   </Route>
-            <Route path='/about' element={<About></About>}></Route>            
+            <Route path='/' element={<Home></Home>}></Route>
+            <Route path='/home' element={<Home></Home>}></Route>
+            <Route path='/about' element={<About></About>}></Route>
             <Route path='/contact' element={<Contact></Contact>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
-            
+
             <Route path='/register' element={<Register></Register>}></Route>
             <Route path='/shoppingcart' element={<ShoppingCart></ShoppingCart>}></Route>
 
@@ -60,6 +62,8 @@ function App() {
             <Route path='/myaccount' element={<DeshBoard></DeshBoard>}></Route>
             <Route path='/myaccount/order' element={<Order></Order>}></Route>
             <Route path='/myaccount/admin' element={<Admin></Admin>}></Route>
+            <Route path='/myaccount/download' element={<Download></Download>}></Route>
+            <Route path='/myaccount/address' element={<Address></Address>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
           </Routes>

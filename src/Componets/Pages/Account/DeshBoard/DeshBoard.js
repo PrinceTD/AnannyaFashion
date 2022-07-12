@@ -3,7 +3,13 @@ import React from 'react'
 import useAuth from '../../../../hooks/useAuth';
 import Account from '../Account'
 import './deshboard.css'
-import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons'
+import order from '../../../../images/order.png'
+import download from '../../../../images/download.svg'
+import address from '../../../../images/location.svg'
+import logout from '../../../../images/logout.svg'
+import admin from '../../../../images/admin.png'
+import { Link } from 'react-router-dom';
+
 
 function DeshBoard() {
     const { user, logOut } = useAuth();
@@ -16,48 +22,82 @@ function DeshBoard() {
                 <div className='col-md-9 padding-site'>
                     <div>
                         <div>
-                            Hello, <b>{user.email}</b>  (not <b>{user.email}</b>? <Button onClick={logOut} color="secondary">Logout</Button>)
+                            Hello, <b>{user.email}</b>  (not <b>{user.email}</b>? <Button onClick={logOut} sx={{ color: " black" }}>Logout</Button>)
                         </div>
-                        <div className='pt-2'>
-                            <div class="row row-cols-1 row-cols-md-3 g-3">
-                                <div class="col">
-                                    <div class="card h-100">
-                                        
-                                        <div class="card-body">
-                                            <h5 class="card-title">ORDER</h5>
-                                           
-                                        </div>
+                        <div className='pt-3'>
+                            <div className="row row-cols-2 row-cols-md-3 g-3 pictuire-logo">
+                                <div className="col">
+                                    <div className="card h-100">
+                                        <Link to='/myaccount/admin'>
+                                            <Button sx={{ color: " black" }} variant="text">
+                                                <div className='text-center p-2'>
+                                                    <img src={admin}></img>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">ADMIN</h5>
+                                                    </div>
+                                                </div>
+                                            </Button>
+                                        </Link>
 
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="card h-100">
-                                        
-                                        <div class="card-body">
-                                            <h5 class="card-title">DOWNLOADS</h5>
-                                           
-                                        </div>
+                                <div className="col">
+                                    <div className="card h-100">
+                                        <Link to='/myaccount/order'>
+                                            <Button sx={{ color: " black" }} variant="text">
+                                                <div className='text-center p-2'>
+                                                    <img src={order}></img>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">ORDER</h5>
 
+                                                    </div>
+                                                </div>
+                                            </Button>
+                                        </Link>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="card h-100">
-                                        
-                                        <div class="card-body">
-                                            <h5 class="card-title">ADDRESS</h5>
-                                           
-                                        </div>
-
+                                <div className="col">
+                                    <div className="card h-100">
+                                        <Link to='/myaccount/download'>
+                                            <Button sx={{ color: " black" }} variant="text">
+                                                <div className='text-center p-2'>
+                                                    <img src={download}></img>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">DOWNLOADS</h5>
+                                                    </div>
+                                                </div>
+                                            </Button>
+                                        </Link>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="card h-100">
-                                        
-                                        <div class="card-body">
-                                            <h5 class="card-title">LOGOUT</h5>
-                                           
-                                        </div>
-
+                                <div className="col">
+                                    <div className="card h-100">
+                                        <Link to='/myaccount/address'>
+                                            <Button sx={{ color: " black" }} variant="text">
+                                                <div className='text-center p-2'>
+                                                    <img src={address}></img>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">ADDRESS</h5>
+                                                    </div>
+                                                </div>
+                                            </Button>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className="card h-100">
+                                        <Button 
+                                        onClick={logOut}
+                                        type='button'
+                                        sx={{ color: " black" }}
+                                         variant="text">
+                                            <div className='text-center p-2'>
+                                                <img src={logout}></img>
+                                                <div className="card-body">
+                                                    <h5 className="card-title">LOGOUT</h5>
+                                                </div>
+                                            </div>
+                                        </Button>
                                     </div>
                                 </div>
 
