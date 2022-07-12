@@ -10,6 +10,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function Note() {
     const { user, logOut } = useAuth();
+    console.log(user)
     return (
         <div className=' colorBg'>
             <div className='d-flex container align-items-center justify-content-between' >

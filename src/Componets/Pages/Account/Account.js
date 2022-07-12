@@ -12,22 +12,27 @@ function Account() {
                         <thead>
                             <tr>
                                 <th scope="col"><h4>MY ACCOUNT</h4></th>
-                               
+
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th className='color-link' scope="row"><Link to="/myaccount">Deshboard</Link></th>
-                               
-                                
+                                <th className='color-link' scope="row"><Link to="/myaccount/admin">Admin</Link></th>
+                            </tr>
+                            <tr>
+                                <th className='color-link active' scope="row"><Link to="/myaccount">Deshboard</Link></th>
                             </tr>
                             <tr>
                                 <th className='color-link' scope="row"><Link to='/myaccount/order'>Order</Link></th>
-                              
+                            </tr>
+                            <tr>
+                                <th className='color-link active' scope="row"><Link to="/myaccount/downloads">Downloads</Link></th>
+                            </tr>
+                            <tr>
+                                <th className='color-link active' scope="row"><Link to="/myaccount/address">Address</Link></th>
                             </tr>
                             <tr>
                                 <th scope="row">Logout</th>
-                               
                             </tr>
                         </tbody>
                     </table>

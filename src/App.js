@@ -22,6 +22,7 @@ import SingleOrna from './Componets/Pages/Product/Women/womenCatagory/Orna/Singl
 import ShoppingCart from './Componets/Pages/ShoppingCart/ShoppingCart';
 import DeshBoard from './Componets/Pages/Account/DeshBoard/DeshBoard';
 import Order from './Componets/Pages/Account/Order/Order';
+import Admin from './Componets/Pages/Account/Admin/Admin';
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
 
             <Route path='/myaccount' element={<DeshBoard></DeshBoard>}></Route>
             <Route path='/myaccount/order' element={<Order></Order>}></Route>
+            <Route path='/myaccount/admin' element={<Admin></Admin>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
           </Routes>
