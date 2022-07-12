@@ -14,11 +14,12 @@ const useFirebase = () => {
     const auth = getAuth();
 
 
-    const registerUser = (email, Password) => {
+    const registerUser = (email, Password, navigate) => {
         setIsLoading(true)
         createUserWithEmailAndPassword(auth, email, Password)
             .then((userCredential) => {
 
+                navigate('/myaccount');
                 setAuthError('')
             })
             .catch((error) => {
@@ -33,6 +34,7 @@ const useFirebase = () => {
         setIsLoading(true)
         signInWithPopup(auth, googleProvider)
             .then((result) => {
+
                 navigate('/myaccount');
                 setAuthError('')
 

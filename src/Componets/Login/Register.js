@@ -1,12 +1,12 @@
 import { Alert, Box, Button, CircularProgress, Container, Grid, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 export default function Register() {
     const [logInData, setLogInData] = useState({})
 
-
+    const navigate = useNavigate();
     const { user, authError, registerUser, isLoading } = useAuth();
 
     const handleOneChange = e => {
@@ -25,7 +25,7 @@ export default function Register() {
             return;
         }
 
-        registerUser(logInData.email, logInData.password);
+        registerUser(logInData.email, logInData.password, navigate);
         e.preventDefault();
     }
     return (
