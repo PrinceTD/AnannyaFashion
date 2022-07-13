@@ -9,12 +9,12 @@ export default function Register() {
     const navigate = useNavigate();
     const { user, authError, registerUser, isLoading } = useAuth();
 
-    const handleOneChange = e => {
+    const handleOnBlur = e => {
         const field = e.target.name;
         const value = e.target.value;
         const newLogInData = { ...logInData };
         newLogInData[field] = value;
-
+        // console.log(newLogInData)
         setLogInData(newLogInData);
 
     }
@@ -25,7 +25,7 @@ export default function Register() {
             return;
         }
 
-        registerUser(logInData.email, logInData.password, navigate);
+        registerUser(logInData.name, logInData.email, logInData.password, navigate);
         e.preventDefault();
     }
     return (
@@ -41,9 +41,17 @@ export default function Register() {
                                 <TextField
                                     sx={{ width: '75%', m: 1 }}
                                     id="standard-basic"
+                                    label="Your name"
+                                    name='name'
+                                    onBlur={handleOnBlur}
+                                    type='text'
+                                    variant="standard" />
+                                <TextField
+                                    sx={{ width: '75%', m: 1 }}
+                                    id="standard-basic"
                                     label="Your email"
                                     name='email'
-                                    onChange={handleOneChange}
+                                    onBlur={handleOnBlur}
                                     type='email'
                                     variant="standard" />
                                 <TextField
@@ -51,7 +59,7 @@ export default function Register() {
                                     id="standard-basic"
                                     label="Your password"
                                     name='password'
-                                    onChange={handleOneChange}
+                                    onBlur={handleOnBlur}
                                     type='password'
                                     variant="standard"
                                 />
@@ -60,7 +68,7 @@ export default function Register() {
                                     id="standard-basic"
                                     label="Re-Type Your password"
                                     name='password2'
-                                    onChange={handleOneChange}
+                                    onBlur={handleOnBlur}
                                     type='password'
                                     variant="standard"
                                 />

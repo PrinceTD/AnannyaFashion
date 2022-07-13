@@ -24,7 +24,7 @@ export default function Note() {
 
                     {
                         user.email ?
-                            <a href='/myaccount'><button type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> Hello, {user.email}</small>
+                            <a href='/myaccount'><button type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> Hello, {user.displayName}</small>
                             </button></a> :
                             <a href='/login'><button type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LOGIN / REGISTER</small></button></a>
 

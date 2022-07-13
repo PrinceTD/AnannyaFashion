@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import initializeFirebase from "../Componets/Login/Fairbase/firebase.init";
-import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, updateProfile, signOut, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 initializeFirebase();
 
@@ -14,12 +14,22 @@ const useFirebase = () => {
     const auth = getAuth();
 
 
-    const registerUser = (email, Password, navigate) => {
+    const registerUser = (name, email, Password, navigate) => {
         setIsLoading(true)
         createUserWithEmailAndPassword(auth, email, Password)
             .then((userCredential) => {
-
+                const newUser = { email, displayName: name }
+                setUser(newUser);
+                saveuser(email, name)
+                // update user
+                updateProfile(auth.currentUser, {
+                    displayName: name
+                }).then(() => {
+                    
+                }).catch((error) => {
+                });
                 navigate('/myaccount');
+
                 setAuthError('')
             })
             .catch((error) => {
@@ -83,6 +93,19 @@ const useFirebase = () => {
 
         })
             .finally(() => setIsLoading(false));
+    }
+
+
+    const saveuser = (email, displayName) => {
+        const user = {email, displayName};
+        fetch("http://localhost:5000/users",{
+            method: "POST",
+            headers:{
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(user)
+        })
+        .then()
     }
 
     return {
