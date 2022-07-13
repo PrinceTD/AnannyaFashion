@@ -25,6 +25,7 @@ import Order from './Componets/Pages/Account/Order/Order';
 import Admin from './Componets/Pages/Account/Admin/Admin';
 import Download from './Componets/Pages/Account/Download/Download';
 import Address from './Componets/Pages/Account/Address/Address';
+import PrivetRoute from './Componets/Login/PrivetRoute/PrivetRoute';
 
 function App() {
   return (
@@ -59,11 +60,13 @@ function App() {
             <Route path='/newin' element={<NewIn></NewIn>}></Route>
             <Route path='/newin/:serviceId' element={<SingleNewIn></SingleNewIn>}></Route>
 
-            <Route path='/myaccount' element={<DeshBoard></DeshBoard>}></Route>
-            <Route path='/myaccount/order' element={<Order></Order>}></Route>
-            <Route path='/myaccount/admin' element={<Admin></Admin>}></Route>
-            <Route path='/myaccount/download' element={<Download></Download>}></Route>
-            <Route path='/myaccount/address' element={<Address></Address>}></Route>
+            {/* deshboard privet route */}
+
+            <Route path='/myaccount' element={<PrivetRoute><DeshBoard /></PrivetRoute>}></Route>
+            <Route path='/myaccount/order' element={<PrivetRoute><Order /></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin' element={<PrivetRoute><Admin /></PrivetRoute>}></Route>
+            <Route path='/myaccount/download' element={<PrivetRoute><Download /></PrivetRoute>}></Route>
+            <Route path='/myaccount/address' element={<PrivetRoute><Address /></PrivetRoute>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
           </Routes>
