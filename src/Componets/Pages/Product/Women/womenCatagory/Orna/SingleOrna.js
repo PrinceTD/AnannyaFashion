@@ -24,6 +24,7 @@ export default function SingleOrna() {
                   <h2 class="pt-2">{service.name}</h2>
                   <h4 className='pt-2'>৳ {service.price}</h4>
                   <small><span className='pt-2 fst-normal'>{service.details}</span></small>
+                  
                 </div>
               </div>
             </div>

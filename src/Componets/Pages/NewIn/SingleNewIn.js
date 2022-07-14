@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
 
@@ -9,6 +10,15 @@ function SingleNewIn() {
             .then(res => res.json())
             .then(data => setService(data));
     }, []);
+
+    const handelAddtoCard = e => {
+        const addToCard = {
+            
+        }
+
+        e.preventDefault();
+    }
+
     return (
         <div className='container'>
             <div className="">
@@ -24,6 +34,8 @@ function SingleNewIn() {
                                     <h2 class="pt-2">{service.name}</h2>
                                     <h4 className='pt-2'>৳ {service.price}</h4>
                                     <small><span className='pt-2 fst-normal'>{service.details}</span></small>
+                                    <br />
+                                    <button>add to card</button>
                                 </div>
                             </div>
                         </div>

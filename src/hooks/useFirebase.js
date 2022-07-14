@@ -20,7 +20,7 @@ const useFirebase = () => {
             .then((userCredential) => {
                 const newUser = { email, displayName: name }
                 setUser(newUser);
-                saveuser(email, name)
+                saveuser(email, name, 'POST')
                 // update user
                 updateProfile(auth.currentUser, {
                     displayName: name
@@ -40,7 +40,7 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
 
-    const signInWithGoogle = (location, navigate) => {
+    const signInWithGoogle = ( navigate) => {
         setIsLoading(true)
         signInWithPopup(auth, googleProvider)
             .then((result) => {
@@ -96,10 +96,10 @@ const useFirebase = () => {
     }
 
 
-    const saveuser = (email, displayName) => {
+    const saveuser = (email, displayName, method) => {
         const user = {email, displayName};
-        fetch("http://localhost:5000/users",{
-            method: "POST",
+        fetch('http://localhost:5000/users',{
+            method: method,
             headers:{
                 "content-type": "application/json"
             },

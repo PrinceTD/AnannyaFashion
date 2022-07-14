@@ -21,7 +21,7 @@ function NewIns({ service }) {
                         <h5 style={{ color: "coral" }} class="card-title">{name}</h5>
                         <h3>$ {price}</h3>
                         <div className="d-flex justify-content-between">
-                            <Link to={`/women/pant/${_id}`}>
+                            <Link to={`/newin/${_id}`}>
                                 <button style={{ backgroundColor: "coral", padding: "5px 15px", color: "#fff" }} className="border-0 rounded-pill">Details</button>
                             </Link>
                         </div>
