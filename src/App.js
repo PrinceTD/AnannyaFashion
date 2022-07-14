@@ -26,6 +26,7 @@ import Admin from './Componets/Pages/Account/Admin/Admin';
 import Download from './Componets/Pages/Account/Download/Download';
 import Address from './Componets/Pages/Account/Address/Address';
 import PrivetRoute from './Componets/Login/PrivetRoute/PrivetRoute';
+import AddAdmin from './Componets/Pages/Account/Admin/AddAdmin';
 
 function App() {
   return (
@@ -64,9 +65,13 @@ function App() {
 
             <Route path='/myaccount' element={<PrivetRoute><DeshBoard /></PrivetRoute>}></Route>
             <Route path='/myaccount/order' element={<PrivetRoute><Order /></PrivetRoute>}></Route>
-            <Route path='/myaccount/admin' element={<PrivetRoute><Admin /></PrivetRoute>}></Route>
             <Route path='/myaccount/download' element={<PrivetRoute><Download /></PrivetRoute>}></Route>
             <Route path='/myaccount/address' element={<PrivetRoute><Address /></PrivetRoute>}></Route>
+
+            {/* admin panal */}
+            <Route path='/myaccount/admin' element={<PrivetRoute><Admin /></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/makeadmin' element={<PrivetRoute><AddAdmin /></PrivetRoute>}></Route>
+
 
             <Route path='*' element={<Error></Error>}></Route>
           </Routes>

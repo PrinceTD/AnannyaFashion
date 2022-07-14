@@ -47,6 +47,7 @@ const useFirebase = () => {
 
                 navigate('/myaccount');
                 setAuthError('')
+                saveuser(user.email, user.displayName, "PUT")
 
             }).catch((error) => {
                 setAuthError(error.massage)
