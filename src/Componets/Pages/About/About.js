@@ -4,11 +4,11 @@ import imgA from '../../../images/mukti.jpg'
 export default function About() {
   return (
     <div className='container'>
-      <div class="row row-cols-1 row-cols-md-2 g-4 border-0">
-        <div class="col">
-          <div class="card">
+      <div className="row row-cols-1 row-cols-md-2 g-4 border-0">
+        <div className="col">
+          <div className="card">
 
-            <div class="card-body">
+            <div className="card-body">
 
               <h2 className='card-title'>আমাদের গল্প</h2>
 
@@ -27,9 +27,9 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src={imgA} class="card-img-top" alt="..." />
+        <div className="col">
+          <div className="card">
+            <img src={imgA} className="card-img-top" alt="..." />
 
           </div>
         </div>

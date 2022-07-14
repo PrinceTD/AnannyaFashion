@@ -5,12 +5,12 @@ import useAuth from '../../../hooks/useAuth';
 import './account.css'
 
 function Account() {
-    const {user, logOut} = useAuth();
+    const { user, logOut, admin } = useAuth();
     return (
         <div className='container'>
             <div className=''>
                 <div className='border-account'>
-                    <table class="table">
+                    <table className="table">
                         <thead>
                             <tr>
                                 <th scope="col"><h4>MY ACCOUNT</h4></th>
@@ -18,9 +18,10 @@ function Account() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th className='color-link' scope="row"><Link to="/myaccount/admin">Admin</Link></th>
-                            </tr>
+                            {admin &&
+                                <tr>
+                                    <th className='color-link' scope="row"><Link to="/myaccount/admin">Admin</Link></th>
+                                </tr>}
                             <tr>
                                 <th className='color-link active' scope="row"><Link to="/myaccount">Deshboard</Link></th>
                             </tr>
@@ -34,14 +35,14 @@ function Account() {
                                 <th className='color-link active' scope="row"><Link to="/myaccount/address">Address</Link></th>
                             </tr>
                             <tr>
-                                <th scope="row"><Button 
-                                        onClick={logOut}
-                                        type='button'
-                                        sx={{ color: " black" }}
-                                         variant="text">
-                                            Logout
-                                            </Button>
-                                         </th>
+                                <th scope="row"><Button
+                                    onClick={logOut}
+                                    type='button'
+                                    sx={{ color: " black" }}
+                                    variant="text">
+                                    Logout
+                                </Button>
+                                </th>
                             </tr>
                         </tbody>
                     </table>

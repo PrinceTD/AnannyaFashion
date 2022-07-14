@@ -8,6 +8,8 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [authError, setAuthError] = useState('');
     const [isLoading, setIsLoading] = useState(true);
+    // addmin
+    const [admin, setAdmin] = useState(false);
 
     const googleProvider = new GoogleAuthProvider();
 
@@ -25,7 +27,7 @@ const useFirebase = () => {
                 updateProfile(auth.currentUser, {
                     displayName: name
                 }).then(() => {
-                    
+
                 }).catch((error) => {
                 });
                 navigate('/myaccount');
@@ -40,7 +42,7 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
 
-    const signInWithGoogle = ( navigate) => {
+    const signInWithGoogle = (navigate) => {
         setIsLoading(true)
         signInWithPopup(auth, googleProvider)
             .then((result) => {
@@ -86,6 +88,14 @@ const useFirebase = () => {
         return () => unsubscribe;
     }, [])
 
+    // admin
+
+    useEffect(() => {
+        fetch(`http://localhost:5000/users/${user.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
+    }, [user.email])
+
     const logOut = () => {
         signOut(auth).then(() => {
 
@@ -98,15 +108,15 @@ const useFirebase = () => {
 
 
     const saveuser = (email, displayName, method) => {
-        const user = {email, displayName};
-        fetch('http://localhost:5000/users',{
+        const user = { email, displayName };
+        fetch(`http://localhost:5000/users`, {
             method: method,
-            headers:{
+            headers: {
                 "content-type": "application/json"
             },
             body: JSON.stringify(user)
         })
-        .then()
+            .then()
     }
 
     return {
@@ -116,8 +126,8 @@ const useFirebase = () => {
         registerUser,
         logOut,
         loginUser,
-        signInWithGoogle
-
+        signInWithGoogle,
+        admin
 
     }
 

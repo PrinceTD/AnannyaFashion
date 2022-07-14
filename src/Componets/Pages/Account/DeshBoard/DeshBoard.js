@@ -7,12 +7,12 @@ import order from '../../../../images/order.png'
 import download from '../../../../images/download.svg'
 import address from '../../../../images/location.svg'
 import logout from '../../../../images/logout.svg'
-import admin from '../../../../images/admin.png'
+import adminLogo from '../../../../images/admin.png'
 import { Link } from 'react-router-dom';
 
 
 function DeshBoard() {
-    const { user, logOut } = useAuth();
+    const { user, logOut, admin } = useAuth();
     return (
         <div className='container pt-5 pb-5'>
             <div className='row'>
@@ -26,21 +26,28 @@ function DeshBoard() {
                         </div>
                         <div className='pt-3'>
                             <div className="row row-cols-2 row-cols-md-3 g-3 pictuire-logo">
-                                <div className="col">
-                                    <div className="card h-100">
-                                        <Link to='/myaccount/admin'>
-                                            <Button sx={{ color: " black" }} variant="text">
-                                                <div className='text-center p-2'>
-                                                    <img src={admin}></img>
-                                                    <div className="card-body">
-                                                        <h5 className="card-title">ADMIN</h5>
-                                                    </div>
-                                                </div>
-                                            </Button>
-                                        </Link>
 
+
+                                {
+                                    admin &&
+                                    <div className="col">
+                                        <div className="card h-100">
+                                            <Link to='/myaccount/admin'>
+                                                <Button sx={{ color: " black" }} variant="text">
+                                                    <div className='text-center p-2'>
+                                                        <img src={adminLogo}></img>
+                                                        <div className="card-body">
+                                                            <h5 className="card-title">ADMIN</h5>
+                                                        </div>
+                                                    </div>
+                                                </Button>
+                                            </Link>
+                                        </div>
                                     </div>
-                                </div>
+                                }
+
+
+
                                 <div className="col">
                                     <div className="card h-100">
                                         <Link to='/myaccount/order'>
@@ -86,11 +93,11 @@ function DeshBoard() {
                                 </div>
                                 <div className="col">
                                     <div className="card h-100">
-                                        <Button 
-                                        onClick={logOut}
-                                        type='button'
-                                        sx={{ color: " black" }}
-                                         variant="text">
+                                        <Button
+                                            onClick={logOut}
+                                            type='button'
+                                            sx={{ color: " black" }}
+                                            variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={logout}></img>
                                                 <div className="card-body">

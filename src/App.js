@@ -27,6 +27,7 @@ import Download from './Componets/Pages/Account/Download/Download';
 import Address from './Componets/Pages/Account/Address/Address';
 import PrivetRoute from './Componets/Login/PrivetRoute/PrivetRoute';
 import AddAdmin from './Componets/Pages/Account/Admin/AddAdmin';
+import AdminRoute from './Componets/Login/AdminRoute/AdminRoute';
 
 function App() {
   return (
@@ -69,8 +70,8 @@ function App() {
             <Route path='/myaccount/address' element={<PrivetRoute><Address /></PrivetRoute>}></Route>
 
             {/* admin panal */}
-            <Route path='/myaccount/admin' element={<PrivetRoute><Admin /></PrivetRoute>}></Route>
-            <Route path='/myaccount/admin/makeadmin' element={<PrivetRoute><AddAdmin /></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin' element={<PrivetRoute><AdminRoute><Admin /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/makeadmin' element={<PrivetRoute><AdminRoute><AddAdmin /></AdminRoute></PrivetRoute>}></Route>
 
 
             <Route path='*' element={<Error></Error>}></Route>

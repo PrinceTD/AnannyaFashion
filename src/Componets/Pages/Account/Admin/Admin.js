@@ -11,6 +11,7 @@ import admin from '../../../../images/admin.png'
 
 function Admin() {
     const { user } = useAuth();
+
     return (
 
         <div>
@@ -23,7 +24,7 @@ function Admin() {
                         <div>
                             <p>Your Account <b>{user.email}</b>. It's a admin account, so you can edit all products in this page. </p>
                         </div>
-                        <div class="row row-cols-2 row-cols-md-3 g-3 admin-logo">
+                        <div className="row row-cols-2 row-cols-md-3 g-3 admin-logo">
                             <div className="col">
                                 <div className="card h-100">
                                     <Link to='/myaccount/admin'>
@@ -82,7 +83,7 @@ function Admin() {
                                     </Link>
                                 </div>
                             </div>
-                            
+
 
                         </div>
                     </div>
