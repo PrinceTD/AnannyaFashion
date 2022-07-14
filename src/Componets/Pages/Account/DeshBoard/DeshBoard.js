@@ -4,9 +4,9 @@ import useAuth from '../../../../hooks/useAuth';
 import Account from '../Account'
 import './deshboard.css'
 import order from '../../../../images/order.png'
-import download from '../../../../images/download.svg'
-import address from '../../../../images/location.svg'
-import logout from '../../../../images/logout.svg'
+import download from '../../../../images/download.png'
+import address from '../../../../images/location.png'
+import logout from '../../../../images/logout.png'
 import adminLogo from '../../../../images/admin.png'
 import { Link } from 'react-router-dom';
 

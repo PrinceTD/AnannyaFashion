@@ -5,7 +5,7 @@ import useAuth from '../../../../hooks/useAuth'
 import Account from '../Account'
 import './Admin.css'
 import order from '../../../../images/order.png'
-import download from '../../../../images/download.svg'
+import download from '../../../../images/download.png'
 import addAdmin from '../../../../images/add.png'
 import admin from '../../../../images/admin.png'
 
