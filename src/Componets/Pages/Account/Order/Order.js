@@ -8,7 +8,7 @@ function Order() {
                 <div className='col-md-3'>
                     <Account></Account>
                 </div>
-                <div className='col-md-9'>
+                <div className='col-md-9 padding-site'>
 
                 </div>
             </div>

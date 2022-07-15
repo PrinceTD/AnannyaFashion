@@ -58,8 +58,8 @@ export default function Navbar() {
                                         Jewellery
                                     </a>
                                     <ul className="dropdown-menu Menu" aria-labelledby="navbarDropdown">
-                                        <li><a className="dropdown-item" href="#">Necklace</a></li>
-                                        <li><a className="dropdown-item" href="#">Ear Ring</a></li>
+                                        <li><a className="dropdown-item" href="/jewellary/necklace">Necklace</a></li>
+                                        <li><a className="dropdown-item" href="/jewellary/earring">Ear Ring</a></li>
                                         <li><a className="dropdown-item" href="#">Bangle</a></li>
                                     </ul>
                                 </li>

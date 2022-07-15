@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth'
 import Account from '../Account'
 import './Admin.css'
-import order from '../../../../images/order.png'
+import manage from '../../../../images/manage.png'
 import download from '../../../../images/download.png'
 import addAdmin from '../../../../images/add.png'
 import admin from '../../../../images/admin.png'
@@ -42,12 +42,12 @@ function Admin() {
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/order'>
+                                    <Link to='/myaccount/admin/manageorder'>
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
-                                                <img src={order}></img>
+                                                <img src={manage}></img>
                                                 <div className="card-body">
-                                                    <h5 className="card-title">ORDER</h5>
+                                                    <h5 className="card-title">MANAGE ORDER</h5>
 
                                                 </div>
                                             </div>
