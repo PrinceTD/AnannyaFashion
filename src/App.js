@@ -36,6 +36,8 @@ import Jewellary from './Componets/Pages/Account/ManageOrder/JewellaryAdd/Jewell
 import Necklecs from './Componets/Pages/Product/Jewelry/Neclesh/Necklecs';
 import SingleNecklecs from './Componets/Pages/Product/Jewelry/Neclesh/SingleNecklecs';
 import NecklaceAdd from './Componets/Pages/Account/ManageOrder/JewellaryAdd/NecklaceAdd';
+import ManageAllProduct from './Componets/Pages/Account/AdminManage/ManageAllProduct';
+import ManageAllOrder from './Componets/Pages/Account/AdminManage/ManageAllOrder';
 
 function App() {
   return (
@@ -86,6 +88,15 @@ function App() {
             {/* admin panal */}
             <Route path='/myaccount/admin' element={<PrivetRoute><AdminRoute><Admin /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/makeadmin' element={<PrivetRoute><AdminRoute><AddAdmin /></AdminRoute></PrivetRoute>}></Route>
+
+
+            {/* manageProduct */}
+            <Route path='/myaccount/admin/manageproduct' element={<PrivetRoute><AdminRoute><ManageAllProduct /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/managevieworder' element={<PrivetRoute><AdminRoute><ManageAllOrder /></AdminRoute></PrivetRoute>}></Route>
+
+
+            {/* add product */}
+
             <Route path='/myaccount/admin/manageorder' element={<PrivetRoute><AdminRoute><ManageOrder /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/jewellery' element={<PrivetRoute><AdminRoute><Jewellary></Jewellary></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/jewellery/earring' element={<PrivetRoute><AdminRoute><EarringAdd /></AdminRoute></PrivetRoute>}></Route>

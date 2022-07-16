@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth'
 import Account from '../Account'
 import './Admin.css'
+import addOrder from '../../../../images/Porder.png'
 import manage from '../../../../images/manage.png'
-import download from '../../../../images/download.png'
 import addAdmin from '../../../../images/add.png'
-import admin from '../../../../images/admin.png'
+import manageOrder from '../../../../images/manageOrder.png'
 
 function Admin() {
     const { user } = useAuth();
@@ -27,12 +27,12 @@ function Admin() {
                         <div className="row row-cols-2 row-cols-md-3 g-3 admin-logo">
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin'>
+                                    <Link to='/myaccount/admin/managevieworder'>
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
-                                                <img src={admin}></img>
+                                                <img src={manageOrder}></img>
                                                 <div className="card-body">
-                                                    <h5 className="card-title">ADMIN</h5>
+                                                    <h5 className="card-title">MANAGE ORDER</h5>
                                                 </div>
                                             </div>
                                         </Button>
@@ -45,9 +45,9 @@ function Admin() {
                                     <Link to='/myaccount/admin/manageorder'>
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
-                                                <img src={manage}></img>
+                                                <img src={addOrder}></img>
                                                 <div className="card-body">
-                                                    <h5 className="card-title">MANAGE ORDER</h5>
+                                                    <h5 className="card-title">ADD PRODUCTS</h5>
 
                                                 </div>
                                             </div>
@@ -57,12 +57,12 @@ function Admin() {
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/download'>
+                                    <Link to='/myaccount/admin/manageproduct'>
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
-                                                <img src={download}></img>
+                                                <img src={manage}></img>
                                                 <div className="card-body">
-                                                    <h5 className="card-title">DOWNLOADS</h5>
+                                                    <h5 className="card-title">MANAGE PRODUCT</h5>
                                                 </div>
                                             </div>
                                         </Button>
