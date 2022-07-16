@@ -8,7 +8,7 @@ function NecklaceAdd() {
     const [open, setOpen] = React.useState(false);
 
     const onSubmit = (data) => {
-        fetch("http://localhost:5000/necklace", {
+        fetch("https://powerful-wildwood-87881.herokuapp.com/necklace", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

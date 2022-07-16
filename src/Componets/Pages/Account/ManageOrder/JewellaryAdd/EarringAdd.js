@@ -8,7 +8,7 @@ function EarringAdd() {
     const [open, setOpen] = React.useState(false);
 
     const onSubmit = (data) => {
-        fetch("http://localhost:5000/earring", {
+        fetch("https://powerful-wildwood-87881.herokuapp.com/earring", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

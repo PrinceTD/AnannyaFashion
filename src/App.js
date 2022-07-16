@@ -38,6 +38,8 @@ import SingleNecklecs from './Componets/Pages/Product/Jewelry/Neclesh/SingleNeck
 import NecklaceAdd from './Componets/Pages/Account/ManageOrder/JewellaryAdd/NecklaceAdd';
 import ManageAllProduct from './Componets/Pages/Account/AdminManage/ManageAllProduct';
 import ManageAllOrder from './Componets/Pages/Account/AdminManage/ManageAllOrder';
+import JewelleryDel from './Componets/Pages/Account/AdminManage/ManageProductDel/JewelleryDel/JewelleryDel';
+import EarRingDel from './Componets/Pages/Account/AdminManage/ManageProductDel/JewelleryDel/EarRingDel';
 
 function App() {
   return (
@@ -92,6 +94,10 @@ function App() {
 
             {/* manageProduct */}
             <Route path='/myaccount/admin/manageproduct' element={<PrivetRoute><AdminRoute><ManageAllProduct /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/jewellerydel' element={<PrivetRoute><AdminRoute><JewelleryDel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/jewellerydel/earringdel' element={<PrivetRoute><AdminRoute><EarRingDel /></AdminRoute></PrivetRoute>}></Route>
+
+
             <Route path='/myaccount/admin/managevieworder' element={<PrivetRoute><AdminRoute><ManageAllOrder /></AdminRoute></PrivetRoute>}></Route>
 
 

@@ -5,7 +5,7 @@ function SingleNecklecs() {
     const [service, setService] = useState({});
     const { serviceId } = useParams();
     useEffect(() => {
-        fetch(`http://localhost:5000/earring/${serviceId}`)
+        fetch(`https://powerful-wildwood-87881.herokuapp.com/earring/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data));
     }, []);

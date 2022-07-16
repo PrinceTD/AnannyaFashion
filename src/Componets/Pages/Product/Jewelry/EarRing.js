@@ -7,7 +7,7 @@ function EarRing() {
     const { isLoading } = useAuth();
     const [service, setService] = useState([]);
     useEffect(() => {
-        const url = "http://localhost:5000/earring"
+        const url = "https://powerful-wildwood-87881.herokuapp.com/earring"
         fetch(url)
             .then(res => res.json())
             .then(data => setService(data))
