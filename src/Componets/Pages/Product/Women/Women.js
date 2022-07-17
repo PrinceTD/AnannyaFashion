@@ -16,10 +16,18 @@ export default function Women() {
               <img src={imgC} class="card-img-top" alt="..." />
               <div class="card-body">
                 <Link to={"/women/saree"}><h1 class="card-title txt">SAREE</h1></Link>
-
               </div>
-
             </div>
+
+            <div class="col ">
+              <div class="card border-0 h-100 text-center shadow">
+                <img src={imgC} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <Link to={"/women/kurti"}><h1 class="card-title txt">KURTI</h1></Link>
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="col ">
             <div class="card border-0 h-100 text-center shadow">
@@ -31,15 +39,7 @@ export default function Women() {
 
             </div>
           </div>
-          <div class="col ">
-            <div class="card border-0 h-100 text-center shadow">
-              <img src={imgC} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1 class="card-title txt">KURTI</h1>
-              </div>
 
-            </div>
-          </div>
           <div class="col ">
             <div class="card border-0 h-100 text-center shadow">
               <img src={imgC} class="card-img-top" alt="..." />

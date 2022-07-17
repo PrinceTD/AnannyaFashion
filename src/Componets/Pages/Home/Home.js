@@ -9,6 +9,7 @@ import Facebook from '../SocialMedia/Facebook'
 import Socialmedia from '../SocialMedia/Socialmedia'
 import CardC from '../carousel/CardC'
 import useAuth from '../../../hooks/useAuth'
+import EarringAdd from '../Account/ManageOrder/JewellaryAdd/EarringAdd'
 
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
       <Title></Title>
       {/* <CardC></CardC> */}
       <Socialmedia></Socialmedia>
-
+      
 
     </div>
   )

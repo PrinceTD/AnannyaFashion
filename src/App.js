@@ -40,6 +40,8 @@ import ManageAllProduct from './Componets/Pages/Account/AdminManage/ManageAllPro
 import ManageAllOrder from './Componets/Pages/Account/AdminManage/ManageAllOrder';
 import JewelleryDel from './Componets/Pages/Account/AdminManage/ManageProductDel/JewelleryDel/JewelleryDel';
 import EarRingDel from './Componets/Pages/Account/AdminManage/ManageProductDel/JewelleryDel/EarRingDel';
+import Kurti from './Componets/Pages/Product/Women/womenCatagory/Kurti/Kurti';
+import SingleKurti from './Componets/Pages/Product/Women/womenCatagory/Kurti/SingleKurti';
 
 function App() {
   return (
@@ -64,6 +66,10 @@ function App() {
 
             <Route path='/women/pant' element={<Pant></Pant>}></Route>
             <Route path='/women/pant/:serviceId' element={<SinglePant></SinglePant>}></Route>
+
+            <Route path='/women/kurti' element={<Kurti></Kurti>}></Route>
+            <Route path='/women/kurti/:serviceId' element={<SingleKurti></SingleKurti>}></Route>
+
 
             <Route path='/women/saree' element={<Saree></Saree>}></Route>
             <Route path='/women/saree/:serviceId' element={<SingleSaree></SingleSaree>}></Route>

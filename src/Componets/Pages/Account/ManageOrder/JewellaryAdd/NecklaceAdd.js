@@ -1,6 +1,6 @@
 import React from 'react'
 import Account from '../../Account'
-import { Alert, Box, Button, Container, Grid, Snackbar, Typography } from '@mui/material';
+import { Alert, Box, Button, Container, Grid, Snackbar, TextField, Typography } from '@mui/material';
 import { useForm } from "react-hook-form";
 
 function NecklaceAdd() {
@@ -40,15 +40,32 @@ function NecklaceAdd() {
                 <div className='col-md-9 padding-site'>
                     <Container>
                         <Grid container>
-                            <Grid item xs={12} md={8} sm={10} sx={{ mx: "auto" }}>
-                                <Box sx={{ p: 4, my: 3 }} className="add-new-product">
-                                    <Typography variant="h2" sx={{ my: 2 }}>
+                            <Grid>
+                                <Box>
+                                    <Typography variant="h2">
                                         Add a new Product
                                     </Typography>
                                     <form
                                         onSubmit={handleSubmit(onSubmit)}
                                         style={{ display: "flex", flexDirection: "column" }}
                                     >
+                                        {/* <TextField
+                                        sx={{width: "50%"}}
+                                        required
+                                        id="outlined-basic" 
+                                        label="Product Name"
+                                        type="name" 
+                                        variant="outlined" />
+                                        <br/>
+                                        <TextField
+                                        sx={{width: "50%"}}
+                                        required
+                                        id="outlined-basic" 
+                                        label="Product Detail"
+                                        type="text" 
+                                        variant="outlined" /> */}
+
+
                                         <input
                                             {...register("name")}
                                             type="text"

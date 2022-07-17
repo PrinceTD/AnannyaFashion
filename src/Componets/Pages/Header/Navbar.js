@@ -32,14 +32,13 @@ export default function Navbar() {
                                     </a>
                                     <ul className="dropdown-menu Menu " aria-labelledby="navbarDropdown">
                                         <li><a className="dropdown-item" href="/women/saree">Saree</a></li>
-                                        <li><a className="dropdown-item" href="#">Top</a></li>
-                                        <li><a className="dropdown-item" href="#">Kurti</a></li>
-                                        <li><a className="dropdown-item" href="#">Frock</a></li>
+                                        <li><a className="dropdown-item" href="/women/kurti">Kurti</a></li>
                                         <li><a className="dropdown-item" href="#">Salwar Kameez</a></li>
                                         <li><a className="dropdown-item" href="#">Blouse</a></li>
+                                        <li><a className="dropdown-item" href="#">Top</a></li>
                                         <li><a className="dropdown-item" href="/women/orna">Orna</a></li>
                                         <li><a className="dropdown-item" href="/women/pant">Pant</a></li>
-                                        <li><a className="dropdown-item" href="#">Shawl</a></li>
+
                                     </ul>
                                 </li>
                                 <li className="nav-item dropdown">
