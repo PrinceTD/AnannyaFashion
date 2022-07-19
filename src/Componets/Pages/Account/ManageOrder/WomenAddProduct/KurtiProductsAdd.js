@@ -1,8 +1,10 @@
 import { Button, Input, TextField } from '@mui/material'
 import React, { useState } from 'react'
+import useAuth from '../../../../../hooks/useAuth';
 import Account from '../../Account'
 
 function KurtiProductsAdd() {
+    const { use } = useAuth();
     const [name, setName] = useState('');
     const [details, setDetails] = useState("");
     const [price, setPrice] = useState("");
@@ -25,7 +27,7 @@ function KurtiProductsAdd() {
         })
             .then(response => response.json())
             .then(data => {
-                if(data.insertedId){
+                if (data.insertedId) {
                     console.log("added succes")
                 }
             })
@@ -42,7 +44,7 @@ function KurtiProductsAdd() {
                     <Account></Account>
                 </div>
                 <div className='col-md-9 padding-site'>
-                    <h4>add a kurti</h4>
+                    <h4>{user}, It's an admin account. so, You can upload product</h4>
                     <br />
                     <form onSubmit={handelSubmit}>
                         <TextField
