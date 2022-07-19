@@ -21,14 +21,13 @@ function KurtiProductsAdd() {
 
         fetch("http://localhost:5000/kurti", {
             method: "POST",
-            headers: {
-                "content-type": "application/json",
-            },
             body: formData
         })
             .then(response => response.json())
             .then(data => {
-                console.log('success :', data)
+                if(data.insertedId){
+                    console.log("added succes")
+                }
             })
             .catch(error => {
                 console.error('error:', error);
@@ -45,7 +44,7 @@ function KurtiProductsAdd() {
                 <div className='col-md-9 padding-site'>
                     <h4>add a kurti</h4>
                     <br />
-                    <from onSubmit={handelSubmit}>
+                    <form onSubmit={handelSubmit}>
                         <TextField
                             sx={{ width: '50%', marginBottom: '5px' }}
                             label="Product Name"
@@ -80,11 +79,10 @@ function KurtiProductsAdd() {
                         <br />
                         <Button
                             sx={{ width: '50%', marginBottom: '5px' }}
-                            type='submit'
-                            variant="contained" >
-                            Add Product
+                            variant="contained" type="submit">
+                            Add Doctor
                         </Button>
-                    </from>
+                    </form>
                 </div>
             </div>
         </div>

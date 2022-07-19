@@ -7,7 +7,7 @@ export default function Kurti() {
   const { isLoading } = useAuth();
   const [service, setService] = useState([]);
   useEffect(() => {
-    const url = "https://powerful-wildwood-87881.herokuapp.com/earring"
+    const url = "http://localhost:5000/kurti"
     fetch(url)
       .then(res => res.json())
       .then(data => setService(data))

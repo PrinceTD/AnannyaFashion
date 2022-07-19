@@ -6,7 +6,7 @@ function Kurtis({service}) {
     return (
         <div class="col">
             <div class="card">
-                <img src={img} class="card-img-top" alt="..." height='250px' width={'200px'}/>
+                <img src={`data:img/png;base64,${img}`} class="card-img-top" alt="..." height='250px' width={'200px'}/>
                 <div class="card-body">
                     <p class="card-title">{name}</p>
                     <p class="card-text">{price}</p>

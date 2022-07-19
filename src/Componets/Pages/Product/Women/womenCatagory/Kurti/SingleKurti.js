@@ -5,7 +5,7 @@ function SingleKurti() {
     const [service, setService] = useState({});
     const { serviceId } = useParams();
     useEffect(() => {
-        fetch(`https://powerful-wildwood-87881.herokuapp.com/earring/${serviceId}`)
+        fetch(`http://localhost:5000/kurti/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data));
     }, []);
@@ -15,7 +15,7 @@ function SingleKurti() {
                 <div class="card mb-3 border-0">
                     <div class="row g-4">
                         <div class="col-md-6">
-                            <img src={service.img} class="img-fluid rounded-start" alt="..." />
+                            <img src={`data:img/png;base64,${service.img}`} class="img-fluid rounded-start" alt="..." />
                         </div>
                         <div class="col-md-6">
                             <div class="">
