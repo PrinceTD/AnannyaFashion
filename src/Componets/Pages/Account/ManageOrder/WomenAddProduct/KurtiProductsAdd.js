@@ -19,7 +19,7 @@ function KurtiProductsAdd() {
         formData.append('price', price);
         formData.append('img', img);
 
-        fetch("http://localhost:5000/kurti", {
+        fetch("https://powerful-wildwood-87881.herokuapp.com/kurti", {
             method: "POST",
             body: formData
         })

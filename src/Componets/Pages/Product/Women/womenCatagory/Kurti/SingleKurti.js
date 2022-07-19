@@ -5,7 +5,7 @@ function SingleKurti() {
     const [service, setService] = useState({});
     const { serviceId } = useParams();
     useEffect(() => {
-        fetch(`http://localhost:5000/kurti/${serviceId}`)
+        fetch(`https://powerful-wildwood-87881.herokuapp.com/kurti/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data));
     }, []);
