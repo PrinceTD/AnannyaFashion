@@ -42,6 +42,9 @@ import JewelleryDel from './Componets/Pages/Account/AdminManage/ManageProductDel
 import EarRingDel from './Componets/Pages/Account/AdminManage/ManageProductDel/JewelleryDel/EarRingDel';
 import Kurti from './Componets/Pages/Product/Women/womenCatagory/Kurti/Kurti';
 import SingleKurti from './Componets/Pages/Product/Women/womenCatagory/Kurti/SingleKurti';
+import WomenProductAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/WomenProductAdd';
+import KurtiProductsAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/KurtiProductsAdd';
+import SareeProductAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/SareeProductAdd';
 
 function App() {
   return (
@@ -61,6 +64,8 @@ function App() {
 
             <Route path='/register' element={<Register></Register>}></Route>
             <Route path='/shoppingcart' element={<ShoppingCart></ShoppingCart>}></Route>
+
+            {/* products */}
 
             <Route path='/women' element={<Women></Women>}></Route>
 
@@ -102,18 +107,23 @@ function App() {
             <Route path='/myaccount/admin/manageproduct' element={<PrivetRoute><AdminRoute><ManageAllProduct /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/jewellerydel' element={<PrivetRoute><AdminRoute><JewelleryDel /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/jewellerydel/earringdel' element={<PrivetRoute><AdminRoute><EarRingDel /></AdminRoute></PrivetRoute>}></Route>
-
-
             <Route path='/myaccount/admin/managevieworder' element={<PrivetRoute><AdminRoute><ManageAllOrder /></AdminRoute></PrivetRoute>}></Route>
 
 
             {/* add product */}
+
+            {/* jewellery */}
 
             <Route path='/myaccount/admin/manageorder' element={<PrivetRoute><AdminRoute><ManageOrder /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/jewellery' element={<PrivetRoute><AdminRoute><Jewellary></Jewellary></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/jewellery/earring' element={<PrivetRoute><AdminRoute><EarringAdd /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/jewellery/necklace' element={<PrivetRoute><AdminRoute><NecklaceAdd /></AdminRoute></PrivetRoute>}></Route>
 
+            {/* women */}
+            <Route path='/myaccount/admin/manageorder/womenadd' element={<PrivetRoute><AdminRoute><WomenProductAdd></WomenProductAdd></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageorder/womenadd/kurtiadd' element={<PrivetRoute><AdminRoute><KurtiProductsAdd /></AdminRoute></PrivetRoute>}></Route>
+
+            <Route path='/myaccount/admin/manageorder/womenadd/sareeadd' element={<PrivetRoute><AdminRoute><SareeProductAdd /></AdminRoute></PrivetRoute>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
           </Routes>

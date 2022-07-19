@@ -1,12 +1,12 @@
-import { Button } from '@mui/material'
 import React from 'react'
+import Account from '../../Account'
+
+import saree from '../../../../../images/saree.png'
+import kurti from '../../../../../images/kurti.png'
 import { Link } from 'react-router-dom'
-import Account from '../Account'
+import { Button } from '@mui/material'
 
-import jewellary from '../../../../images/jewelry.png'
-import girl from '../../../../images/girl.png'
-
-function ManageOrder() {
+function WomenProductAdd() {
     return (
         <div className='container pt-5 pb-5'>
             <div className='row'>
@@ -17,12 +17,12 @@ function ManageOrder() {
                     <div className="row row-cols-2 row-cols-md-3 g-3 admin-logo">
                         <div className="col">
                             <div className="card h-100">
-                                <Link to='/myaccount/admin/manageorder/jewellery'>
+                                <Link to='/myaccount/admin/manageorder/womenadd/sareeadd'>
                                     <Button sx={{ color: " black" }} variant="text">
                                         <div className='text-center p-2'>
-                                            <img src={jewellary}></img>
+                                            <img src={saree}></img>
                                             <div className="card-body">
-                                                <h5 className="card-title">JEWELLARY</h5>
+                                                <h5 className="card-title">SAREE</h5>
                                             </div>
                                         </div>
                                     </Button>
@@ -32,12 +32,12 @@ function ManageOrder() {
                         </div>
                         <div className="col">
                             <div className="card h-100">
-                                <Link to='/myaccount/admin/manageorder/womenadd'>
+                                <Link to='/myaccount/admin/manageorder/womenadd/kurtiadd'>
                                     <Button sx={{ color: " black" }} variant="text">
                                         <div className='text-center p-2'>
-                                            <img src={girl}></img>
+                                            <img src={kurti}></img>
                                             <div className="card-body">
-                                                <h5 className="card-title">WOMEN</h5>
+                                                <h5 className="card-title">KURTI</h5>
 
                                             </div>
                                         </div>
@@ -59,7 +59,7 @@ function ManageOrder() {
                                 </Link>
                             </div>
                         </div>
-                        
+
 
 
                     </div>
@@ -69,4 +69,4 @@ function ManageOrder() {
     )
 }
 
-export default ManageOrder
+export default WomenProductAdd
