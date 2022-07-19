@@ -4,7 +4,7 @@ import useAuth from '../../../../../hooks/useAuth';
 import Account from '../../Account'
 
 function KurtiProductsAdd() {
-    const { use } = useAuth();
+    const { user } = useAuth();
     const [name, setName] = useState('');
     const [details, setDetails] = useState("");
     const [price, setPrice] = useState("");
