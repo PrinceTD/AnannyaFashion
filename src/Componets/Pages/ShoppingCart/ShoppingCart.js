@@ -6,7 +6,7 @@ function ShoppingCart() {
         <div className='container'>
             <div className='row g-4'>
                 <div className='col-md-8'>
-                    <table class="table table-sm">
+                    <table className="table table-sm">
                         <thead>
                             <tr>
                                 <th scope="col">PRODUCT</th>
@@ -46,7 +46,7 @@ function ShoppingCart() {
                 <div className='col-md-4'>
                     <h2>Cart totals</h2>
                     <div>
-                        <table class="table table-bordered">
+                        <table className="table table-bordered">
                             <thead>
                                 <tr>
 

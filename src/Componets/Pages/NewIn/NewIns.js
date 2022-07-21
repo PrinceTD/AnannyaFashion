@@ -5,8 +5,8 @@ import './Newin.css'
 function NewIns({ service }) {
     const { _id, name, price, details, img } = service;
     return (
-        <div class="col">
-            <div class="card h-100">
+        <div className="col">
+            <div className="card h-100">
                 <div>
                     <div className='service-photo'>
                         <img src={service.img} className="card-img-top" alt="" />
@@ -16,9 +16,9 @@ function NewIns({ service }) {
                     </div>
                 </div>
 
-                <div class="card-body card-new">
+                <div className="card-body card-new">
                     <div>
-                        <h5 style={{ color: "coral" }} class="card-title">{name}</h5>
+                        <h5 style={{ color: "coral" }} className="card-title">{name}</h5>
                         <h3>$ {price}</h3>
                         <div className="d-flex justify-content-between">
                             <Link to={`/newin/${_id}`}>

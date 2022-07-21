@@ -25,7 +25,7 @@ export default function Pant() {
           <div>
             {service.length === 0 ? <CircularProgress />
               :
-              <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">
+              <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">
 
 
                 {

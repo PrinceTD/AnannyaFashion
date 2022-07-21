@@ -48,7 +48,7 @@ function KurtiProductsAdd() {
                     <br />
                     <form onSubmit={handelSubmit}>
                         <TextField
-                            sx={{ width: '50%', marginBottom: '8px' }}
+                            sx={{ width: '100%', marginBottom: '8px' }}
                             label="Product Name"
                             size="small"
                             onChange={e => setName(e.target.value)}
@@ -56,7 +56,7 @@ function KurtiProductsAdd() {
                             variant="outlined" />
                         <br />
                         <TextField
-                            sx={{ width: '50%', marginBottom: '8px' }}
+                            sx={{ width: '100%', marginBottom: '8px' }}
                             label="Product details"
                             size="small"
                             onChange={e => setDetails(e.target.value)}
@@ -65,13 +65,13 @@ function KurtiProductsAdd() {
                             variant="outlined" />
                         <br />
                         <Input
-                            sx={{ width: '50%', marginBottom: '8px' }}
+                            sx={{ width: '100%', marginBottom: '8px' }}
                             accept="image/*"
                             onChange={e => setImg(e.target.files[0])}
                             multiple type="file" />
                         <br />
                         <TextField
-                            sx={{ width: '50%', marginBottom: '8px' }}
+                            sx={{ width: '100%', marginBottom: '8px' }}
                             label="Product Price"
                             size="small"
                             onChange={e => setPrice(e.target.value)}
@@ -80,7 +80,7 @@ function KurtiProductsAdd() {
                             variant="outlined" />
                         <br />
                         <Button
-                            sx={{ width: '50%', marginBottom: '8px' }}
+                            sx={{ width: '100%', marginBottom: '8px' }}
                             variant="contained" type="submit">
                             Add Doctor
                         </Button>

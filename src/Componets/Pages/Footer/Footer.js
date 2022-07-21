@@ -19,7 +19,7 @@ export default function Footer() {
 
                         <div>
                             <small>
-                                <FontAwesomeIcon className='pe-2' icon={faLocationArrow} />Shop-97, Block-C, Level-2, Bashundhara City Shopping Mall, Karwanbazar, Dhaka, Bangladesh
+                                <FontAwesomeIcon className='pe-2' icon={faLocationArrow} />Sylhet MAG Osmani Medical College road, Sylhet
                             </small>
 
                         </div>

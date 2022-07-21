@@ -60,32 +60,38 @@ function App() {
             <Route path='/home' element={<Home></Home>}></Route>
             <Route path='/about' element={<About></About>}></Route>
             <Route path='/contact' element={<Contact></Contact>}></Route>
-            <Route path='/login' element={<Login></Login>}></Route>
 
+            {/* login/reg */}
+            <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/register' element={<Register></Register>}></Route>
+
             <Route path='/shoppingcart' element={<ShoppingCart></ShoppingCart>}></Route>
 
             {/* products */}
 
             <Route path='/women' element={<Women></Women>}></Route>
 
+            {/* pant */}
             <Route path='/women/pant' element={<Pant></Pant>}></Route>
             <Route path='/women/pant/:serviceId' element={<SinglePant></SinglePant>}></Route>
-            
+
             {/* kurti */}
             <Route path='/women/kurti' element={<Kurti></Kurti>}></Route>
             <Route path='/women/kurti/:serviceId' element={<SingleKurti></SingleKurti>}></Route>
 
-
+            {/* saree */}
             <Route path='/women/saree' element={<Saree></Saree>}></Route>
             <Route path='/women/saree/:serviceId' element={<SingleSaree></SingleSaree>}></Route>
 
+            {/* orna */}
             <Route path='/women/orna' element={<Orna></Orna>}></Route>
             <Route path='/women/orna/:serviceId' element={<SingleOrna></SingleOrna>}></Route>
 
+            {/* earring */}
             <Route path='/jewellary/earring' element={<EarRing></EarRing>}></Route>
             <Route path='/jewellary/earring/:serviceId' element={<SingleEarRing></SingleEarRing>}></Route>
 
+            {/* nacklace */}
             <Route path='/jewellary/necklace' element={<Necklecs></Necklecs>}></Route>
             <Route path='/jewellary/necklace/:serviceId' element={<SingleNecklecs></SingleNecklecs>}></Route>
 

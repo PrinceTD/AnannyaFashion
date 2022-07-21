@@ -10,7 +10,7 @@ export default function Title() {
 
             <div className='container'>
                 <div className=''>
-                    <div className=" row row-cols-1 row-cols-md-2 g-4 wrapper">
+                    <div className=" row row-cols-2 row-cols-md-2 g-4 wrapper">
                         <div className="col">
                             <div className="card border-0 h-100 photo-frame">
                                 <Link to={'/women'}>
@@ -19,7 +19,7 @@ export default function Title() {
                                     </div>
                                     <div className="photo-detail">
                                         <h1 className="title-photo">WOMEN</h1>
-                                        <button type="button" className='title-btn'>Shop Now</button>
+                                        
                                     </div>
                                 </Link>
                             </div>
@@ -32,7 +32,6 @@ export default function Title() {
                                     </div>
                                     <div className="photo-detail">
                                         <h1 className="title-photo">MEN</h1>
-                                        <button type="button" className='title-btn'>Shop Now</button>
                                     </div>
                                 </Link>
                             </div>

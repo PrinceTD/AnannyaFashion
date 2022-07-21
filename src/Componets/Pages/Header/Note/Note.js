@@ -24,19 +24,19 @@ export default function Note() {
 
                     {
                         user.email ?
-                            <a href='/myaccount'><button type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> Hello, {user.displayName}</small>
+                            <a href='/myaccount'><button type="button" className="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> Hello, {user.displayName}</small>
                             </button></a> :
-                            <a href='/login'><button type="button" class="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LOGIN / REGISTER</small></button></a>
+                            <a href='/login'><button type="button" className="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LOGIN / REGISTER</small></button></a>
 
                     }
-                    <a href='/shoppingcart'>
+                   
                         <div className='font-border'>
 
 
                             <small className='ps-2'><FontAwesomeIcon icon={faShoppingCart} /></small>
 
                         </div>
-                    </a>
+                   
                 </div>
 
             </div>

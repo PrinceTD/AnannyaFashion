@@ -10,93 +10,97 @@ export default function Women() {
         <h1 className=''>WOMEN</h1>
       </div>
       <div className='container'>
-        <div class="row row-cols-2 row-cols-md-3 g-5">
-          <div class="col">
-            <div class="card border-0 h-100 text-center shadow ">
-              <img src={imgC} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <Link to={"/women/saree"}><h1 class="card-title txt">SAREE</h1></Link>
-              </div>
-            </div>
-
-            <div class="col ">
-              <div class="card border-0 h-100 text-center shadow">
-                <img src={imgC} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <Link to={"/women/kurti"}><h1 class="card-title txt">KURTI</h1></Link>
+        <div className="row row-cols-2 row-cols-md-3 g-5">
+          <div className="col">
+            <Link to={"/women/saree"}>
+              <div className="card border-0 h-100 text-center shadow ">
+                <img src={imgC} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h4 className="card-title txt">SAREE</h4>
                 </div>
               </div>
-            </div>
-
+            </Link>
           </div>
-          <div class="col ">
-            <div class="card border-0 h-100 text-center shadow">
-              <img src={imgC} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1 class="card-title txt">TOP</h1>
+
+          <div className="col ">
+            <Link to={"/women/kurti"}>
+              <div className="card border-0 h-100 text-center shadow">
+                <img src={imgC} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h4 className="card-title txt">KURTI</h4>
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="col ">
+            <div className="card border-0 h-100 text-center shadow">
+              <img src={imgC} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h1 className="card-title txt">TOP</h1>
 
               </div>
 
             </div>
           </div>
 
-          <div class="col ">
-            <div class="card border-0 h-100 text-center shadow">
-              <img src={imgC} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1 class="card-title txt">FROCK</h1>
+          <div className="col ">
+            <div className="card border-0 h-100 text-center shadow">
+              <img src={imgC} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h1 className="card-title txt">FROCK</h1>
 
               </div>
 
             </div>
           </div>
-          <div class="col ">
-            <div class="card border-0 h-100 text-center shadow">
-              <img src={imgC} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1 class="card-title txt">SALWAR KAMEEZ</h1>
+          <div className="col ">
+            <div className="card border-0 h-100 text-center shadow">
+              <img src={imgC} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h1 className="card-title txt">SALWAR KAMEEZ</h1>
 
               </div>
 
             </div>
           </div>
-          <div class="col ">
-            <div class="card border-0 h-100 text-center shadow">
-              <img src={imgC} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1 class="card-title txt">BLOUSE</h1>
+          <div className="col ">
+            <div className="card border-0 h-100 text-center shadow">
+              <img src={imgC} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h1 className="card-title txt">BLOUSE</h1>
               </div>
 
             </div>
           </div>
-          <div class="col">
-            <div class="card border-0 h-100 text-center shadow">
-              <img src={imgC} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h1 class="card-title txt">ORNA</h1>
+          <div className="col">
+            <div className="card border-0 h-100 text-center shadow">
+              <img src={imgC} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h1 className="card-title txt">ORNA</h1>
 
               </div>
 
             </div>
           </div>
-          <div class="col">
+          <div className="col">
 
-            <div class="card border-0 h-100 text-center shadow">
+            <div className="card border-0 h-100 text-center shadow">
               <a href='#' className='teg'>
-                <img src={imgC} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h1 class="card-title txt">SKIRT</h1>
+                <img src={imgC} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h1 className="card-title txt">SKIRT</h1>
 
                 </div>
               </a>
             </div>
           </div>
-          <div class="col">
-            <div class="card border-0 h-100 text-center shadow">
+          <div className="col">
+            <div className="card border-0 h-100 text-center shadow">
               <a href='/women/pant' className='teg'>
-                <img src={imgC} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h1 class="card-title txt">PANT</h1>
+                <img src={imgC} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h1 className="card-title txt">PANT</h1>
                 </div>
               </a>
 

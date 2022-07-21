@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 function Kurtis({service}) {
     const { _id, name, price, details, img } = service;
     return (
-        <div class="col">
-            <div class="card">
-                <img src={`data:img/png;base64,${img}`} class="card-img-top" alt="..." height='250px' width={'200px'}/>
-                <div class="card-body">
-                    <p class="card-title">{name}</p>
-                    <p class="card-text">{price}</p>
+        <div className="col">
+            <div className="card">
+                <img src={`data:img/png;base64,${img}`} className="card-img-top" alt="..." height='250px' width={'200px'}/>
+                <div className="card-body">
+                    <p className="card-title">{name}</p>
+                    <p className="card-text">{price}</p>
                     <Link to={`/women/kurti/${_id}`}>
                         <button style={{ backgroundColor: "coral", padding: "5px 15px", color: "#fff" }} className="border-0 rounded-pill">Details</button>
                     </Link>

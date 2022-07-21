@@ -29,9 +29,9 @@
    
     
 }
-.photo-detail h1{
-
-}
+/* .photo-detail {
+background-color: rgb(39, 37, 37);
+} */
 
 .photo-frame:hover .title-btn {
     display: block;
@@ -44,4 +44,5 @@
     
     transform: scale(1.2);
     transition: transform 0.75s ease-in-out;
+
 }
