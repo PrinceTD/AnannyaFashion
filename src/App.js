@@ -71,7 +71,8 @@ function App() {
 
             <Route path='/women/pant' element={<Pant></Pant>}></Route>
             <Route path='/women/pant/:serviceId' element={<SinglePant></SinglePant>}></Route>
-
+            
+            {/* kurti */}
             <Route path='/women/kurti' element={<Kurti></Kurti>}></Route>
             <Route path='/women/kurti/:serviceId' element={<SingleKurti></SingleKurti>}></Route>
 

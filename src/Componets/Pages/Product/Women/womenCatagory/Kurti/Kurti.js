@@ -1,13 +1,11 @@
 import { CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
-import useAuth from '../../../../../../hooks/useAuth';
 import Kurtis from './Kurtis'
 
 export default function Kurti() {
-  const { isLoading } = useAuth();
   const [service, setService] = useState([]);
   useEffect(() => {
-    const url = "https://powerful-wildwood-87881.herokuapp.com/kurti"
+    const url = "http://localhost:5000/kurti"
     fetch(url)
       .then(res => res.json())
       .then(data => setService(data))
