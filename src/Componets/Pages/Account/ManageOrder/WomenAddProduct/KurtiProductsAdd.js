@@ -1,6 +1,5 @@
 import { Button, Input, TextField } from '@mui/material'
 import React, { useState } from 'react'
-import useAuth from '../../../../../hooks/useAuth';
 import Account from '../../Account'
 
 function KurtiProductsAdd() {
@@ -57,6 +56,8 @@ function KurtiProductsAdd() {
                         <br />
                         <TextField
                             sx={{ width: '100%', marginBottom: '8px' }}
+                            multiline
+                            rows={4}
                             label="Product details"
                             size="small"
                             onChange={e => setDetails(e.target.value)}

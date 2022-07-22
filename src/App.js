@@ -45,13 +45,14 @@ import SingleKurti from './Componets/Pages/Product/Women/womenCatagory/Kurti/Sin
 import WomenProductAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/WomenProductAdd';
 import KurtiProductsAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/KurtiProductsAdd';
 import SareeProductAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/SareeProductAdd';
+import Header from './Componets/Pages/Header/Header';
 
 function App() {
   return (
     <div className="">
 
       <AuthProvider>
-        <Navbar></Navbar>
+       <Navbar/>
 
         <BrowserRouter>
 
