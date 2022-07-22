@@ -1,13 +1,15 @@
-import { Button, Input, TextField } from '@mui/material'
+import { Alert, Button, Input, Snackbar, TextField } from '@mui/material'
 import React, { useState } from 'react'
 import Account from '../../Account'
 
 function KurtiProductsAdd() {
+    const [open, setOpen] = React.useState(false);
 
     const [name, setName] = useState('');
     const [details, setDetails] = useState("");
     const [price, setPrice] = useState("");
     const [img, setImg] = useState(null);
+
 
     const handelSubmit = e => {
         e.preventDefault();
@@ -33,8 +35,17 @@ function KurtiProductsAdd() {
             .catch(error => {
                 console.error('error:', error);
             })
+            setOpen(true);
 
     }
+    const handleClose = (event, reason) => {
+        if (reason === "clickaway") {
+            return;
+        }
+
+        setOpen(false);
+    };
+
 
     return (
         <div className='container pt-5 pb-5'>
@@ -86,6 +97,15 @@ function KurtiProductsAdd() {
                             Add Doctor
                         </Button>
                     </form>
+                    <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                        <Alert
+                            onClose={handleClose}
+                            severity="success"
+                            sx={{ width: "100%", fontSize: "1.2rem" }}
+                        >
+                            Product Added successfully!
+                        </Alert>
+                    </Snackbar>
                 </div>
             </div>
         </div>
