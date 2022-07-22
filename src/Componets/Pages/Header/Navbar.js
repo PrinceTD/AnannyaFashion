@@ -34,11 +34,10 @@ export default function Navbar() {
                                     <ul className="dropdown-menu Menu " aria-labelledby="navbarDropdown">
                                         <li><Link className="dropdown-item" to="/women/saree">Saree</Link></li>
                                         <li><Link className="dropdown-item" to="/women/kurti">Kurti</Link></li>
+                                        <li><Link className="dropdown-item" to="/women/orna">Orna</Link></li>
                                         <li><Link className="dropdown-item" to="#">Salwar Kameez</Link></li>
                                         <li><Link className="dropdown-item" to="#">Blouse</Link></li>
-                                        <li><Link className="dropdown-item" to="#">Top</Link></li>
-                                        <li><Link className="dropdown-item" to="/women/orna">Orna</Link></li>
-                                        <li><Link className="dropdown-item" to="/women/pant">Pant</Link></li>
+                                       
 
                                     </ul>
                                 </li>
@@ -47,10 +46,9 @@ export default function Navbar() {
                                         Men
                                     </Link>
                                     <ul className="dropdown-menu Menu" aria-labelledby="navbarDropdown">
-                                        <li><Link className="dropdown-item" to="#">Panjabi</Link></li>
-                                        <li><Link className="dropdown-item" to="#">Shirt</Link></li>
+                                        <li><Link className="dropdown-item" to="/men/panjabi">Panjabi</Link></li>
+                                        <li><Link className="dropdown-item" to="/men/shirt">Shirt</Link></li>
                                         <li><Link className="dropdown-item" to="#">T-Shirt</Link></li>
-                                        <li><Link className="dropdown-item" to="#">Lungi</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item dropdown">
@@ -60,13 +58,17 @@ export default function Navbar() {
                                     <ul className="dropdown-menu Menu" aria-labelledby="navbarDropdown">
                                         <li><Link className="dropdown-item" to="/jewellary/necklace">Necklace</Link></li>
                                         <li><Link className="dropdown-item" to="/jewellary/earring">Ear Ring</Link></li>
-                                        <li><Link className="dropdown-item" to="#">Bangle</Link></li>
+                                        <li><Link className="dropdown-item" to="#">Cokar</Link></li>
                                     </ul>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="#">Essence of Anannya</Link>
+                                <li className="nav-item dropdown">
+                                    <Link className="nav-link dropdown-toggle" to="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Package
+                                    </Link>
+                                    <ul className="dropdown-menu Menu" aria-labelledby="navbarDropdown">
+                                        <li><Link className="dropdown-item" to="#">Surprise Package</Link></li>
+                                    </ul>
                                 </li>
-                               
                             </ul>
 
                         </div>

@@ -43,6 +43,9 @@ import SingleKurti from './Componets/Pages/Product/Women/womenCatagory/Kurti/Sin
 import WomenProductAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/WomenProductAdd';
 import KurtiProductsAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/KurtiProductsAdd';
 import SareeProductAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/SareeProductAdd';
+import Man from './Componets/Pages/Product/Man/Man';
+import Panjabi from './Componets/Pages/Product/Man/catagori/Panjabi';
+
 
 function App() {
   return (
@@ -67,6 +70,10 @@ function App() {
             {/* products */}
 
             <Route path='/women' element={<Women></Women>}></Route>
+            <Route path='/men' element={<Man />}></Route>
+
+            <Route path='/men/panjabi' element={<Panjabi />}></Route>
+            <Route path='/men/shirt' element={<Panjabi />}></Route>
 
             {/* pant */}
             <Route path='/women/pant' element={<Pant></Pant>}></Route>
@@ -133,7 +140,7 @@ function App() {
 
           </Routes>
         </BrowserRouter>
-       
+
       </AuthProvider>
 
     </div>

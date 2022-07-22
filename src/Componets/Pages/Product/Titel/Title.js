@@ -26,7 +26,7 @@ export default function Title() {
                         </div>
                         <div className="col ">
                             <div className="card border-0 h-100 photo-frame">
-                                <Link to={'/women'}>
+                                <Link to={'/men'}>
                                     <div className='photo'>
                                         <img src={mukti} className="card-img-top" alt="" />
                                     </div>

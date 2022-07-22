@@ -8,7 +8,7 @@ import Footer from '../../Footer/Footer'
 export default function Women() {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div className='bgImg text-center'>
         <h1 className=''>WOMEN</h1>
       </div>
@@ -35,26 +35,12 @@ export default function Women() {
               </div>
             </Link>
           </div>
-
-          <div className="col ">
+          <div className="col">
             <div className="card border-0 h-100 text-center shadow">
               <img src={imgC} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h1 className="card-title txt">TOP</h1>
-
+                <h1 className="card-title txt">ORNA</h1>
               </div>
-
-            </div>
-          </div>
-
-          <div className="col ">
-            <div className="card border-0 h-100 text-center shadow">
-              <img src={imgC} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h1 className="card-title txt">FROCK</h1>
-
-              </div>
-
             </div>
           </div>
           <div className="col ">
@@ -62,9 +48,7 @@ export default function Women() {
               <img src={imgC} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h1 className="card-title txt">SALWAR KAMEEZ</h1>
-
               </div>
-
             </div>
           </div>
           <div className="col ">
@@ -76,42 +60,10 @@ export default function Women() {
 
             </div>
           </div>
-          <div className="col">
-            <div className="card border-0 h-100 text-center shadow">
-              <img src={imgC} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h1 className="card-title txt">ORNA</h1>
 
-              </div>
-
-            </div>
-          </div>
-          <div className="col">
-
-            <div className="card border-0 h-100 text-center shadow">
-              <a href='#' className='teg'>
-                <img src={imgC} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h1 className="card-title txt">SKIRT</h1>
-
-                </div>
-              </a>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card border-0 h-100 text-center shadow">
-              <a href='/women/pant' className='teg'>
-                <img src={imgC} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h1 className="card-title txt">PANT</h1>
-                </div>
-              </a>
-
-            </div>
-          </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div >
 
   )
