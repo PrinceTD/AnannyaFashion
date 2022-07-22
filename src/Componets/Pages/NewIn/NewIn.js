@@ -1,10 +1,10 @@
 import { CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
-import useAuth from '../../../hooks/useAuth';
+import Footer from '../Footer/Footer';
+import Navbar from '../Header/Navbar';
 import NewIns from './NewIns';
 
 function NewIn() {
-    const { isLoading } = useAuth();
     const [service, setService] = useState([]);
     useEffect(() => {
         const url = "https://tranquil-ridge-16978.herokuapp.com/product"
@@ -13,8 +13,9 @@ function NewIn() {
             .then(data => setService(data))
     }, []);
     return (
-        <div className="container mt-5 mb-5">
-            <div>
+        <div>
+            <Navbar/>
+            <div  className="container mt-5 mb-5">
                 <div className='text-center pb-3'>
                     <h2 style={{ color: "coral" }}>Our Products</h2>
                     <p style={{ color: "gray" }}>Our upholstery range is available in a furniture in a beautiful array of colours and types. To see the full range please come and see us in store, or alternatively contact us to discuss your ideas and we can post out samples to your home. Each and every sofa comes with a 10 year frame guarantee. </p>
@@ -35,6 +36,7 @@ function NewIn() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

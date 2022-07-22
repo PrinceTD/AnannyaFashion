@@ -1,10 +1,13 @@
 import { Alert } from '@mui/material'
 import React from 'react'
+import Footer from '../../Footer/Footer'
+import Navbar from '../../Header/Navbar'
 import Account from '../Account'
 
 function Address() {
     return (
         <div>
+            <Navbar></Navbar>
             <div className='container pt-5 pb-5'>
                 <div className='row'>
                     <div className='col-md-3'>
@@ -18,6 +21,7 @@ function Address() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

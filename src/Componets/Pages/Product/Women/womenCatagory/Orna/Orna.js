@@ -1,6 +1,8 @@
 import { CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import useAuth from '../../../../../../hooks/useAuth';
+import Footer from '../../../../Footer/Footer';
+import Navbar from '../../../../Header/Navbar';
 import Ornas from './Ornas';
 
 export default function Orna() {
@@ -13,8 +15,9 @@ export default function Orna() {
       .then(data => setService(data))
   }, []);
   return (
-    <div className="container mt-5 mb-5">
-      <div>
+    <div >
+      <Navbar/>
+      <div className="container mt-5 mb-5">
         <div className='text-center pb-3'>
           <h2 style={{ color: "black" }}>Our Products</h2>
           <div>
@@ -32,6 +35,7 @@ export default function Orna() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

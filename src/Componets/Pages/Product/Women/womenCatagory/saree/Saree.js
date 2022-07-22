@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import Footer from '../../../../Footer/Footer';
+import Navbar from '../../../../Header/Navbar';
 import Sarees from './Sarees';
 
 export default function Saree() {
@@ -10,8 +12,9 @@ export default function Saree() {
       .then(data => setService(data))
   }, []);
   return (
-    <div className="container mt-5 mb-5">
-      <div>
+    <div >
+      <Navbar />
+      <div className="container mt-5 mb-5">
 
       </div>
       <div className='text-center pb-3'>
@@ -31,7 +34,7 @@ export default function Saree() {
 
         </div>
       </div>
-
+      <Footer />
     </div>
   )
 }

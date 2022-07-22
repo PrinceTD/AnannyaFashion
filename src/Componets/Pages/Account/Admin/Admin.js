@@ -8,6 +8,8 @@ import addOrder from '../../../../images/Porder.png'
 import manage from '../../../../images/manage.png'
 import addAdmin from '../../../../images/add.png'
 import manageOrder from '../../../../images/manageOrder.png'
+import Navbar from '../../Header/Navbar';
+import Footer from '../../Footer/Footer';
 
 function Admin() {
     const { user } = useAuth();
@@ -15,6 +17,7 @@ function Admin() {
     return (
 
         <div>
+            <Navbar/>
             <div className='container pt-5 pb-5'>
                 <div className='row'>
                     <div className='col-md-3'>
@@ -89,6 +92,7 @@ function Admin() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

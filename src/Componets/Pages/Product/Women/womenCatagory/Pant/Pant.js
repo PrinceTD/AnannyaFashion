@@ -2,6 +2,8 @@ import { Newspaper } from '@mui/icons-material';
 import { CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import useAuth from '../../../../../../hooks/useAuth';
+import Footer from '../../../../Footer/Footer';
+import Navbar from '../../../../Header/Navbar';
 import Pants from './Pants';
 
 
@@ -16,7 +18,7 @@ export default function Pant() {
   }, []);
   return (
     <div className="container mt-5 mb-5">
-
+      <Navbar />
       <div>
         <div className='text-center pb-3'>
           <h2 style={{ color: "coral" }}>Our Products</h2>
@@ -40,7 +42,7 @@ export default function Pant() {
           </div>
         </div>
       </div>
-
+      <Footer />
     </div>
   )
 }

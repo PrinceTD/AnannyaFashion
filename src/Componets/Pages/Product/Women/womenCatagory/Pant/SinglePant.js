@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
+import Footer from '../../../../Footer/Footer';
+import Navbar from '../../../../Header/Navbar';
 
 export default function SinglePant() {
 
@@ -11,8 +13,9 @@ export default function SinglePant() {
             .then(data => setService(data));
     }, []);
     return (
-        <div className='container'>
-            <div className="">
+        <div className=''>
+            <Navbar />
+            <div className="container">
                 <div className="card mb-3 border-0">
                     <div className="row g-4">
                         <div className="col-md-6">
@@ -32,7 +35,7 @@ export default function SinglePant() {
                     </div>
                 </div>
             </div>
-
+            <Footer />
         </div>
     )
 }

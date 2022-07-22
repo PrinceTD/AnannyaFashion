@@ -2,13 +2,18 @@ import { Button } from '@mui/material';
 import React from 'react'
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import Footer from '../Footer/Footer';
+import Navbar from '../Header/Navbar';
 import './account.css'
+
+
 
 function Account() {
     const { user, logOut, admin } = useAuth();
     return (
-        <div className='container'>
-            <div className=''>
+        <div className=''>
+          
+            <div className='container'>
                 <div className='border-account'>
                     <table className="table">
                         <thead>
@@ -48,6 +53,7 @@ function Account() {
                     </table>
                 </div>
             </div>
+           
         </div>
     )
 }

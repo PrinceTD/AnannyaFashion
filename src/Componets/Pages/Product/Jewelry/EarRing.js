@@ -1,6 +1,8 @@
 import { CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import useAuth from '../../../../hooks/useAuth';
+import Footer from '../../Footer/Footer';
+import Navbar from '../../Header/Navbar';
 import EarRings from './EarRings';
 
 function EarRing() {
@@ -13,8 +15,9 @@ function EarRing() {
             .then(data => setService(data))
     }, []);
     return (
-        <div className="container mt-5 mb-5">
-            <div>
+        <div>
+            <Navbar/>
+            <div  className="container mt-5 mb-5">
                 
                 <div className='text-center pb-3'>
                     <h2 style={{ color: "coral" }}>Our Products</h2>
@@ -33,6 +36,7 @@ function EarRing() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

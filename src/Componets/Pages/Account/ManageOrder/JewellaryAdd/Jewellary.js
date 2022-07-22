@@ -5,11 +5,15 @@ import earRing from '../../../../../images/ear.png'
 import necklace from '../../../../../images/necklace.png'
 import { Link } from 'react-router-dom'
 import { Button } from '@mui/material'
+import Footer from '../../../Footer/Footer'
+import Navbar from '../../../Header/Navbar'
 
 
 function Jewellary() {
     return (
-        <div className='container pt-5 pb-5'>
+        <div>
+            <Navbar/>
+            <div className='container pt-5 pb-5'>
             <div className='row'>
                 <div className='col-md-3'>
                     <Account></Account>
@@ -66,6 +70,8 @@ function Jewellary() {
                     </div>
                 </div>
             </div>
+        </div>
+        <Footer/>
         </div>
     )
 }

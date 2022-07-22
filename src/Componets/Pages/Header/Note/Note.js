@@ -5,6 +5,7 @@ import { faRightToBracket, faShoppingCart } from '@fortawesome/free-solid-svg-ic
 import useAuth from '../../../../hooks/useAuth'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { Link } from 'react-router-dom'
 
 
 
@@ -24,9 +25,9 @@ export default function Note() {
 
                     {
                         user.email ?
-                            <a href='/myaccount'><button type="button" className="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> Hello, {user.displayName}</small>
-                            </button></a> :
-                            <a href='/login'><button type="button" className="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LOGIN / REGISTER</small></button></a>
+                            <Link to='/myaccount'><button type="button" className="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> Hello, {user.displayName}</small>
+                            </button></Link> :
+                            <Link to='/login'><button type="button" className="btn btn-sm"><small> <FontAwesomeIcon icon={faRightToBracket} /> LOGIN / REGISTER</small></button></Link>
 
                     }
                    

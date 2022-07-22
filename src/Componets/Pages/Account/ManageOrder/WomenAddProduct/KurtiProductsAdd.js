@@ -1,5 +1,7 @@
 import { Alert, Button, Input, Snackbar, TextField } from '@mui/material'
 import React, { useState } from 'react'
+import Footer from '../../../Footer/Footer';
+import Navbar from '../../../Header/Navbar';
 import Account from '../../Account'
 
 function KurtiProductsAdd() {
@@ -48,7 +50,9 @@ function KurtiProductsAdd() {
 
 
     return (
-        <div className='container pt-5 pb-5'>
+        <div>
+            <Navbar></Navbar>
+            <div className='container pt-5 pb-5'>
             <div className='row'>
                 <div className='col-md-3'>
                     <Account></Account>
@@ -109,6 +113,9 @@ function KurtiProductsAdd() {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </div>
+
     )
 }
 

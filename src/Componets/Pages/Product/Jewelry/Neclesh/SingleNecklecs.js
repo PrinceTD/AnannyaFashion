@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {useParams, Link } from 'react-router-dom';
+import Footer from '../../../Footer/Footer';
+import Navbar from '../../../Header/Navbar';
 
 function SingleNecklecs() {
     const [service, setService] = useState({});
@@ -10,8 +12,9 @@ function SingleNecklecs() {
             .then(data => setService(data));
     }, []);
     return (
-        <div className='container'>
-            <div className="">
+        <div className=''>
+            <Navbar></Navbar>
+            <div className="container">
                 <div className="card mb-3 border-0">
                     <div className="row g-4">
                         <div className="col-md-6">
@@ -30,6 +33,7 @@ function SingleNecklecs() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

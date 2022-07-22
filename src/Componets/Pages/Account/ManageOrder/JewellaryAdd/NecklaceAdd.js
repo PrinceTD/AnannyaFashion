@@ -2,6 +2,8 @@ import React from 'react'
 import Account from '../../Account'
 import { Alert, Box, Button, Container, Grid, Snackbar, TextField, Typography } from '@mui/material';
 import { useForm } from "react-hook-form";
+import Footer from '../../../Footer/Footer';
+import Navbar from '../../../Header/Navbar';
 
 function NecklaceAdd() {
     const { register, handleSubmit, reset } = useForm();
@@ -32,7 +34,9 @@ function NecklaceAdd() {
     };
 
     return (
-        <div className='container pt-5 pb-5'>
+        <div>
+            <Navbar></Navbar>
+            <div className='container pt-5 pb-5'>
             <div className='row'>
                 <div className='col-md-3'>
                     <Account></Account>
@@ -114,6 +118,8 @@ function NecklaceAdd() {
                     </Container>
                 </div>
             </div>
+        </div>
+        <Footer/>
         </div>
     )
 }

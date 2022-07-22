@@ -1,5 +1,7 @@
 import { CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
+import Footer from '../../../../Footer/Footer';
+import Navbar from '../../../../Header/Navbar';
 import Kurtis from './Kurtis'
 
 export default function Kurti() {
@@ -13,8 +15,9 @@ export default function Kurti() {
   
 
   return (
-    <div className="container mt-5 mb-5">
-      <div>
+    <div >
+      <Navbar/>
+      <div className="container mt-5 mb-5">
         <div className='text-center pb-3'>
           <h2 style={{ color: "black" }}>Our Products</h2>
 
@@ -33,6 +36,7 @@ export default function Kurti() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

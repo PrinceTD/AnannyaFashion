@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import './Women.css'
 import imgC from '../../../../images/mukti.jpg'
 import { Link } from 'react-router-dom'
+import Navbar from '../../Header/Navbar'
+import Footer from '../../Footer/Footer'
 
 export default function Women() {
   return (
     <div>
+      <Navbar/>
       <div className='bgImg text-center'>
         <h1 className=''>WOMEN</h1>
       </div>
@@ -108,6 +111,7 @@ export default function Women() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div >
 
   )

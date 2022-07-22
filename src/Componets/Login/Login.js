@@ -2,6 +2,8 @@ import { Alert, Button, CircularProgress, Container, Grid, TextField, Typography
 import React, { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import Footer from '../Pages/Footer/Footer';
+import Navbar from '../Pages/Header/Navbar';
 
 export default function Login() {
 
@@ -30,7 +32,9 @@ export default function Login() {
         e.preventDefault();
     }
     return (
-        <div className='pt-5 pb-5'>
+        <div>
+            <Navbar />
+            <div className='pt-5 pb-5'>
             <Container>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
@@ -68,7 +72,7 @@ export default function Login() {
                             {authError && <Alert severity="error">{authError}</Alert>}
                         </form>
                         <br />
-                        
+
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <div className='d-flex'>
@@ -90,6 +94,8 @@ export default function Login() {
                 </Grid>
 
             </Container >
+            </div>
+            <Footer></Footer>
         </div>
     )
 }

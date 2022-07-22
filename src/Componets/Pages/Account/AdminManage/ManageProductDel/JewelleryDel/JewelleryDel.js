@@ -1,11 +1,15 @@
 import { Button } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Footer from '../../../../Footer/Footer'
+import Navbar from '../../../../Header/Navbar'
 import Account from '../../../Account'
 
 function JewelleryDel() {
     return (
-        <div className='container pt-5 pb-5'>
+        <div>
+            <Navbar/>
+            <div className='container pt-5 pb-5'>
             <div className='row'>
                 <div className='col-md-3'>
                     <Account></Account>
@@ -62,6 +66,8 @@ function JewelleryDel() {
                     </div>
                 </div>
             </div>
+        </div>
+        <Footer/>
         </div>
     )
 }

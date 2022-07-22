@@ -2,7 +2,6 @@ import './App.css';
 import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from './Componets/Pages/Home/Home';
-import Navbar from './Componets/Pages/Header/Navbar';
 import About from './Componets/Pages/About/About';
 import Women from './Componets/Pages/Product/Women/Women';
 import Error from './Componets/Error/Error';
@@ -10,7 +9,6 @@ import Pant from './Componets/Pages/Product/Women/womenCatagory/Pant/Pant';
 import SinglePant from './Componets/Pages/Product/Women/womenCatagory/Pant/SinglePant';
 import Saree from './Componets/Pages/Product/Women/womenCatagory/saree/Saree';
 import SingleSaree from './Componets/Pages/Product/Women/womenCatagory/saree/SingleSaree';
-import Footer from './Componets/Pages/Footer/Footer';
 import Login from './Componets/Login/Login';
 import Register from './Componets/Login/Register';
 import AuthProvider from './context/AuthProvider/AuthProvider';
@@ -45,18 +43,16 @@ import SingleKurti from './Componets/Pages/Product/Women/womenCatagory/Kurti/Sin
 import WomenProductAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/WomenProductAdd';
 import KurtiProductsAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/KurtiProductsAdd';
 import SareeProductAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/SareeProductAdd';
-import Header from './Componets/Pages/Header/Header';
 
 function App() {
   return (
     <div className="">
 
       <AuthProvider>
-       <Navbar/>
 
         <BrowserRouter>
-
           <Routes>
+
             <Route path='/' element={<Home></Home>}></Route>
             <Route path='/home' element={<Home></Home>}></Route>
             <Route path='/about' element={<About></About>}></Route>
@@ -134,9 +130,10 @@ function App() {
             <Route path='/myaccount/admin/manageorder/womenadd/sareeadd' element={<PrivetRoute><AdminRoute><SareeProductAdd /></AdminRoute></PrivetRoute>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
+
           </Routes>
         </BrowserRouter>
-        <Footer></Footer>
+       
       </AuthProvider>
 
     </div>
