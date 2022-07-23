@@ -8,11 +8,14 @@ function EarRings({ service }) {
 
         <div className="col">
             <div className="card">
-                <img src={img} className="card-img-top" alt="..." height='250px' width={'200px'}/>
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
+                <img src={`data:img/png;base64,${img}`} className="card-img-top" alt="..." height='250px' width={'200px'}/>
+                <div className="card-body">
+                    <p className="card-title">{name}</p>
+                    <p className="card-text">{price}</p>
+                    <Link to={`/jewellary/earring/${_id}`}>
+                        <button style={{ backgroundColor: "coral", padding: "5px 15px", color: "#fff" }} className="border-0 rounded-pill">Details</button>
+                    </Link>
+                </div>
             </div>
         </div>
 

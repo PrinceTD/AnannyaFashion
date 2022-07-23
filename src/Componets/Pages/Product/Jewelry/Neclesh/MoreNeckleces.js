@@ -15,12 +15,11 @@ function MoreNeckleces({ service }) {
 
         <div className="col">
             <div className="card">
-                <img src={img} className="card-img-top" alt="..." height='250px' width={'180px'} />
+                <img src={`data:img/png;base64,${img}`} className="card-img-top" alt="..." height='250px' width={'200px'}/>
                 <div className="card-body">
-                    <p>{name}</p>
-                    <p>{price}</p>
-
-                    <Link to={`/jewellary/necklace/${_id}`}>
+                    <p className="card-title">{name}</p>
+                    <p className="card-text">{price}</p>
+                    <Link to={`/jewellary/earring/${_id}`}>
                         <button style={{ backgroundColor: "coral", padding: "5px 15px", color: "#fff" }} className="border-0 rounded-pill">Details</button>
                     </Link>
                 </div>

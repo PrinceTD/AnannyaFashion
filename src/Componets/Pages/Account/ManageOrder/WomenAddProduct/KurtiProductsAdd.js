@@ -32,6 +32,7 @@ function KurtiProductsAdd() {
             .then(data => {
                 if (data.insertedId) {
                     console.log("added succes")
+                    
                 }
             })
             .catch(error => {
@@ -59,6 +60,8 @@ function KurtiProductsAdd() {
                 </div>
                 <div className='col-md-9 padding-site'>
                     <h4> It's an admin account. so, You can upload product</h4>
+                    <p>You Can add Kurti.</p>
+                    <hr/>
                     <br />
                     <form onSubmit={handelSubmit}>
                         <TextField

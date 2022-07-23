@@ -1,30 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Account from '../../Account'
-import { Alert, Box, Button, Container, Grid, Snackbar, TextField, Typography } from '@mui/material';
+import { Alert, Button, Input, Snackbar, TextField } from '@mui/material';
 import { useForm } from "react-hook-form";
 import Footer from '../../../Footer/Footer';
 import Navbar from '../../../Header/Navbar';
 
 function NecklaceAdd() {
-    const { register, handleSubmit, reset } = useForm();
     const [open, setOpen] = React.useState(false);
 
-    const onSubmit = (data) => {
+    const [name, setName] = useState('');
+    const [details, setDetails] = useState("");
+    const [price, setPrice] = useState("");
+    const [img, setImg] = useState(null);
+
+
+    const handelSubmit = e => {
+        e.preventDefault();
+        if (!img) {
+            return
+        }
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append("details", details);
+        formData.append('price', price);
+        formData.append('img', img);
+
         fetch("https://powerful-wildwood-87881.herokuapp.com/necklace", {
             method: "POST",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify(data),
-        }).then((res) => {
-            console.log(res);
-        });
-        setOpen(true);
-        reset();
-    };
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.insertedId) {
+                    console.log("added succes")
+                    
+                }
+            })
+            .catch(error => {
+                console.error('error:', error);
+            })
+            setOpen(true);
 
-    //
-
+    }
     const handleClose = (event, reason) => {
         if (reason === "clickaway") {
             return;
@@ -35,92 +52,72 @@ function NecklaceAdd() {
 
     return (
         <div>
-            <Navbar></Navbar>
-            <div className='container pt-5 pb-5'>
-            <div className='row'>
-                <div className='col-md-3'>
-                    <Account></Account>
-                </div>
-                <div className='col-md-9 padding-site'>
-                    <Container>
-                        <Grid container>
-                            <Grid>
-                                <Box>
-                                    <Typography variant="h2">
-                                        Add a new Product
-                                    </Typography>
-                                    <form
-                                        onSubmit={handleSubmit(onSubmit)}
-                                        style={{ display: "flex", flexDirection: "column" }}
-                                    >
-                                        {/* <TextField
-                                        sx={{width: "50%"}}
-                                        required
-                                        id="outlined-basic" 
-                                        label="Product Name"
-                                        type="name" 
-                                        variant="outlined" />
-                                        <br/>
-                                        <TextField
-                                        sx={{width: "50%"}}
-                                        required
-                                        id="outlined-basic" 
-                                        label="Product Detail"
-                                        type="text" 
-                                        variant="outlined" /> */}
-
-
-                                        <input
-                                            {...register("name")}
-                                            type="text"
-                                            required
-                                            placeholder="name"
-                                        />
-                                        <input
-                                            {...register("details")}
-                                            type="text"
-                                            required
-                                            placeholder="details"
-                                        />
-
-                                        <input
-                                            {...register("price")}
-                                            type="number"
-                                            required
-                                            placeholder="Price"
-                                        />
-
-
-
-                                        <input
-                                            {...register("img")}
-                                            type="text"
-                                            required
-                                            placeholder="Image URL"
-                                        />
-                                        <Button type="submit" variant="contained">
-                                            Add Product
-                                        </Button>
-                                    </form>
-                                </Box>
-                            </Grid>
-                        </Grid>
-                        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-                            <Alert
-                                onClose={handleClose}
-                                severity="success"
-                                sx={{ width: "100%", fontSize: "1.2rem" }}
-                            >
-                                Product Added successfully!
-                            </Alert>
-                        </Snackbar>
-                        ;
-                    </Container>
-                </div>
+        <Navbar></Navbar>
+        <div className='container pt-5 pb-5'>
+        <div className='row'>
+            <div className='col-md-3'>
+                <Account></Account>
+            </div>
+            <div className='col-md-9 padding-site'>
+                <h4> It's an admin account. so, You can upload product</h4>
+                <p>You Can add Nacklaces Product</p>
+                <hr/>
+                <br />
+                <form onSubmit={handelSubmit}>
+                    <TextField
+                        sx={{ width: '100%', marginBottom: '8px' }}
+                        label="Product Name"
+                        size="small"
+                        onChange={e => setName(e.target.value)}
+                        required
+                        variant="outlined" />
+                    <br />
+                    <TextField
+                        sx={{ width: '100%', marginBottom: '8px' }}
+                        multiline
+                        rows={4}
+                        label="Product details"
+                        size="small"
+                        onChange={e => setDetails(e.target.value)}
+                        type='text'
+                        required
+                        variant="outlined" />
+                    <br />
+                    <Input
+                        sx={{ width: '100%', marginBottom: '8px' }}
+                        accept="image/*"
+                        onChange={e => setImg(e.target.files[0])}
+                        multiple type="file" />
+                    <br />
+                    <TextField
+                        sx={{ width: '100%', marginBottom: '8px' }}
+                        label="Product Price"
+                        size="small"
+                        onChange={e => setPrice(e.target.value)}
+                        type='number'
+                        required
+                        variant="outlined" />
+                    <br />
+                    <Button
+                        sx={{ width: '100%', marginBottom: '8px' }}
+                        variant="contained" type="submit">
+                        Add Doctor
+                    </Button>
+                </form>
+                <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                    <Alert
+                        onClose={handleClose}
+                        severity="success"
+                        sx={{ width: "100%", fontSize: "1.2rem" }}
+                    >
+                        Product Added successfully!
+                    </Alert>
+                </Snackbar>
             </div>
         </div>
-        <Footer/>
-        </div>
+    </div>
+    <Footer/>
+    </div>
     )
 }
 
