@@ -45,6 +45,10 @@ import KurtiProductsAdd from './Componets/Pages/Account/ManageOrder/WomenAddProd
 import SareeProductAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/SareeProductAdd';
 import Man from './Componets/Pages/Product/Man/Man';
 import Panjabi from './Componets/Pages/Product/Man/catagori/Panjabi';
+import NacklacesDel from './Componets/Pages/Account/AdminManage/ManageProductDel/JewelleryDel/NacklacesDel';
+import WomenDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/WomenDel';
+import KurtiDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/KurtiDel';
+import MendelProduct from './Componets/Pages/Account/AdminManage/ManageProductDel/Men/MendelProduct';
 
 
 function App() {
@@ -114,12 +118,19 @@ function App() {
             <Route path='/myaccount/admin/makeadmin' element={<PrivetRoute><AdminRoute><AddAdmin /></AdminRoute></PrivetRoute>}></Route>
 
 
-            {/* manageProduct */}
+            {/* manageProduct (del) */}
             <Route path='/myaccount/admin/manageproduct' element={<PrivetRoute><AdminRoute><ManageAllProduct /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/jewellerydel' element={<PrivetRoute><AdminRoute><JewelleryDel /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/jewellerydel/earringdel' element={<PrivetRoute><AdminRoute><EarRingDel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/jewellerydel/nacklacedel' element={<PrivetRoute><AdminRoute><NacklacesDel /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/managevieworder' element={<PrivetRoute><AdminRoute><ManageAllOrder /></AdminRoute></PrivetRoute>}></Route>
 
+            {/* manageProduct (WOMEN) */}
+            <Route path='/myaccount/admin/manageproduct/womendel' element={<PrivetRoute><AdminRoute><WomenDel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/jewellerydel/kurtidel' element={<PrivetRoute><AdminRoute><KurtiDel /></AdminRoute></PrivetRoute>}></Route>
+
+
+            <Route path='/myaccount/admin/manageproduct/mendel' element={<PrivetRoute><AdminRoute><MendelProduct /></AdminRoute></PrivetRoute>}></Route>
 
             {/* add product */}
 

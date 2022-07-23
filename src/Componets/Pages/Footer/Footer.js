@@ -4,6 +4,7 @@ import logoAnannya from '../../../images/anannya.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import useAuth from '../../../hooks/useAuth'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
     const {user} = useAuth();
@@ -37,12 +38,12 @@ export default function Footer() {
 
                     </div>
 
-                    <div className=' col d-flex justify-content-center'>
+                    <div className=' col'>
                         <div>
                             <p className='pt-3'>
                                 ABOUT ANANNYA
                             </p>
-                            <a href='/about'>WHO WE ARE</a>
+                            <Link to='/about'>WHO WE ARE</Link>
                             <hr/>
                             <p>SOCIAL LINKS</p>
                            

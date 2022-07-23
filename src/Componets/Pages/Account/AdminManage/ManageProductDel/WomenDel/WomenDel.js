@@ -1,14 +1,12 @@
-import { Button } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Account from '../Account'
-import del from '../../../../images/delete.png'
-import delF from '../../../../images/delete-file.png'
-import Navbar from '../../Header/Navbar'
-import Footer from '../../Footer/Footer'
+import Footer from '../../../../Footer/Footer'
+import Navbar from '../../../../Header/Navbar'
+import Account from '../../../Account'
+import del from '../../../../../../images/delete.png'
+import { Button } from '@mui/material'
 
-function ManageAllProduct() {
-
+function WomenDel() {
     return (
         <div>
             <Navbar />
@@ -21,12 +19,12 @@ function ManageAllProduct() {
                         <div className="row row-cols-2 row-cols-md-3 g-3 admin-logo">
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageproduct/jewellerydel'>
+                                    <Link to='/myaccount/admin/manageproduct/jewellerydel/kurtidel'>
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
-                                                <img src={delF}></img>
+                                                <img src={del}></img>
                                                 <div className="card-body">
-                                                    <h5 className="card-title">JEWELLARY DELETE</h5>
+                                                    <h5 className="card-title">KURTI DELETE</h5>
                                                 </div>
                                             </div>
                                         </Button>
@@ -36,12 +34,12 @@ function ManageAllProduct() {
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageproduct/womendel'>
+                                    <Link to='/myaccount/admin/manageproduct/jewellerydel/nacklacedel'>
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
-                                                <img src={delF}></img>
+                                                <img src={del}></img>
                                                 <div className="card-body">
-                                                    <h5 className="card-title">WOMEN PRODUCT DELETE </h5>
+                                                    <h5 className="card-title">SAREE DELETE</h5>
 
                                                 </div>
                                             </div>
@@ -49,23 +47,6 @@ function ManageAllProduct() {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="col">
-                                <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageproduct/mendel'>
-                                        <Button sx={{ color: " black" }} variant="text">
-                                            <div className='text-center p-2'>
-                                                <img src={delF}></img>
-                                                <div className="card-body">
-                                                    <h5 className="card-title">MEN PRODUCT DELETE</h5>
-                                                </div>
-                                            </div>
-                                        </Button>
-                                    </Link>
-                                </div>
-                            </div>
-
-
-
                         </div>
                     </div>
                 </div>
@@ -75,4 +56,4 @@ function ManageAllProduct() {
     )
 }
 
-export default ManageAllProduct
+export default WomenDel

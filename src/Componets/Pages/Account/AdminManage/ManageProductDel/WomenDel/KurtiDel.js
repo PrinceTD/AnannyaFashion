@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import useAuth from '../../../../../../hooks/useAuth';
-import Footer from '../../../../Footer/Footer';
-import Navbar from '../../../../Header/Navbar';
-import Account from '../../../Account';
+import Footer from '../../../../Footer/Footer'
+import Navbar from '../../../../Header/Navbar'
+import Account from '../../../Account'
 
+function KurtiDel() {
 
-function EarRingDel() {
-    const { user } = useAuth()
     const [productLoad, setProductLoad] = useState([]);
 
     useEffect(() => {
-        fetch(`https://powerful-wildwood-87881.herokuapp.com/earring`)
+        fetch(`https://powerful-wildwood-87881.herokuapp.com/kurti`)
             .then((res) => res.json())
             .then((data) => setProductLoad(data));
     }, [])
@@ -18,7 +16,7 @@ function EarRingDel() {
         const confirm = window.confirm("are u sure")
         if (confirm) {
             fetch(
-                `https://powerful-wildwood-87881.herokuapp.com/earring/${id}`,
+                `https://powerful-wildwood-87881.herokuapp.com/kurti/${id}`,
                 {
                     method: "DELETE",
                 }
@@ -33,7 +31,6 @@ function EarRingDel() {
 
     };
     return (
-
         <div>
             <Navbar></Navbar>
             <div className='container pt-5 pb-5'>
@@ -61,7 +58,9 @@ function EarRingDel() {
                                         >
 
                                             <td>{SingleProduct.name}</td>
-                                            <td><button onClick={() => handleDeleteConfirm(SingleProduct._id)}>X</button></td>
+                                            <td>
+                                                <button onClick={() => handleDeleteConfirm(SingleProduct._id)}>X</button>
+                                            </td>
 
                                         </tr>
                                     )
@@ -74,9 +73,7 @@ function EarRingDel() {
             </div>
             <Footer />
         </div>
-
-
     )
 }
 
-export default EarRingDel
+export default KurtiDel;
