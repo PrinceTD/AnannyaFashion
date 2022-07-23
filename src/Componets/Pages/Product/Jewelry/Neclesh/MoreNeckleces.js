@@ -19,7 +19,7 @@ function MoreNeckleces({ service }) {
                 <div className="card-body">
                     <p className="card-title">{name}</p>
                     <p className="card-text">{price}</p>
-                    <Link to={`/jewellary/earring/${_id}`}>
+                    <Link to={`/jewellary/necklace/${_id}`}>
                         <button style={{ backgroundColor: "coral", padding: "5px 15px", color: "#fff" }} className="border-0 rounded-pill">Details</button>
                     </Link>
                 </div>
