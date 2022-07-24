@@ -5,6 +5,9 @@ import './Home.css'
 import Socialmedia from '../SocialMedia/Socialmedia'
 import Navbar from '../Header/Navbar'
 import Footer from '../Footer/Footer'
+import CardC from '../carousel/CardC'
+import CardManu from '../carousel/CardManu'
+import BastSeals from '../carousel/BastSeals'
 
 
 
@@ -14,11 +17,12 @@ export default function Home() {
     <div>
 
       <Navbar></Navbar>
-      <Banner></Banner>
-      <Title></Title>
-      {/* <CardC></CardC> */}
-      <Socialmedia></Socialmedia>
-      <Footer></Footer>
+      {/* <Banner></Banner>
+      <Title></Title> */}
+      {/* <BastSeals/> */}
+      <CardC/>
+      {/* <Socialmedia></Socialmedia>
+      <Footer></Footer> */}
 
 
 

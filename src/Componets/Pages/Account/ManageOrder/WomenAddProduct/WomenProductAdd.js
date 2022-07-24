@@ -56,7 +56,7 @@ function WomenProductAdd() {
                                             <div className='text-center p-2'>
                                                 {/* <img src={download}></img> */}
                                                 <div className="card-body">
-                                                    <h5 className="card-title">DOWNLOADS</h5>
+                                                    <h5 className="card-title">jj</h5>
                                                 </div>
                                             </div>
                                         </Button>

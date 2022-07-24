@@ -9,14 +9,14 @@ export default function Socialmedia() {
             <div className="row">
                 <div className="col col-md-6">
                     <div className="text-center">
-                       <h2 className='pb-2'>Follow us on Instagram</h2>
+                       <h4 className='pb-2'>Follow us on Instagram</h4>
                            <Instagram></Instagram>
                     </div>
                 </div>
                 <div className="col col-md-6">
                     <div className="facebook text-center">
                         
-                          <h2 className='pb-3'> Like Anannya on Facebook </h2>
+                          <h4 className='pb-3'> Like Anannya on Facebook </h4>
                           <Facebook></Facebook>
                           
                     </div>

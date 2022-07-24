@@ -1,11 +1,11 @@
 import { Alert, Button, Input, Snackbar, TextField } from '@mui/material'
 import React, { useState } from 'react'
-import Footer from '../../../Footer/Footer';
-import Navbar from '../../../Header/Navbar';
+import Footer from '../../../Footer/Footer'
+import Navbar from '../../../Header/Navbar'
 import Account from '../../Account'
 
-function KurtiProductsAdd() {
-    const [open, setOpen] = React.useState(false);
+function BestSellsAdd() {
+    const [open, setOpen] = useState(false);
 
     const [name, setName] = useState('');
     const [details, setDetails] = useState("");
@@ -24,7 +24,7 @@ function KurtiProductsAdd() {
         formData.append('price', price);
         formData.append('img', img);
 
-        fetch("https://powerful-wildwood-87881.herokuapp.com/kurti", {
+        fetch("https://powerful-wildwood-87881.herokuapp.com/earring", {
             method: "POST",
             body: formData
         })
@@ -33,15 +33,11 @@ function KurtiProductsAdd() {
                 if (data.insertedId) {
                     console.log("added succes")
                     
-                    
                 }
             })
             .catch(error => {
                 console.error('error:', error);
             })
-            .finally(
-                
-            )
             setOpen(true);
 
     }
@@ -53,8 +49,8 @@ function KurtiProductsAdd() {
         setOpen(false);
     };
 
-
-    return (
+  return (
+    <div>
         <div>
             <Navbar></Navbar>
             <div className='container pt-5 pb-5'>
@@ -64,7 +60,7 @@ function KurtiProductsAdd() {
                 </div>
                 <div className='col-md-9 padding-site'>
                     <h4> It's an admin account. so, You can upload product</h4>
-                    <p>You Can add Kurti.</p>
+                    <p>You Can add bestSell products</p>
                     <hr/>
                     <br />
                     <form onSubmit={handelSubmit}>
@@ -122,8 +118,8 @@ function KurtiProductsAdd() {
         </div>
         <Footer/>
         </div>
-
-    )
+    </div>
+  )
 }
 
-export default KurtiProductsAdd
+export default BestSellsAdd

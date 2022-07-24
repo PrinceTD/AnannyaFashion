@@ -5,7 +5,7 @@ import Footer from '../../../Footer/Footer';
 import Navbar from '../../../Header/Navbar';
 
 function EarringAdd() {
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
 
     const [name, setName] = useState('');
     const [details, setDetails] = useState("");

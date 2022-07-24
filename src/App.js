@@ -49,6 +49,10 @@ import NacklacesDel from './Componets/Pages/Account/AdminManage/ManageProductDel
 import WomenDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/WomenDel';
 import KurtiDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/KurtiDel';
 import MendelProduct from './Componets/Pages/Account/AdminManage/ManageProductDel/Men/MendelProduct';
+import BastSeals from './Componets/Pages/carousel/BastSeals';
+import Featured from './Componets/Pages/carousel/Featured';
+import HomePageManage from './Componets/Pages/Account/ManageOrder/HomePageManage.js/HomePageManage';
+import BestSellsAdd from './Componets/Pages/Account/ManageOrder/HomePageManage.js/BestSellsAdd';
 
 
 function App() {
@@ -70,6 +74,11 @@ function App() {
             <Route path='/register' element={<Register></Register>}></Route>
 
             <Route path='/shoppingcart' element={<ShoppingCart></ShoppingCart>}></Route>
+
+            {/* cursor */}
+
+            <Route path='/bestsells' element={<BastSeals />}></Route>
+            <Route path='/featured' element={<Featured />}></Route>
 
             {/* products */}
 
@@ -146,6 +155,10 @@ function App() {
             <Route path='/myaccount/admin/manageorder/womenadd/kurtiadd' element={<PrivetRoute><AdminRoute><KurtiProductsAdd /></AdminRoute></PrivetRoute>}></Route>
 
             <Route path='/myaccount/admin/manageorder/womenadd/sareeadd' element={<PrivetRoute><AdminRoute><SareeProductAdd /></AdminRoute></PrivetRoute>}></Route>
+
+
+            <Route path='/myaccount/admin/manageorder/homepage' element={<PrivetRoute><AdminRoute><HomePageManage/></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageorder/homepage/bestsellsadd' element={<PrivetRoute><AdminRoute><BestSellsAdd/></AdminRoute></PrivetRoute>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
 
