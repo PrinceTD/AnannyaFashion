@@ -24,7 +24,7 @@ function CokersAdd() {
         formData.append('price', price);
         formData.append('img', img);
 
-        fetch("http://localhost:5000/coker", {
+        fetch("https://powerful-wildwood-87881.herokuapp.com/saree", {
             method: "POST",
             body: formData
         })

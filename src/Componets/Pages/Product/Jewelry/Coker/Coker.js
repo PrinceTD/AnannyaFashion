@@ -7,7 +7,7 @@ import Cokers from './Cokers';
 function Coker() {
     const [service, setService] = useState([]);
     useEffect(() => {
-        const url = "http://localhost:5000/coker"
+        const url = "https://powerful-wildwood-87881.herokuapp.com/saree"
         fetch(url)
             .then(res => res.json())
             .then(data => setService(data))
