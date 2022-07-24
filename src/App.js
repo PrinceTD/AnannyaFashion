@@ -53,6 +53,9 @@ import BastSeals from './Componets/Pages/carousel/BastSeals';
 import Featured from './Componets/Pages/carousel/Featured';
 import HomePageManage from './Componets/Pages/Account/ManageOrder/HomePageManage.js/HomePageManage';
 import BestSellsAdd from './Componets/Pages/Account/ManageOrder/HomePageManage.js/BestSellsAdd';
+import SingleBestSells from './Componets/Pages/carousel/SingleBestSells';
+import Coker from './Componets/Pages/Product/Jewelry/Coker/Coker';
+import SingleCokar from './Componets/Pages/Product/Jewelry/Coker/SingleCokar';
 
 
 function App() {
@@ -77,8 +80,9 @@ function App() {
 
             {/* cursor */}
 
-            <Route path='/bestsells' element={<BastSeals />}></Route>
-            <Route path='/featured' element={<Featured />}></Route>
+            {/* <Route path='/bestsells' element={<BastSeals />}></Route> */}
+            <Route path='/bestsells/:serviceId' element={<SingleBestSells />}></Route>
+            {/* <Route path='/featured' element={<Featured />}></Route> */}
 
             {/* products */}
 
@@ -104,9 +108,15 @@ function App() {
             <Route path='/women/orna' element={<Orna></Orna>}></Route>
             <Route path='/women/orna/:serviceId' element={<SingleOrna></SingleOrna>}></Route>
 
+            {/* jewellary */}
             {/* earring */}
+
             <Route path='/jewellary/earring' element={<EarRing></EarRing>}></Route>
             <Route path='/jewellary/earring/:serviceId' element={<SingleEarRing></SingleEarRing>}></Route>
+
+            {/* coker */}
+            <Route path='/jewellary/coker' element={<Coker />}></Route>
+            <Route path='/npserviceId' element={<SingleCokar />}></Route>
 
             {/* nacklace */}
             <Route path='/jewellary/necklace' element={<Necklecs></Necklecs>}></Route>
@@ -149,6 +159,7 @@ function App() {
             <Route path='/myaccount/admin/manageorder/jewellery' element={<PrivetRoute><AdminRoute><Jewellary></Jewellary></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/jewellery/earring' element={<PrivetRoute><AdminRoute><EarringAdd /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/jewellery/necklace' element={<PrivetRoute><AdminRoute><NecklaceAdd /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageorder/jewellery/cokersadd' element={<PrivetRoute><AdminRoute><NecklaceAdd /></AdminRoute></PrivetRoute>}></Route>
 
             {/* women */}
             <Route path='/myaccount/admin/manageorder/womenadd' element={<PrivetRoute><AdminRoute><WomenProductAdd></WomenProductAdd></AdminRoute></PrivetRoute>}></Route>
@@ -157,8 +168,8 @@ function App() {
             <Route path='/myaccount/admin/manageorder/womenadd/sareeadd' element={<PrivetRoute><AdminRoute><SareeProductAdd /></AdminRoute></PrivetRoute>}></Route>
 
 
-            <Route path='/myaccount/admin/manageorder/homepage' element={<PrivetRoute><AdminRoute><HomePageManage/></AdminRoute></PrivetRoute>}></Route>
-            <Route path='/myaccount/admin/manageorder/homepage/bestsellsadd' element={<PrivetRoute><AdminRoute><BestSellsAdd/></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageorder/homepage' element={<PrivetRoute><AdminRoute><HomePageManage /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageorder/homepage/bestsellsadd' element={<PrivetRoute><AdminRoute><BestSellsAdd /></AdminRoute></PrivetRoute>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
 

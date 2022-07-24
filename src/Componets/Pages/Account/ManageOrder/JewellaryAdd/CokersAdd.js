@@ -1,10 +1,10 @@
-import { Alert, Button, Input, Snackbar, TextField } from '@mui/material'
+import { Alert, Button, Input, Snackbar, TextField } from '@mui/material';
 import React, { useState } from 'react'
-import Footer from '../../../Footer/Footer'
-import Navbar from '../../../Header/Navbar'
-import Account from '../../Account'
+import Footer from '../../../Footer/Footer';
+import Navbar from '../../../Header/Navbar';
+import Account from '../../Account';
 
-function BestSellsAdd() {
+function CokersAdd() {
     const [open, setOpen] = useState(false);
 
     const [name, setName] = useState('');
@@ -24,7 +24,7 @@ function BestSellsAdd() {
         formData.append('price', price);
         formData.append('img', img);
 
-        fetch("https://powerful-wildwood-87881.herokuapp.com/bestsells", {
+        fetch("http://localhost:5000/coker", {
             method: "POST",
             body: formData
         })
@@ -49,8 +49,8 @@ function BestSellsAdd() {
         setOpen(false);
     };
 
-  return (
-    <div>
+    return (
+        <div>
         <div>
             <Navbar></Navbar>
             <div className='container pt-5 pb-5'>
@@ -60,7 +60,7 @@ function BestSellsAdd() {
                 </div>
                 <div className='col-md-9 padding-site'>
                     <h4> It's an admin account. so, You can upload product</h4>
-                    <p>You Can add bestSell products</p>
+                    <p>You Can add coker products</p>
                     <hr/>
                     <br />
                     <form onSubmit={handelSubmit}>
@@ -119,7 +119,7 @@ function BestSellsAdd() {
         <Footer/>
         </div>
     </div>
-  )
+    )
 }
 
-export default BestSellsAdd
+export default CokersAdd

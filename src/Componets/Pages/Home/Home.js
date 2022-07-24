@@ -17,12 +17,11 @@ export default function Home() {
     <div>
 
       <Navbar></Navbar>
-      {/* <Banner></Banner>
-      <Title></Title> */}
-      {/* <BastSeals/> */}
+      <Banner></Banner>
+      <Title></Title>
       <CardC/>
-      {/* <Socialmedia></Socialmedia>
-      <Footer></Footer> */}
+      <Socialmedia></Socialmedia>
+      <Footer></Footer>
 
 
 

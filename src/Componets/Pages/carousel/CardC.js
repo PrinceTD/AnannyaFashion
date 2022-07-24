@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ReactCarousel from './ReactCarousel';
-import { CircularProgress } from '@mui/material';
 
 function CardC() {
   const settings = {
@@ -43,7 +42,7 @@ function CardC() {
 
   const [service, setService] = useState([]);
   useEffect(() => {
-    const url = "https://tranquil-ridge-16978.herokuapp.com/product"
+    const url = "https://powerful-wildwood-87881.herokuapp.com/bestsells"
     fetch(url)
       .then(res => res.json())
       .then(data => setService(data))
@@ -51,10 +50,10 @@ function CardC() {
 
 
   return (
-    <div className='container'>
+    <div className='container text-center pt-5 pb-5'>
+      <h4>FEATURED PRODUCTS</h4>
 
       <Slider {...settings}>
-
 
         {
           service.map((service) => (
@@ -68,6 +67,11 @@ function CardC() {
 
           ))
         }
+
+
+
+
+
       </Slider>
 
 
