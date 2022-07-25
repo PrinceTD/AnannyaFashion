@@ -61,7 +61,7 @@ function AddAdmin() {
                                         onBlur={handelOnBule} />
                                     <br />
                                     <br />
-                                    <Button type="submit" variant="contained"> Submit</Button>
+                                    <Button type="submit" variant="contained"> Add Admin</Button>
                                 </form>
                                 {
                                     success && <Alert

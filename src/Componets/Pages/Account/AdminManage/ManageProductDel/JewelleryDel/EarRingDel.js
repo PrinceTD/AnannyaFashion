@@ -1,3 +1,4 @@
+import { CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import useAuth from '../../../../../../hooks/useAuth';
 import Footer from '../../../../Footer/Footer';
@@ -53,6 +54,7 @@ function EarRingDel() {
 
                                 </tr>
                             </thead>
+                            {productLoad.length === 0 ? <CircularProgress /> :
                             <tbody>
                                 {
                                     productLoad.map(SingleProduct =>
@@ -68,6 +70,7 @@ function EarRingDel() {
                                 }
 
                             </tbody>
+}
                         </table>
                     </div>
                 </div>

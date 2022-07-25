@@ -1,16 +1,16 @@
-import { CircularProgress } from '@mui/material'
+import { CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
-import useAuth from '../../../../../../hooks/useAuth'
-import Footer from '../../../../Footer/Footer'
-import Navbar from '../../../../Header/Navbar'
-import Account from '../../../Account'
+import useAuth from '../../../../../../hooks/useAuth';
+import Footer from '../../../../Footer/Footer';
+import Navbar from '../../../../Header/Navbar';
+import Account from '../../../Account';
 
-function NacklacesDel() {
+function BestSellPDel() {
     const { user } = useAuth()
     const [productLoad, setProductLoad] = useState([]);
 
     useEffect(() => {
-        fetch(`https://powerful-wildwood-87881.herokuapp.com/necklace`)
+        fetch(`https://powerful-wildwood-87881.herokuapp.com/bestsells`)
             .then((res) => res.json())
             .then((data) => setProductLoad(data));
     }, [])
@@ -18,7 +18,7 @@ function NacklacesDel() {
         const confirm = window.confirm("are u sure")
         if (confirm) {
             fetch(
-                `https://powerful-wildwood-87881.herokuapp.com/necklace/${id}`,
+                `https://powerful-wildwood-87881.herokuapp.com/bestsells/${id}`,
                 {
                     method: "DELETE",
                 }
@@ -32,8 +32,8 @@ function NacklacesDel() {
         }
 
     };
-    return (
-        <div>
+  return (
+    <div>
             <Navbar></Navbar>
             <div className='container pt-5 pb-5'>
                 <div className='row'>
@@ -53,30 +53,29 @@ function NacklacesDel() {
                                 </tr>
                             </thead>
                             {productLoad.length === 0 ? <CircularProgress /> :
-                                <tbody>
+                            <tbody>
+                                {
+                                    productLoad.map(SingleProduct =>
+                                        <tr
+                                            key={SingleProduct._id}
+                                        >
 
-                                    {
-                                        productLoad.map(SingleProduct =>
-                                            <tr
-                                                key={SingleProduct._id}
-                                            >
+                                            <td>{SingleProduct.name}</td>
+                                            <td><button onClick={() => handleDeleteConfirm(SingleProduct._id)}>X</button></td>
 
-                                                <td>{SingleProduct.name}</td>
-                                                <td><button onClick={() => handleDeleteConfirm(SingleProduct._id)}>X</button></td>
+                                        </tr>
+                                    )
+                                }
 
-                                            </tr>
-                                        )
-                                    }
-
-                                </tbody>
-                            }
+                            </tbody>
+}
                         </table>
                     </div>
                 </div>
             </div>
             <Footer />
         </div>
-    )
+  )
 }
 
-export default NacklacesDel
+export default BestSellPDel

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Bloused({service}) {
   const { _id, name, price, details, img } = service;
@@ -9,7 +10,7 @@ export default function Bloused({service}) {
         <div className="card-body">
           <p className="card-title">{name}</p>
           <p className="card-text">{price}</p>
-          <Link to={`/women/kurti/${_id}`}>
+          <Link to={`/women/blouse/${_id}`}>
             <button style={{ backgroundColor: "coral", padding: "5px 15px", color: "#fff" }} className="border-0 rounded-pill">Details</button>
           </Link>
         </div>

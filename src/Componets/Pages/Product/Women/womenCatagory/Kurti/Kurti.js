@@ -21,7 +21,7 @@ export default function Kurti() {
         <div className='text-center pb-3'>
           <h2 style={{ color: "black" }}>Our Products</h2>
 
-          <div>
+          <div className='text-center'>
             {service.length === 0 ? <CircularProgress /> :
               <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">
                 {

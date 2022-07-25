@@ -19,7 +19,7 @@ function WomenDel() {
                         <div className="row row-cols-2 row-cols-md-3 g-3 admin-logo">
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageproduct/jewellerydel/kurtidel'>
+                                    <Link to='/myaccount/admin/manageproduct/womendel/kurtidel'>
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={del}></img>
@@ -34,7 +34,7 @@ function WomenDel() {
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageproduct/jewellerydel/nacklacedel'>
+                                    <Link to='/myaccount/admin/manageproduct/womendel/sareedel'>
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={del}></img>

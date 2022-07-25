@@ -20,8 +20,9 @@ function ManageAllProduct() {
                     <div className='col-md-9 padding-site'>
                         <div className="row row-cols-2 row-cols-md-3 g-3 admin-logo">
                             <div className="col">
-                                <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageproduct/jewellerydel'>
+
+                                <Link to='/myaccount/admin/manageproduct/jewellerydel'>
+                                    <div className="card h-100">
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={delF}></img>
@@ -30,9 +31,10 @@ function ManageAllProduct() {
                                                 </div>
                                             </div>
                                         </Button>
-                                    </Link>
+                                    </div>
+                                </Link>
 
-                                </div>
+
                             </div>
                             <div className="col">
                                 <div className="card h-100">
@@ -50,13 +52,29 @@ function ManageAllProduct() {
                                 </div>
                             </div>
                             <div className="col">
-                                <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageproduct/mendel'>
+
+                                <Link to='/myaccount/admin/manageproduct/mendel'>
+                                    <div className="card h-100">
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={delF}></img>
                                                 <div className="card-body">
                                                     <h5 className="card-title">MEN PRODUCT DELETE</h5>
+                                                </div>
+                                            </div>
+                                        </Button>
+                                    </div>
+                                </Link>
+
+                            </div>
+                            <div className="col">
+                                <div className="card h-100">
+                                    <Link to='/myaccount/admin/manageproduct/homepmdel'>
+                                        <Button sx={{ color: " black" }} variant="text">
+                                            <div className='text-center p-2'>
+                                                <img src={delF}></img>
+                                                <div className="card-body">
+                                                    <h5 className="card-title">HOME PAGE MANAGE DELETE</h5>
                                                 </div>
                                             </div>
                                         </Button>

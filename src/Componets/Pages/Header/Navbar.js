@@ -35,8 +35,8 @@ export default function Navbar() {
                                         <li><Link className="dropdown-item" to="/women/saree">Saree</Link></li>
                                         <li><Link className="dropdown-item" to="/women/kurti">Kurti</Link></li>
                                         <li><Link className="dropdown-item" to="/women/orna">Orna</Link></li>
-                                        <li><Link className="dropdown-item" to="#">Salwar Kameez</Link></li>
-                                        <li><Link className="dropdown-item" to="#">Blouse</Link></li>
+                                        <li><Link className="dropdown-item" to="/women/salwarkameez">Salwar Kameez</Link></li>
+                                        <li><Link className="dropdown-item" to="/women/blouse">Blouse</Link></li>
                                        
 
                                     </ul>

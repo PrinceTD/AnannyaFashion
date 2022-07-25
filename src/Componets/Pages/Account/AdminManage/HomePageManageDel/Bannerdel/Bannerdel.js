@@ -1,16 +1,16 @@
-import { CircularProgress } from '@mui/material'
+import { CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
-import useAuth from '../../../../../../hooks/useAuth'
-import Footer from '../../../../Footer/Footer'
-import Navbar from '../../../../Header/Navbar'
-import Account from '../../../Account'
+import useAuth from '../../../../../../hooks/useAuth';
+import Footer from '../../../../Footer/Footer';
+import Navbar from '../../../../Header/Navbar';
+import Account from '../../../Account';
 
-function NacklacesDel() {
+function Bannerdel() {
     const { user } = useAuth()
     const [productLoad, setProductLoad] = useState([]);
 
     useEffect(() => {
-        fetch(`https://powerful-wildwood-87881.herokuapp.com/necklace`)
+        fetch(`https://powerful-wildwood-87881.herokuapp.com/banner`)
             .then((res) => res.json())
             .then((data) => setProductLoad(data));
     }, [])
@@ -18,7 +18,7 @@ function NacklacesDel() {
         const confirm = window.confirm("are u sure")
         if (confirm) {
             fetch(
-                `https://powerful-wildwood-87881.herokuapp.com/necklace/${id}`,
+                `https://powerful-wildwood-87881.herokuapp.com/banner/${id}`,
                 {
                     method: "DELETE",
                 }
@@ -79,4 +79,4 @@ function NacklacesDel() {
     )
 }
 
-export default NacklacesDel
+export default Bannerdel

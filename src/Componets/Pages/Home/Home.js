@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Title></Title>
-      <CardC/>
+      {/* <CardC/> */}
       <Socialmedia></Socialmedia>
       <Footer></Footer>
 

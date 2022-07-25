@@ -57,13 +57,10 @@ function CardC() {
 
         {
           service.map((service) => (
-            <div>
               <ReactCarousel
                 key={service._id}
                 service={service}
               ></ReactCarousel>
-
-            </div>
 
           ))
         }

@@ -1,3 +1,4 @@
+import { CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import Footer from '../../../../Footer/Footer'
 import Navbar from '../../../../Header/Navbar'
@@ -50,6 +51,7 @@ function KurtiDel() {
 
                                 </tr>
                             </thead>
+                            {productLoad.length === 0 ? <CircularProgress /> :
                             <tbody>
                                 {
                                     productLoad.map(SingleProduct =>
@@ -67,6 +69,7 @@ function KurtiDel() {
                                 }
 
                             </tbody>
+}
                         </table>
                     </div>
                 </div>

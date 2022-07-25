@@ -101,7 +101,7 @@ function BestSellsAdd() {
                         <Button
                             sx={{ width: '100%', marginBottom: '8px' }}
                             variant="contained" type="submit">
-                            Add Doctor
+                            Add Product
                         </Button>
                     </form>
                     <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>

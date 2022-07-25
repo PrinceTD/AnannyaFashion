@@ -56,6 +56,13 @@ import BestSellsAdd from './Componets/Pages/Account/ManageOrder/HomePageManage.j
 import SingleBestSells from './Componets/Pages/carousel/SingleBestSells';
 import Coker from './Componets/Pages/Product/Jewelry/Coker/Coker';
 import SingleCokar from './Componets/Pages/Product/Jewelry/Coker/SingleCokar';
+import BannerAdd from './Componets/Pages/Account/ManageOrder/HomePageManage.js/BannerAdd';
+import HomePageMDel from './Componets/Pages/Account/AdminManage/HomePageManageDel/HomePageMDel';
+import Bannerdel from './Componets/Pages/Account/AdminManage/HomePageManageDel/Bannerdel/Bannerdel';
+import BestSellPDel from './Componets/Pages/Account/AdminManage/HomePageManageDel/BestSellPDel/BestSellPDel';
+import Blouse from './Componets/Pages/Product/Women/womenCatagory/Blouse/Blouse';
+import SingleBlouse from './Componets/Pages/Product/Women/womenCatagory/Blouse/SingleBlouse';
+import SareeDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/SareeDel';
 
 
 function App() {
@@ -104,6 +111,10 @@ function App() {
             <Route path='/women/saree' element={<Saree></Saree>}></Route>
             <Route path='/women/saree/:serviceId' element={<SingleSaree></SingleSaree>}></Route>
 
+
+            <Route path='/women/blouse' element={<Blouse />}></Route>
+            <Route path='/women/blouse/:serviceId' element={<SingleBlouse />}></Route>
+
             {/* orna */}
             <Route path='/women/orna' element={<Orna></Orna>}></Route>
             <Route path='/women/orna/:serviceId' element={<SingleOrna></SingleOrna>}></Route>
@@ -146,10 +157,14 @@ function App() {
 
             {/* manageProduct (WOMEN) */}
             <Route path='/myaccount/admin/manageproduct/womendel' element={<PrivetRoute><AdminRoute><WomenDel /></AdminRoute></PrivetRoute>}></Route>
-            <Route path='/myaccount/admin/manageproduct/jewellerydel/kurtidel' element={<PrivetRoute><AdminRoute><KurtiDel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/womendel/kurtidel' element={<PrivetRoute><AdminRoute><KurtiDel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/womendel/sareedel' element={<PrivetRoute><AdminRoute><SareeDel /></AdminRoute></PrivetRoute>}></Route>
 
 
             <Route path='/myaccount/admin/manageproduct/mendel' element={<PrivetRoute><AdminRoute><MendelProduct /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/homepmdel' element={<PrivetRoute><AdminRoute><HomePageMDel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/homepmdel/bannerdel' element={<PrivetRoute><AdminRoute><Bannerdel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/homepmdel/bestspdel' element={<PrivetRoute><AdminRoute><BestSellPDel /></AdminRoute></PrivetRoute>}></Route>
 
             {/* add product */}
 
@@ -170,6 +185,7 @@ function App() {
 
             <Route path='/myaccount/admin/manageorder/homepage' element={<PrivetRoute><AdminRoute><HomePageManage /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/homepage/bestsellsadd' element={<PrivetRoute><AdminRoute><BestSellsAdd /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageorder/homepage/banneradd' element={<PrivetRoute><AdminRoute><BannerAdd /></AdminRoute></PrivetRoute>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
 

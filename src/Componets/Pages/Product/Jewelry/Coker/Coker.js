@@ -13,7 +13,7 @@ function Coker() {
             .then(data => setService(data))
     }, []);
     return (
-        <div>
+        <div> 
             <div >
                 <Navbar />
                 <div className="container mt-5 mb-5">
