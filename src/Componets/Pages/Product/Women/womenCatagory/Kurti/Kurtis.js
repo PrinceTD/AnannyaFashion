@@ -18,7 +18,7 @@ function Kurtis({ service }) {
                 </Link>
                 <div className='text-center pt-2'>
                     <h6>{name}</h6>
-                    <h5>{price}</h5>
+                    <h5>৳ {price}</h5>
                 </div>
             </div>
         </div>

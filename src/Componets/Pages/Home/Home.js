@@ -17,13 +17,13 @@ export default function Home() {
   return (
     <div>
 
-      {/* <Navbar></Navbar> */}
-      <ProductCard/>
-      {/* <Banner></Banner>
+      <Navbar></Navbar>
+      {/* <ProductCard/> */}
+      <Banner></Banner>
       <Title></Title>
-      <CardC/>
-      <Socialmedia></Socialmedia> */}
-      {/* <Footer></Footer> */}
+      {/* <CardC/> */}
+      <Socialmedia></Socialmedia>
+      <Footer></Footer>
 
 
 

@@ -12,6 +12,9 @@ function CardC() {
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 1024,
