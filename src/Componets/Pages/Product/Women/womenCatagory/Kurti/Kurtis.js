@@ -9,7 +9,7 @@ function Kurtis({ service }) {
         <div className="col">
             <div className="card border-0 h-100">
                 <Link to={'/women'} className=''>
-                    <div className='card border-0'>
+                    <div className='card border-0git '>
                         <img src={`data:img/png;base64,${img}`} class="card-img-top" alt="..." />
                         <div className="card-img-overlay d-flex align-items-end justify-content-center">
                             <p className="rounded card-title pe-3 ps-3 bg-light"><VisibilityIcon /> <span>/</span> <ShoppingCartOutlinedIcon /> </p>
