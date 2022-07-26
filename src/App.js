@@ -63,6 +63,7 @@ import BestSellPDel from './Componets/Pages/Account/AdminManage/HomePageManageDe
 import Blouse from './Componets/Pages/Product/Women/womenCatagory/Blouse/Blouse';
 import SingleBlouse from './Componets/Pages/Product/Women/womenCatagory/Blouse/SingleBlouse';
 import SareeDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/SareeDel';
+import NewInAdd from './Componets/Pages/Account/ManageOrder/HomePageManage.js/NewInAdd';
 
 
 function App() {
@@ -186,6 +187,7 @@ function App() {
             <Route path='/myaccount/admin/manageorder/homepage' element={<PrivetRoute><AdminRoute><HomePageManage /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/homepage/bestsellsadd' element={<PrivetRoute><AdminRoute><BestSellsAdd /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/homepage/banneradd' element={<PrivetRoute><AdminRoute><BannerAdd /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageorder/homepage/newproductadd' element={<PrivetRoute><AdminRoute><NewInAdd /></AdminRoute></PrivetRoute>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>
 

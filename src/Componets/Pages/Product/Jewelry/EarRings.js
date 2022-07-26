@@ -6,9 +6,6 @@ import { Link } from 'react-router-dom';
 function EarRings({ service }) {
     const { _id, name, price, details, img } = service;
     return (
-
-
-
         <div className="col">
             <div className="card border-0 h-100">
                 <Link to={`/jewellary/earring/${_id}`} className=''>
@@ -25,8 +22,6 @@ function EarRings({ service }) {
                 </div>
             </div>
         </div>
-
-
 
 
     )

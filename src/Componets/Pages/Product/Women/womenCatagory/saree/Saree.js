@@ -29,12 +29,10 @@ export default function Saree() {
                   service={service}
                 ></Sarees>)
               }
-
             </div>}
-
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   )
 }
