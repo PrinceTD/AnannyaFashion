@@ -9,7 +9,7 @@ export default function Orna() {
   const { isLoading } = useAuth();
   const [service, setService] = useState([]);
   useEffect(() => {
-    const url = "https://tranquil-ridge-16978.herokuapp.com/product"
+    const url = "https://powerful-wildwood-87881.herokuapp.com/kurti"
     fetch(url)
       .then(res => res.json())
       .then(data => setService(data))

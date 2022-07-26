@@ -25,8 +25,6 @@ export default function Home() {
       <Socialmedia></Socialmedia>
       <Footer></Footer>
 
-
-
     </div>
   )
 }

@@ -8,7 +8,7 @@ function Kurtis({ service }) {
     return (
         <div className="col">
             <div className="card border-0 h-100">
-                <Link to={'/women'} className=''>
+                <Link to={`/women/kurti/${_id}`} className=''>
                     <div className='card border-0'>
                         <img src={`data:img/png;base64,${img}`} class="card-img-top" alt="..." />
                         <div className="card-img-overlay d-flex align-items-end justify-content-center">

@@ -11,7 +11,7 @@ function CardC() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    initialSlide: 0,
+    initialSlide: 1,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 4000,

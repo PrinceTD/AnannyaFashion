@@ -30,7 +30,8 @@ export default function Banner() {
         <div className='container pb-3'>
             <Slider {...settings}>
 
-                {
+              
+               {
                     service.map((service) => (
                         <BannerSingle
                             key={service._id}
