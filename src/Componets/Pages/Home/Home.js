@@ -8,6 +8,7 @@ import Footer from '../Footer/Footer'
 import CardC from '../carousel/CardC'
 import CardManu from '../carousel/CardManu'
 import BastSeals from '../carousel/BastSeals'
+import ProductCard from '../../ProductCard'
 
 
 
@@ -16,12 +17,13 @@ export default function Home() {
   return (
     <div>
 
-      <Navbar></Navbar>
-      <Banner></Banner>
+      {/* <Navbar></Navbar> */}
+      <ProductCard/>
+      {/* <Banner></Banner>
       <Title></Title>
-      {/* <CardC/> */}
-      <Socialmedia></Socialmedia>
-      <Footer></Footer>
+      <CardC/>
+      <Socialmedia></Socialmedia> */}
+      {/* <Footer></Footer> */}
 
 
 
