@@ -1,10 +1,10 @@
+import React, { useState } from 'react';
 import { Alert, Button, Input, Snackbar, TextField } from '@mui/material';
-import React, { useState } from 'react'
 import Footer from '../../../Footer/Footer';
 import Navbar from '../../../Header/Navbar';
 import Account from '../../Account';
 
-function CokersAdd() {
+function BlouseAdd() {
     const [open, setOpen] = React.useState(false);
 
     const [name, setName] = useState('');
@@ -24,7 +24,7 @@ function CokersAdd() {
         formData.append('price', price);
         formData.append('img', img);
 
-        fetch("https://powerful-wildwood-87881.herokuapp.com/coker", {
+        fetch("https://powerful-wildwood-87881.herokuapp.com/blouse", {
             method: "POST",
             body: formData
         })
@@ -59,7 +59,7 @@ function CokersAdd() {
                 </div>
                 <div className='col-md-9 padding-site'>
                     <h4> It's an admin account. so, You can upload product</h4>
-                    <p>You Can add sawalar kameez.</p>
+                    <p>You Can add Blouse.</p>
                     <hr />
                     <br />
                     <form onSubmit={handelSubmit}>
@@ -120,4 +120,4 @@ function CokersAdd() {
     )
 }
 
-export default CokersAdd
+export default BlouseAdd

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
-export default function Bloused({service}) {
-  const { _id, name, price, details, img } = service;
-  return (
-    <div className="col">
+function SuperPackages({service}) {
+    const { _id, name, price, img } = service;
+    return (
+        <div className="col">
             <div className="card border-0 h-100">
-                <Link to={`/women/blouse/${_id}`} className=''>
+                <Link to={`/package/${_id}`} className=''>
                     <div className='card border-0'>
                         <img src={`data:img/png;base64,${img}`} class="card-img-top" alt="..." width={'100%'}/>
                         <div className="card-img-overlay d-flex align-items-end justify-content-center">
@@ -22,5 +22,7 @@ export default function Bloused({service}) {
                 </div>
             </div>
         </div>
-  )
+    )
 }
+
+export default SuperPackages

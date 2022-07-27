@@ -7,7 +7,7 @@ export default function SingleOrna() {
   const [service, setService] = useState({});
   const { serviceId } = useParams();
   useEffect(() => {
-    fetch(`https://tranquil-ridge-16978.herokuapp.com/product/${serviceId}`)
+    fetch(`https://powerful-wildwood-87881.herokuapp.com/orna/${serviceId}`)
       .then(res => res.json())
       .then(data => setService(data));
   }, []);
@@ -18,7 +18,7 @@ export default function SingleOrna() {
         <div className="card mb-3 border-0">
           <div className="row g-4">
             <div className="col-md-6">
-              <img src={service.img} className="img-fluid rounded-start" alt="..." />
+              <img  src={`data:img/png;base64,${service.img}`} className="img-fluid rounded-start" alt="..." />
             </div>
             <div className="col-md-6">
               <div className="">

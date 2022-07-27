@@ -66,7 +66,7 @@ export default function Navbar() {
                                         Package
                                     </Link>
                                     <ul className="dropdown-menu Menu" aria-labelledby="navbarDropdown">
-                                        <li><Link className="dropdown-item" to="#">Surprise Package</Link></li>
+                                        <li><Link className="dropdown-item" to="/package">Surprise Package</Link></li>
                                     </ul>
                                 </li>
                             </ul>

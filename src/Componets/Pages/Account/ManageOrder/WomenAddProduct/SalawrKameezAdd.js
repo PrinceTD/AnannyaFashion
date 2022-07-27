@@ -4,7 +4,7 @@ import Footer from '../../../Footer/Footer';
 import Navbar from '../../../Header/Navbar';
 import Account from '../../Account';
 
-function CokersAdd() {
+function SalawrKameezAdd() {
     const [open, setOpen] = React.useState(false);
 
     const [name, setName] = useState('');
@@ -24,7 +24,7 @@ function CokersAdd() {
         formData.append('price', price);
         formData.append('img', img);
 
-        fetch("https://powerful-wildwood-87881.herokuapp.com/coker", {
+        fetch("https://powerful-wildwood-87881.herokuapp.com/sawalar", {
             method: "POST",
             body: formData
         })
@@ -120,4 +120,4 @@ function CokersAdd() {
     )
 }
 
-export default CokersAdd
+export default SalawrKameezAdd

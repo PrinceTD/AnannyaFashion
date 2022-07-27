@@ -17,7 +17,7 @@ export default function Saree() {
       <Navbar />
       <div className="container mt-5 mb-5">
         <div className='text-center pb-3'>
-          <h2 style={{ color: "coral" }}>Our Products</h2>
+          <h2>Our Products</h2>
         </div>
         <div className='text-center'>
           {service.length === 0 ? <CircularProgress />

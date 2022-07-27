@@ -21,7 +21,7 @@ function Necklecs() {
             <div className="container mt-5 mb-5">
                 <div>
                     <div className='pb-3'>
-                        <h2 style={{ color: "coral" }}>Our Products</h2>
+                        <h2>Our Products</h2>
                         <div>
                             {service.length === 0 ? <CircularProgress /> :
                                 <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">

@@ -2,7 +2,10 @@ import React from 'react'
 import Account from '../../Account'
 
 import saree from '../../../../../images/saree.png'
+import blouse from '../../../../../images/blouse.png'
+import sawalar from '../../../../../images/sawalar.png'
 import kurti from '../../../../../images/kurti.png'
+import orna from '../../../../../images/orna.png'
 import { Link } from 'react-router-dom'
 import { Button } from '@mui/material'
 import Navbar from '../../../Header/Navbar'
@@ -26,7 +29,7 @@ function WomenProductAdd() {
                                             <div className='text-center p-2'>
                                                 <img src={saree}></img>
                                                 <div className="card-body">
-                                                    <h5 className="card-title">SAREE</h5>
+                                                    <h5 className="card-title">SAREE ADD</h5>
                                                 </div>
                                             </div>
                                         </Button>
@@ -41,7 +44,7 @@ function WomenProductAdd() {
                                             <div className='text-center p-2'>
                                                 <img src={kurti}></img>
                                                 <div className="card-body">
-                                                    <h5 className="card-title">KURTI</h5>
+                                                    <h5 className="card-title">KURTI ADD</h5>
 
                                                 </div>
                                             </div>
@@ -51,12 +54,40 @@ function WomenProductAdd() {
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/download'>
+                                    <Link to='/myaccount/admin/manageorder/womenadd/salaweradd'>
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
-                                                {/* <img src={download}></img> */}
+                                                <img src={sawalar}></img>
                                                 <div className="card-body">
-                                                    <h5 className="card-title">jj</h5>
+                                                    <h5 className="card-title">SALAWER KAMEEZ ADD</h5>
+                                                </div>
+                                            </div>
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card h-100">
+                                    <Link to='/myaccount/admin/manageorder/womenadd/blouseadd'>
+                                        <Button sx={{ color: " black" }} variant="text">
+                                            <div className='text-center p-2'>
+                                                <img src={blouse}></img>
+                                                <div className="card-body">
+                                                    <h5 className="card-title">BLOUSE ADD</h5>
+                                                </div>
+                                            </div>
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card h-100">
+                                    <Link to='/myaccount/admin/manageorder/womenadd/ornaadd'>
+                                        <Button sx={{ color: " black" }} variant="text">
+                                            <div className='text-center p-2'>
+                                                <img src={orna}></img>
+                                                <div className="card-body">
+                                                    <h5 className="card-title">ORNA ADD</h5>
                                                 </div>
                                             </div>
                                         </Button>

@@ -6,6 +6,8 @@ import Account from '../Account'
 import jewellary from '../../../../images/jewelry.png'
 import girl from '../../../../images/girl.png'
 import HomePageManage from '../../../../images/property.png'
+import surprise from '../../../../images/surprise.png'
+import man from '../../../../images/man.png'
 import Navbar from '../../Header/Navbar';
 import Footer from '../../Footer/Footer'
 function ManageOrder() {
@@ -69,9 +71,23 @@ function ManageOrder() {
                                     <Link to='/myaccount/download'>
                                         <Button sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
-                                                {/* <img src={download}></img> */}
+                                                <img src={man}></img>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Man ADD</h5>
+                                                </div>
+                                            </div>
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card h-100">
+                                    <Link to='/myaccount/admin/manageorder/packageadd'>
+                                        <Button sx={{ color: " black" }} variant="text">
+                                            <div className='text-center p-2'>
+                                                <img src={surprise}></img>
+                                                <div className="card-body">
+                                                    <h5 className="card-title">SURPRISE PACKAGE</h5>
                                                 </div>
                                             </div>
                                         </Button>

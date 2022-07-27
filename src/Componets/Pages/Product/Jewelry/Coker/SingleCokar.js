@@ -7,7 +7,7 @@ function SingleCokar() {
     const [service, setService] = useState({});
     const { serviceId } = useParams();
     useEffect(() => {
-        fetch(`https://powerful-wildwood-87881.herokuapp.com/kurti/${serviceId}`)
+        fetch(`https://powerful-wildwood-87881.herokuapp.com/coker/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data));
     }, []);

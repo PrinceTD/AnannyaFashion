@@ -7,7 +7,7 @@ export default function SingleBlouse() {
   const [service, setService] = useState({});
   const { serviceId } = useParams();
   useEffect(() => {
-    fetch(`https://powerful-wildwood-87881.herokuapp.com/kurti/${serviceId}`)
+    fetch(`https://powerful-wildwood-87881.herokuapp.com/blouse/${serviceId}`)
       .then(res => res.json())
       .then(data => setService(data));
   }, []);

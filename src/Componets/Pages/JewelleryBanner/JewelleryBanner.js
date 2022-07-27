@@ -15,7 +15,7 @@ function JewelleryBanner() {
                     <div class="col-md-5 d-flex align-items-center text-center">
                         <div class="card-body">
                             <h2 class="card-title">OUR JEWELLARY</h2>
-                            <Link to='/jewellary'><Button>SHOP NOW</Button></Link>
+                            <Link to='/jewellary'><Button variant="outlined">SHOP NOW</Button></Link>
                         </div>
                     </div>
                 </div>
