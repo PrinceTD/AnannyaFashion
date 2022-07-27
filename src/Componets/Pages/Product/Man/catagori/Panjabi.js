@@ -8,10 +8,12 @@ function Panjabi() {
     return (
         <div>
             <Navbar />
-            <div className='container'>
-                <Alert variant="outlined" severity="error">
+            <div className='container mt-5 mb-5'>
+               <div className=' pt-5 pb-5'>
+               <Alert variant="outlined" severity="error">
                     This is an error alert — check it out!
                 </Alert>
+               </div>
             </div>
             <Footer />
         </div>
