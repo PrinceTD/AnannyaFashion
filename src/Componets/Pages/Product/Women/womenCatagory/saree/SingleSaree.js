@@ -19,7 +19,7 @@ export default function SingleSaree() {
         <div className="card mb-3 border-0">
           <div className="row g-4">
             <div className="col-md-6">
-              <img src={`data:img/png;base64,${service.img}`} className="img-fluid rounded-start" alt="..." />
+              <img src={`data:img/png;base64,${service.img}`} className="img-fluid rounded-start" alt="..." width={'100%'}/>
             </div>
             <div className="col-md-6">
               <div className="">

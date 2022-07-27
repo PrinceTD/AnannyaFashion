@@ -6,9 +6,8 @@ import './Title.css'
 export default function Title() {
     return (
         <div className='container mt-1 mb-2'>
-            <h1 className='pt-2 pb-4'></h1>
 
-            <div className='container'>
+            <div className='container pb-4'>
                 <div className=''>
                     <div className=" row row-cols-1 row-cols-md-2 g-4 wrapper">
                         <div className="col">
@@ -19,7 +18,7 @@ export default function Title() {
                                     </div>
                                     <div className="photo-detail">
                                         <h1 className="title-photo">WOMEN</h1>
-                                        
+
                                     </div>
                                 </Link>
                             </div>

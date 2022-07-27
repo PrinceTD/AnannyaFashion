@@ -6,9 +6,7 @@ import Socialmedia from '../SocialMedia/Socialmedia'
 import Navbar from '../Header/Navbar'
 import Footer from '../Footer/Footer'
 import CardC from '../carousel/CardC'
-import CardManu from '../carousel/CardManu'
-import BastSeals from '../carousel/BastSeals'
-import ProductCard from '../../ProductCard'
+import JewelleryBanner from '../JewelleryBanner/JewelleryBanner'
 
 
 
@@ -20,7 +18,9 @@ export default function Home() {
       <Navbar></Navbar>
       {/* <ProductCard/> */}
       <Banner></Banner>
+      {/* <BootstrapBanner /> */}
       <Title></Title>
+      <JewelleryBanner />
       {/* <CardC/> */}
       <Socialmedia></Socialmedia>
       <Footer></Footer>

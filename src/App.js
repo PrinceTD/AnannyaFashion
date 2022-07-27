@@ -49,8 +49,6 @@ import NacklacesDel from './Componets/Pages/Account/AdminManage/ManageProductDel
 import WomenDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/WomenDel';
 import KurtiDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/KurtiDel';
 import MendelProduct from './Componets/Pages/Account/AdminManage/ManageProductDel/Men/MendelProduct';
-import BastSeals from './Componets/Pages/carousel/BastSeals';
-import Featured from './Componets/Pages/carousel/Featured';
 import HomePageManage from './Componets/Pages/Account/ManageOrder/HomePageManage.js/HomePageManage';
 import BestSellsAdd from './Componets/Pages/Account/ManageOrder/HomePageManage.js/BestSellsAdd';
 import SingleBestSells from './Componets/Pages/carousel/SingleBestSells';
@@ -64,6 +62,7 @@ import Blouse from './Componets/Pages/Product/Women/womenCatagory/Blouse/Blouse'
 import SingleBlouse from './Componets/Pages/Product/Women/womenCatagory/Blouse/SingleBlouse';
 import SareeDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/SareeDel';
 import NewInAdd from './Componets/Pages/Account/ManageOrder/HomePageManage.js/NewInAdd';
+import JewellaryT from './Componets/Pages/Product/Jewelry/JewellaryT';
 
 
 function App() {
@@ -94,6 +93,7 @@ function App() {
 
             {/* products */}
 
+
             <Route path='/women' element={<Women></Women>}></Route>
             <Route path='/men' element={<Man />}></Route>
 
@@ -122,6 +122,7 @@ function App() {
 
             {/* jewellary */}
             {/* earring */}
+            <Route path='/jewellary' element={<JewellaryT />}></Route>
 
             <Route path='/jewellary/earring' element={<EarRing></EarRing>}></Route>
             <Route path='/jewellary/earring/:serviceId' element={<SingleEarRing></SingleEarRing>}></Route>
