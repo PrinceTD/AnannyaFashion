@@ -8,7 +8,7 @@ export default function Salawrs({service}) {
   return (
       <div className="col">
           <div className="card border-0 h-100">
-              <Link to={`/women/sawalar/${_id}`} className=''>
+              <Link to={`/women/salawerkameez/${_id}`} className=''>
                   <div className='card border-0'>
                       <img src={`data:img/png;base64,${img}`} class="card-img-top" alt="..." width={'100%'}/>
                       <div className="card-img-overlay d-flex align-items-end justify-content-center">

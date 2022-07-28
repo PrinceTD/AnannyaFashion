@@ -70,6 +70,8 @@ import SuperPackage from './Componets/Pages/Product/SurprisePackage/SuperPackage
 import SinglePackageSu from './Componets/Pages/Product/SurprisePackage/SinglePackageSu';
 import SurprisePackageAdd from './Componets/Pages/Account/ManageOrder/SurprisePackage/SurprisePackageAdd';
 import OrnaAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/OrnaAdd';
+import Shirt from './Componets/Pages/Product/Man/catagori/Shirt';
+import TShirt from './Componets/Pages/Product/Man/TShirt';
 
 
 function App() {
@@ -101,13 +103,18 @@ function App() {
             {/* products */}
 
 
-            <Route path='/women' element={<Women></Women>}></Route>
+   
+
+            {/* man */}
             <Route path='/men' element={<Man />}></Route>
 
             <Route path='/men/panjabi' element={<Panjabi />}></Route>
-            <Route path='/men/shirt' element={<Panjabi />}></Route>
+            <Route path='/men/shirt' element={<Shirt />}></Route>
+            <Route path='/men/tshirt' element={<TShirt />}></Route>
+            
+            {/* women */}
 
-
+            <Route path='/women' element={<Women></Women>}></Route>
             {/* kurti */}
             <Route path='/women/kurti' element={<Kurti></Kurti>}></Route>
             <Route path='/women/kurti/:serviceId' element={<SingleKurti></SingleKurti>}></Route>

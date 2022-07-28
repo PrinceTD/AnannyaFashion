@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Footer from '../../../../Footer/Footer'
 import Navbar from '../../../../Header/Navbar'
 import Salawrs from './Salawrs'
+import banner from '../../../../../../images/bannerT.jpg' 
 
 export default function SalawrKameez() {
   const [service, setService] = useState([]);
@@ -15,9 +16,16 @@ export default function SalawrKameez() {
   return (
     <div >
       <Navbar />
+      <div>
+        <div class="card mb-3 border-0">
+          <img src={banner} class="card-img" alt="..." />
+          <div class="card-img-overlay d-flex justify-content-center align-items-center">
+            <h1 class="fw-bold fs-1 banner-text card-title">SALWAR KAMEEZ</h1>
+          </div>
+        </div>
+      </div>
       <div className="container mt-5 mb-5">
         <div className='text-center pb-3'>
-          <h2 style={{ color: "black" }}>Our Products</h2>
 
           <div className='text-center'>
             {service.length === 0 ? <CircularProgress /> :

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Footer from '../Footer/Footer';
 import Navbar from '../Header/Navbar';
 import NewIns from './NewIns';
+import banner from '../../../images/bannerT.jpg'
 
 function NewIn() {
     const [service, setService] = useState([]);
@@ -14,10 +15,15 @@ function NewIn() {
     }, []);
     return (
         <div>
-            <Navbar/>
-            <div  className="container mt-5 mb-5">
+            <Navbar />
+            <div class="card mb-3 border-0">
+                <img src={banner} class="card-img" alt="..." />
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                    <h1 class="fw-bold fs-1 banner-text card-title">NEW PRODUCT</h1>
+                </div>
+            </div>
+            <div className="container mt-5 mb-5">
                 <div className='text-center pb-3'>
-                    <h2 style={{ color: "coral" }}>Our Products</h2>
                     <div>
                         {
                             service.length === 0 ? <CircularProgress />
@@ -29,13 +35,13 @@ function NewIn() {
                                             service={service}
                                         ></NewIns>)
                                     }
-                                    
+
                                 </div>
                         }
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

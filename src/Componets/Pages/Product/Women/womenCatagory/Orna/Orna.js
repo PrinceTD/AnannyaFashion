@@ -4,6 +4,7 @@ import useAuth from '../../../../../../hooks/useAuth';
 import Footer from '../../../../Footer/Footer';
 import Navbar from '../../../../Header/Navbar';
 import Ornas from './Ornas';
+import banner from '../../../../../../images/bannerT.jpg'
 
 export default function Orna() {
   const { isLoading } = useAuth();
@@ -17,9 +18,16 @@ export default function Orna() {
   return (
     <div >
       <Navbar/>
+      <div>
+        <div class="card mb-3 border-0">
+          <img src={banner} class="card-img" alt="..." />
+          <div class="card-img-overlay d-flex justify-content-center align-items-center">
+            <h1 class="fw-bold fs-1 banner-text card-title">WOMEN</h1>
+          </div>
+        </div>
+      </div>
       <div className="container mt-5 mb-5">
         <div className='text-center pb-3'>
-          <h2 style={{ color: "black" }}>Our Products</h2>
           <div>
             {service.length === 0 ? <CircularProgress /> :
               <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">

@@ -10,7 +10,7 @@ export default function Navbar() {
         <div>
             <Note></Note>
         
-            <div className='container-fluid'>
+            <div className='container-fluid  border-bottom'>
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container">
 
@@ -35,7 +35,7 @@ export default function Navbar() {
                                         <li><Link className="dropdown-item" to="/women/saree">Saree</Link></li>
                                         <li><Link className="dropdown-item" to="/women/kurti">Kurti</Link></li>
                                         <li><Link className="dropdown-item" to="/women/orna">Orna</Link></li>
-                                        <li><Link className="dropdown-item" to="/women/salwarkameez">Salwar Kameez</Link></li>
+                                        <li><Link className="dropdown-item" to="/women/salawerkameez">Salwar Kameez</Link></li>
                                         <li><Link className="dropdown-item" to="/women/blouse">Blouse</Link></li>
                                        
 

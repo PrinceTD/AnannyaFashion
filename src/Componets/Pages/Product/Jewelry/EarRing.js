@@ -4,6 +4,7 @@ import useAuth from '../../../../hooks/useAuth';
 import Footer from '../../Footer/Footer';
 import Navbar from '../../Header/Navbar';
 import EarRings from './EarRings';
+import banner from '../../../../images/bannerT.jpg'
 
 function EarRing() {
     const { isLoading } = useAuth();
@@ -16,11 +17,18 @@ function EarRing() {
     }, []);
     return (
         <div>
-            <Navbar/>
-            <div  className="container mt-5 mb-5">
-                
+            <Navbar />
+            <div>
+                <div class="card mb-3 border-0">
+                    <img src={banner} class="card-img" alt="..." />
+                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                        <h1 class="fw-bold fs-1 banner-text card-title">EAR RING</h1>
+                    </div>
+                </div>
+            </div>
+            <div className="container mt-5 mb-5">
+
                 <div className='text-center pb-3'>
-                    <h2>Our Products</h2>
                     <div>
                         {service.length === 0 ? <CircularProgress /> :
                             <div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-4">
@@ -35,7 +43,7 @@ function EarRing() {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

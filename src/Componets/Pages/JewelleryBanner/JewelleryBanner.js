@@ -10,7 +10,7 @@ function JewelleryBanner() {
             <div class="container">
                 <div class="pt-4 pb-5 row g-4">
                     <div class="col-md-7">
-                        <img src={banner} class="img-fluid rounded-start" alt="..." width={'100%'} />
+                        <img src={banner} class="img-fluid rounded" alt="..." width={'100%'} />
                     </div>
                     <div class="col-md-5 d-flex align-items-center text-center">
                         <div class="card-body">

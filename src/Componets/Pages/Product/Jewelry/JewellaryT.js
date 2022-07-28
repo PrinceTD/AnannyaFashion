@@ -1,15 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import imgC from '../../../../images/mukti.jpg'
+import banner from '../../../../images/bannerT.jpg'
 import Footer from '../../Footer/Footer'
 import Navbar from '../../Header/Navbar'
 
 function JewellaryT() {
-    return (
-        <div>
+  return (
+    <div>
       <Navbar />
-      <div className='bgImg text-center'>
-        <h1 className=''>WOMEN</h1>
+      <div>
+        <div class="card mb-3 border-0">
+          <img src={banner} class="card-img" alt="..." />
+          <div class="card-img-overlay d-flex justify-content-center align-items-center">
+            <h1 class="fw-bold fs-1 banner-text card-title">JEWELLARY</h1>
+          </div>
+        </div>
       </div>
       <div className='container'>
         <div className="row row-cols-2 row-cols-md-3 g-5">
@@ -44,12 +50,12 @@ function JewellaryT() {
               </div>
             </Link>
           </div>
-         
+
         </div>
       </div>
       <Footer />
     </div >
-    )
+  )
 }
 
 export default JewellaryT
