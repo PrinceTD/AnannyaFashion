@@ -22,7 +22,7 @@ export default function Orna() {
         <div class="card mb-3 border-0">
           <img src={banner} class="card-img" alt="..." />
           <div class="card-img-overlay d-flex justify-content-center align-items-center">
-            <h1 class="fw-bold fs-1 banner-text card-title">WOMEN</h1>
+            <h1 class="fw-bold fs-1 banner-text card-title">ORNA</h1>
           </div>
         </div>
       </div>
