@@ -74,7 +74,21 @@ function ManageAllProduct() {
                                             <div className='text-center p-2'>
                                                 <img src={delF}></img>
                                                 <div className="card-body">
-                                                    <h5 className="card-title">HOME PAGE MANAGE DELETE</h5>
+                                                    <h5 className="card-title">HOMEPAGE MANAGE DELETE</h5>
+                                                </div>
+                                            </div>
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card h-100">
+                                    <Link to='/myaccount/admin/manageproduct/packagedel'>
+                                        <Button sx={{ color: " black" }} variant="text">
+                                            <div className='text-center p-2'>
+                                                <img src={delF}></img>
+                                                <div className="card-body">
+                                                    <h5 className="card-title">PACKAGE DELETE</h5>
                                                 </div>
                                             </div>
                                         </Button>

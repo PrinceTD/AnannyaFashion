@@ -72,6 +72,12 @@ import SurprisePackageAdd from './Componets/Pages/Account/ManageOrder/SurprisePa
 import OrnaAdd from './Componets/Pages/Account/ManageOrder/WomenAddProduct/OrnaAdd';
 import Shirt from './Componets/Pages/Product/Man/catagori/Shirt';
 import TShirt from './Componets/Pages/Product/Man/TShirt';
+import PackageDel from './Componets/Pages/Account/AdminManage/PackageDel';
+import SKameezDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/SKameezDel';
+import BlouseDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/BlouseDel';
+import OrnaDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/OrnaDel';
+import Cokerdel from './Componets/Pages/Account/AdminManage/ManageProductDel/JewelleryDel/Cokerdel';
+import NewProductDel from './Componets/Pages/Account/AdminManage/HomePageManageDel/NewProductDel';
 
 
 function App() {
@@ -94,7 +100,7 @@ function App() {
 
             <Route path='/shoppingcart' element={<ShoppingCart></ShoppingCart>}></Route>
 
-     
+
 
 
             <Route path='/bestsells/:serviceId' element={<SingleBestSells />}></Route>
@@ -103,7 +109,7 @@ function App() {
             {/* products */}
 
 
-   
+
 
             {/* man */}
             <Route path='/men' element={<Man />}></Route>
@@ -111,7 +117,7 @@ function App() {
             <Route path='/men/panjabi' element={<Panjabi />}></Route>
             <Route path='/men/shirt' element={<Shirt />}></Route>
             <Route path='/men/tshirt' element={<TShirt />}></Route>
-            
+
             {/* women */}
 
             <Route path='/women' element={<Women></Women>}></Route>
@@ -175,18 +181,26 @@ function App() {
             <Route path='/myaccount/admin/manageproduct/jewellerydel' element={<PrivetRoute><AdminRoute><JewelleryDel /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/jewellerydel/earringdel' element={<PrivetRoute><AdminRoute><EarRingDel /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/jewellerydel/nacklacedel' element={<PrivetRoute><AdminRoute><NacklacesDel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/jewellerydel/cokerdel' element={<PrivetRoute><AdminRoute><Cokerdel /></AdminRoute></PrivetRoute>}></Route>
+
+
             <Route path='/myaccount/admin/managevieworder' element={<PrivetRoute><AdminRoute><ManageAllOrder /></AdminRoute></PrivetRoute>}></Route>
 
             {/* manageProduct (WOMEN) */}
             <Route path='/myaccount/admin/manageproduct/womendel' element={<PrivetRoute><AdminRoute><WomenDel /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/womendel/kurtidel' element={<PrivetRoute><AdminRoute><KurtiDel /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/womendel/sareedel' element={<PrivetRoute><AdminRoute><SareeDel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/womendel/ornadel' element={<PrivetRoute><AdminRoute><OrnaDel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/womendel/blousedel' element={<PrivetRoute><AdminRoute><BlouseDel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/womendel/kameezdel' element={<PrivetRoute><AdminRoute><SKameezDel /></AdminRoute></PrivetRoute>}></Route>
 
 
             <Route path='/myaccount/admin/manageproduct/mendel' element={<PrivetRoute><AdminRoute><MendelProduct /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/homepmdel' element={<PrivetRoute><AdminRoute><HomePageMDel /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/homepmdel/bannerdel' element={<PrivetRoute><AdminRoute><Bannerdel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/homepmdel/newindel' element={<PrivetRoute><AdminRoute><NewProductDel /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/homepmdel/bestspdel' element={<PrivetRoute><AdminRoute><BestSellPDel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/packagedel' element={<PrivetRoute><AdminRoute><PackageDel /></AdminRoute></PrivetRoute>}></Route>
 
             {/* add product */}
 

@@ -47,6 +47,36 @@ function WomenDel() {
                                     </Link>
                                 </div>
                             </div>
+                            <div className="col">
+                                <div className="card h-100">
+                                    <Link to='/myaccount/admin/manageproduct/womendel/ornadel'>
+                                        <Button sx={{ color: " black" }} variant="text">
+                                            <div className='text-center p-2'>
+                                                <img src={del}></img>
+                                                <div className="card-body">
+                                                    <h5 className="card-title">ORNA DELETE</h5>
+
+                                                </div>
+                                            </div>
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card h-100">
+                                    <Link to='/myaccount/admin/manageproduct/womendel/blousedel'>
+                                        <Button sx={{ color: " black" }} variant="text">
+                                            <div className='text-center p-2'>
+                                                <img src={del}></img>
+                                                <div className="card-body">
+                                                    <h5 className="card-title">BLOUSE DELETE</h5>
+
+                                                </div>
+                                            </div>
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
