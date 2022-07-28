@@ -69,6 +69,9 @@ export default function Navbar() {
                                         <li><Link className="dropdown-item" to="/package">Surprise Package</Link></li>
                                     </ul>
                                 </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/newin">Gallery</Link>
+                                </li>
                             </ul>
 
                         </div>
