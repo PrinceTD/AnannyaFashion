@@ -24,7 +24,7 @@ function EarringAdd() {
         formData.append('price', price);
         formData.append('img', img);
 
-        fetch("http://localhost:5000/earring", {
+        fetch("https://powerful-wildwood-87881.herokuapp.com/earring", {
             method: "POST",
             body: formData
         })
