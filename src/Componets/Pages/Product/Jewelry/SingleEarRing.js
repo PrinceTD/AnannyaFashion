@@ -46,7 +46,7 @@ function SingleEarRing() {
                                             </span>
                                         </div>
                                         <div className='pt-3'>
-                                            <p><b className='pe-1'>Size:</b>
+                                            {/* <p><b className='pe-1'>Size:</b>
                                                 <select className='w-50 rounded p-1'{...register('size', { required: "size is required" })}>
                                                     <option value="">Choose an option</option>
                                                     <option value="38">38</option>
@@ -54,7 +54,7 @@ function SingleEarRing() {
                                                     <option value="42">42</option>
                                                     <option value="44">44</option>
                                                 </select>
-                                            </p>
+                                            </p> */}
 
                                         </div>
 
