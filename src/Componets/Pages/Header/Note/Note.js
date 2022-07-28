@@ -16,9 +16,11 @@ export default function Note() {
         <div className=' colorBg'>
             <div className='d-flex container align-items-center justify-content-between' >
                 <div className='social'>
-                    <small className='pe-3 '> <InstagramIcon fontSize="small"></InstagramIcon></small>
+                    <small className='pe-3 '> 
+                   <a className='text-light' href='https://www.instagram.com/_anannya_online_/' target="_blank"> <InstagramIcon fontSize="small"></InstagramIcon></a>
+                    </small>
                     <small>
-                        <FacebookIcon fontSize="small" />
+                       <a className='text-light' href='https://www.facebook.com/anannya74/' target="_blank"> <FacebookIcon fontSize="small" /></a>
                     </small>
                 </div>
                 <div className='d-flex'>

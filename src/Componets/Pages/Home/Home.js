@@ -7,6 +7,8 @@ import Navbar from '../Header/Navbar'
 import Footer from '../Footer/Footer'
 import CardC from '../carousel/CardC'
 import JewelleryBanner from '../JewelleryBanner/JewelleryBanner'
+import SwiperBanner from '../Banner/BannerSwiper/SwiperBanner'
+import SocialMedia from '../SocialMedia/SocialMediaBanner/SocialMedia'
 
 
 
@@ -16,10 +18,13 @@ export default function Home() {
     <div>
 
       <Navbar></Navbar>
-      {/* <ProductCard/> */}
+      
+      {/* <SwiperBanner/> */}
       <Banner></Banner>
       {/* <BootstrapBanner /> */}
+      {/* <SocialMedia/> */}
       <Title></Title>
+      
       <JewelleryBanner />
       {/* <CardC/> */}
       <Socialmedia></Socialmedia>
