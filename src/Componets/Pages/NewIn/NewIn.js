@@ -5,6 +5,7 @@ import Navbar from '../Header/Navbar';
 import NewIns from './NewIns';
 import banner from '../../../images/bannerT.jpg'
 
+
 function NewIn() {
     const [service, setService] = useState([]);
     useEffect(() => {

@@ -8,6 +8,7 @@ export default function Navbar() {
     return (
 
         <div>
+            {/* color- #006168 & #264653 */}
             <Note></Note>
         
             <div className='container-fluid  border-bottom'>
@@ -70,7 +71,7 @@ export default function Navbar() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/newin">Gallery</Link>
+                                    <Link className="nav-link" to="/">Gallery</Link>
                                 </li>
                             </ul>
 
