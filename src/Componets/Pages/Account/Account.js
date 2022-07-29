@@ -28,16 +28,16 @@ function Account() {
                                     <th className='color-link' scope="row"><Link to="/myaccount/admin">Admin</Link></th>
                                 </tr>}
                             <tr>
-                                <th className='color-link active' scope="row"><Link to="/myaccount">Deshboard</Link></th>
+                                <th className='color-link' scope="row"><Link to="/myaccount">Deshboard</Link></th>
                             </tr>
                             <tr>
                                 <th className='color-link' scope="row"><Link to='/myaccount/order'>Order</Link></th>
                             </tr>
                             <tr>
-                                <th className='color-link active' scope="row"><Link to="/myaccount/download">Downloads</Link></th>
+                                <th className='color-link' scope="row"><Link to="/myaccount/download">Downloads</Link></th>
                             </tr>
                             <tr>
-                                <th className='color-link active' scope="row"><Link to="/myaccount/address">Address</Link></th>
+                                <th className='color-link' scope="row"><Link to="/myaccount/address">Address</Link></th>
                             </tr>
                             <tr>
                                 <th scope="row"><Button
