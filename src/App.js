@@ -78,6 +78,8 @@ import BlouseDel from './Componets/Pages/Account/AdminManage/ManageProductDel/Wo
 import OrnaDel from './Componets/Pages/Account/AdminManage/ManageProductDel/WomenDel/OrnaDel';
 import Cokerdel from './Componets/Pages/Account/AdminManage/ManageProductDel/JewelleryDel/Cokerdel';
 import NewProductDel from './Componets/Pages/Account/AdminManage/HomePageManageDel/NewProductDel';
+import PhotoGallary from './Componets/Pages/PhotoGallary/PhotoGallary';
+import PhotoGalleryAdd from './Componets/Pages/Account/ManageOrder/HomePageManage.js/PhotoGalleryAdd';
 
 
 function App() {
@@ -113,6 +115,11 @@ function App() {
 
             {/* man */}
             <Route path='/men' element={<Man />}></Route>
+
+
+            <Route path='/gallery' element={<PhotoGallary />}></Route>
+
+            
 
             <Route path='/men/panjabi' element={<Panjabi />}></Route>
             <Route path='/men/shirt' element={<Shirt />}></Route>
@@ -226,6 +233,7 @@ function App() {
             <Route path='/myaccount/admin/manageorder/homepage/bestsellsadd' element={<PrivetRoute><AdminRoute><BestSellsAdd /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/homepage/banneradd' element={<PrivetRoute><AdminRoute><BannerAdd /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/homepage/newproductadd' element={<PrivetRoute><AdminRoute><NewInAdd /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageorder/homepage/photoadd' element={<PrivetRoute><AdminRoute><PhotoGalleryAdd /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/packageadd' element={<PrivetRoute><AdminRoute><SurprisePackageAdd /></AdminRoute></PrivetRoute>}></Route>
 
             <Route path='*' element={<Error></Error>}></Route>

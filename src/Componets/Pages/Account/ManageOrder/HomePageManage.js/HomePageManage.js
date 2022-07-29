@@ -8,6 +8,7 @@ import Account from '../../Account'
 import bestSell from '../../../../../images/sell.png'
 import Banner from '../../../../../images/banner.png'
 import newProduct from '../../../../../images/newProduct.png'
+import photo from '../../../../../images/photo.png'
 
 
 function HomePageManage() {
@@ -58,6 +59,20 @@ function HomePageManage() {
                                                 <img src={newProduct}></img>
                                                 <div className="card-body">
                                                     <h5 className="card-title">NEW PRODUCT ADD</h5>
+                                                </div>
+                                            </div>
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card h-100">
+                                    <Link to='/myaccount/admin/manageorder/homepage/photoadd'>
+                                        <Button sx={{ color: " black" }} variant="text">
+                                            <div className='text-center p-2'>
+                                                <img src={photo}></img>
+                                                <div className="card-body">
+                                                    <h5 className="card-title">GALLERY PHOTO ADD</h5>
                                                 </div>
                                             </div>
                                         </Button>
