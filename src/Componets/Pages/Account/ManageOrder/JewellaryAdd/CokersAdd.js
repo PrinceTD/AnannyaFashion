@@ -59,7 +59,7 @@ function CokersAdd() {
                 </div>
                 <div className='col-md-9 padding-site'>
                     <h4> It's an admin account. so, You can upload product</h4>
-                    <p>You Can add sawalar kameez.</p>
+                    <p>You Can add coker.</p>
                     <hr />
                     <br />
                     <form onSubmit={handelSubmit}>

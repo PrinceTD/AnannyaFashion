@@ -3,6 +3,8 @@ import Account from '../../Account'
 
 import earRing from '../../../../../images/ear.png'
 import necklace from '../../../../../images/necklace.png'
+import coker from '../../../../../images/coker.png'
+import other from '../../../../../images/other.png'
 import { Link } from 'react-router-dom'
 import { Button } from '@mui/material'
 import Footer from '../../../Footer/Footer'
@@ -55,9 +57,23 @@ function Jewellary() {
                                 <Link to='/myaccount/admin/manageorder/jewellery/cokeradd'>
                                     <Button sx={{ color: " black" }} variant="text">
                                         <div className='text-center p-2'>
-                                            {/* <img src={download}></img> */}
+                                            <img src={coker}></img>
                                             <div className="card-body">
                                                 <h5 className="card-title">ADD COKERS</h5>
+                                            </div>
+                                        </div>
+                                    </Button>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card h-100">
+                                <Link to='/myaccount/admin/manageorder/jewellery/othersadd'>
+                                    <Button sx={{ color: " black" }} variant="text">
+                                        <div className='text-center p-2'>
+                                            <img src={other}></img>
+                                            <div className="card-body">
+                                                <h5 className="card-title">ADD OTHERS</h5>
                                             </div>
                                         </div>
                                     </Button>

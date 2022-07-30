@@ -80,6 +80,10 @@ import Cokerdel from './Componets/Pages/Account/AdminManage/ManageProductDel/Jew
 import NewProductDel from './Componets/Pages/Account/AdminManage/HomePageManageDel/NewProductDel';
 import PhotoGallary from './Componets/Pages/PhotoGallary/PhotoGallary';
 import PhotoGalleryAdd from './Componets/Pages/Account/ManageOrder/HomePageManage.js/PhotoGalleryAdd';
+import Other from './Componets/Pages/Product/Jewelry/Coker/Other/Other';
+import SingleOthers from './Componets/Pages/Product/Jewelry/Coker/Other/SingleOthers';
+import OtherAdd from './Componets/Pages/Account/ManageOrder/JewellaryAdd/OtherAdd';
+import OthersDel from './Componets/Pages/Account/AdminManage/ManageProductDel/JewelleryDel/OthersDel';
 
 
 function App() {
@@ -159,6 +163,10 @@ function App() {
             <Route path='/jewellary/coker' element={<Coker />}></Route>
             <Route path='/jewellary/coker/:serviceId' element={<SingleCokar />}></Route>
 
+            {/* others */}
+            <Route path='/jewellary/others' element={<Other />}></Route>
+            <Route path='/jewellary/others/:serviceId' element={<SingleOthers />}></Route>
+
 
             {/* package */}
             <Route path='/package' element={<SuperPackage />}></Route>
@@ -189,6 +197,7 @@ function App() {
             <Route path='/myaccount/admin/manageproduct/jewellerydel/earringdel' element={<PrivetRoute><AdminRoute><EarRingDel /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/jewellerydel/nacklacedel' element={<PrivetRoute><AdminRoute><NacklacesDel /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageproduct/jewellerydel/cokerdel' element={<PrivetRoute><AdminRoute><Cokerdel /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageproduct/jewellerydel/otherdel' element={<PrivetRoute><AdminRoute><OthersDel /></AdminRoute></PrivetRoute>}></Route>
 
 
             <Route path='/myaccount/admin/managevieworder' element={<PrivetRoute><AdminRoute><ManageAllOrder /></AdminRoute></PrivetRoute>}></Route>
@@ -218,6 +227,7 @@ function App() {
             <Route path='/myaccount/admin/manageorder/jewellery/earring' element={<PrivetRoute><AdminRoute><EarringAdd /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/jewellery/necklace' element={<PrivetRoute><AdminRoute><NecklaceAdd /></AdminRoute></PrivetRoute>}></Route>
             <Route path='/myaccount/admin/manageorder/jewellery/cokeradd' element={<PrivetRoute><AdminRoute><CokersAdd /></AdminRoute></PrivetRoute>}></Route>
+            <Route path='/myaccount/admin/manageorder/jewellery/othersadd' element={<PrivetRoute><AdminRoute><OtherAdd /></AdminRoute></PrivetRoute>}></Route>
 
             {/* women */}
             <Route path='/myaccount/admin/manageorder/womenadd' element={<PrivetRoute><AdminRoute><WomenProductAdd></WomenProductAdd></AdminRoute></PrivetRoute>}></Route>

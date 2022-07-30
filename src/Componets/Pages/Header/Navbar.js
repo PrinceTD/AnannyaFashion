@@ -60,6 +60,7 @@ export default function Navbar() {
                                         <li><Link className="dropdown-item" to="/jewellary/necklace">Necklace</Link></li>
                                         <li><Link className="dropdown-item" to="/jewellary/earring">Ear Ring</Link></li>
                                         <li><Link className="dropdown-item" to="/jewellary/coker">Cokar</Link></li>
+                                        <li><Link className="dropdown-item" to="/jewellary/others">Others</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item dropdown">

@@ -51,6 +51,17 @@ function JewellaryT() {
             </Link>
           </div>
 
+          <div className="col ">
+            <Link to={"/jewellary/others"}>
+              <div className="card border-0 h-100 text-center shadow">
+                <img src={imgC} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h4 className="card-title txt">OTHERS</h4>
+                </div>
+              </div>
+            </Link>
+          </div>
+
         </div>
       </div>
       <Footer />

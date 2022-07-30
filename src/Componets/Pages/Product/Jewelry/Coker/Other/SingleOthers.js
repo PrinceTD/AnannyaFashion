@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom';
-import Footer from '../../../Footer/Footer';
-import Navbar from '../../../Header/Navbar';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { useForm } from 'react-hook-form';
 import { Button, CircularProgress } from '@mui/material';
+import { Link, useParams } from 'react-router-dom';
+import Navbar from '../../../../Header/Navbar';
+import Footer from '../../../../Footer/Footer';
 
-function SingleCokar() {
+function SingleOthers() {
     const [service, setService] = useState({});
     const { register, handleSubmit, watch, formState: { error } } = useForm();
 
@@ -16,7 +16,7 @@ function SingleCokar() {
 
     const { serviceId } = useParams();
     useEffect(() => {
-        fetch(`https://powerful-wildwood-87881.herokuapp.com/coker/${serviceId}`)
+        fetch(`https://powerful-wildwood-87881.herokuapp.com/other/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data));
     }, []);
@@ -74,4 +74,4 @@ function SingleCokar() {
         </div>)
 }
 
-export default SingleCokar
+export default SingleOthers

@@ -45,20 +45,8 @@ function SingleEarRing() {
                                                 <small><span className='pt-2 fst-normal'>{service.details}</span></small>
                                             </span>
                                         </div>
-                                        <div className='pt-3'>
-                                            {/* <p><b className='pe-1'>Size:</b>
-                                                <select className='w-50 rounded p-1'{...register('size', { required: "size is required" })}>
-                                                    <option value="">Choose an option</option>
-                                                    <option value="38">38</option>
-                                                    <option value="40">40</option>
-                                                    <option value="42">42</option>
-                                                    <option value="44">44</option>
-                                                </select>
-                                            </p> */}
 
-                                        </div>
-
-                                        <p className='pt-2'>
+                                        <p className='pt-2 disable'>
                                             <span className='border p-2'><AddIcon /></span>
                                             <span className='border p-2'>1</span>
                                             <span className='border p-2'> <RemoveIcon /></span>

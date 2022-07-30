@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
-function Cokers({ service }) {
+function Others({service}) {
     const { _id, name, price, img } = service;
     return (
         <div className="col">
@@ -25,4 +25,4 @@ function Cokers({ service }) {
     )
 }
 
-export default Cokers
+export default Others
