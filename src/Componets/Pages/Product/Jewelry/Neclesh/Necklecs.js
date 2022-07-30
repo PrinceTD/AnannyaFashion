@@ -10,7 +10,7 @@ function Necklecs() {
 
     const [service, setService] = useState([]);
     useEffect(() => {
-        const url = "https://powerful-wildwood-87881.herokuapp.com/necklace"
+        const url = "https://powerful-wildwood-87881.herokuapp.com/newnacklace"
         fetch(url)
             .then(res => res.json())
             .then(data => setService(data))
