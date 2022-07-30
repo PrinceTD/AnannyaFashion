@@ -1,4 +1,4 @@
-import { CircularProgress } from '@mui/material';
+import { Alert, CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import useAuth from '../../../../../../hooks/useAuth';
 import Footer from '../../../../Footer/Footer';
@@ -17,8 +17,26 @@ export default function Orna() {
   }, []);
   return (
     <div >
-      <Navbar/>
+      <Navbar />
       <div>
+        <div>
+          <div className="card mb-3 border-0">
+            <img src={banner} className="card-img" alt="..." />
+            <div className="card-img-overlay d-flex justify-content-center align-items-center">
+              <h1 className="fw-bold fs-1 banner-text card-title">ORNA</h1>
+            </div>
+          </div>
+        </div>
+
+        <div className='container mt-5 mb-5'>
+          <div className=' pt-5 pb-5'>
+            <Alert sx={{ backgroundColor: '#e0b252', padding: " 25px 10px" }} variant="filled" severity="error">
+              No products were found matching your selection.
+            </Alert>
+          </div>
+        </div>
+      </div>
+      {/* <div>
         <div className="card mb-3 border-0">
           <img src={banner} className="card-img" alt="..." />
           <div className="card-img-overlay d-flex justify-content-center align-items-center">
@@ -42,8 +60,8 @@ export default function Orna() {
 
           </div>
         </div>
-      </div>
-      <Footer/>
+      </div> */}
+      <Footer />
     </div>
   )
 }
