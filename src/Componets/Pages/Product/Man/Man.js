@@ -11,10 +11,10 @@ function Man() {
             <Navbar />
             <div>
                 <div>
-                    <div class="card mb-3 border-0">
-                        <img src={banner} class="card-img" alt="..." />
-                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                            <h1 class="fw-bold fs-1 banner-text card-title">MEN</h1>
+                    <div className="card mb-3 border-0">
+                        <img src={banner} className="card-img" alt="..." />
+                        <div className="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h1 className="fw-bold fs-1 banner-text card-title">MEN</h1>
                         </div>
                     </div>
                 </div>
