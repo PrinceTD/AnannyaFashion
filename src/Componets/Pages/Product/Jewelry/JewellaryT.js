@@ -2,6 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import imgC from '../../../../images/mukti.jpg'
 import banner from '../../../../images/bannerT.jpg'
+import EarRingM from '../../../../images/images/MuktiEar.jpg'
+import muktiCoker from '../../../../images/images/muktiCoker.jpg'
+import nacklace from '../../../../images/images/trishaN.jpg'
+import others from '../../../../images/images/others.jpg'
+
 import Footer from '../../Footer/Footer'
 import Navbar from '../../Header/Navbar'
 
@@ -22,7 +27,7 @@ function JewellaryT() {
           <div className="col">
             <Link to={"/jewellary/earring"}>
               <div className="card border-0 h-100 text-center shadow ">
-                <img src={imgC} className="card-img-top" alt="..." />
+                <img src={EarRingM} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h4 className="card-title txt">EAR RING</h4>
                 </div>
@@ -33,7 +38,7 @@ function JewellaryT() {
           <div className="col ">
             <Link to={"/jewellary/necklace"}>
               <div className="card border-0 h-100 text-center shadow">
-                <img src={imgC} className="card-img-top" alt="..." />
+                <img src={nacklace} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h4 className="card-title txt">NECKLECS</h4>
                 </div>
@@ -43,7 +48,7 @@ function JewellaryT() {
           <div className="col ">
             <Link to={"/jewellary/coker"}>
               <div className="card border-0 h-100 text-center shadow">
-                <img src={imgC} className="card-img-top" alt="..." />
+                <img src={muktiCoker} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h4 className="card-title txt">COKER</h4>
                 </div>
@@ -54,7 +59,7 @@ function JewellaryT() {
           <div className="col ">
             <Link to={"/jewellary/others"}>
               <div className="card border-0 h-100 text-center shadow">
-                <img src={imgC} className="card-img-top" alt="..." />
+                <img src={others} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h4 className="card-title txt">OTHERS</h4>
                 </div>

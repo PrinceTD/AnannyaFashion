@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import './Women.css'
 import imgC from '../../../../images/mukti.jpg'
 import banner from '../../../../images/bannerT.jpg'
+import MuktiO from '../../../../images/images/muktiO.jpg'
+import AnuK from '../../../../images/images/anuK.jpg'
+import AnuB from '../../../../images/images/anuB.jpg'
+import sawlar from '../../../../images/images/MuktiS.jpg'
+import saree from '../../../../images/images/muktiSaree.jpg'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Header/Navbar'
 import Footer from '../../Footer/Footer'
@@ -24,7 +29,7 @@ export default function Women() {
           <div className="col">
             <Link to={"/women/saree"}>
               <div className="card border-0 h-100 text-center shadow ">
-                <img src={imgC} className="card-img-top" alt="..." width={'100%'} />
+                <img src={saree} className="card-img-top" alt="..." width={'100%'} />
                 <div className="card-body">
                   <h4 className="card-title txt">SAREE</h4>
                 </div>
@@ -35,7 +40,7 @@ export default function Women() {
           <div className="col ">
             <Link to={"/women/kurti"}>
               <div className="card border-0 h-100 text-center shadow">
-                <img src={imgC} className="card-img-top" alt="..." width={'100%'} />
+                <img src={AnuK} className="card-img-top" alt="..." width={'100%'} />
                 <div className="card-body">
                   <h4 className="card-title txt">KURTI</h4>
                 </div>
@@ -45,7 +50,7 @@ export default function Women() {
           <div className="col">
             <Link to={"/women/orna"}>
               <div className="card border-0 h-100 text-center shadow">
-                <img src={imgC} className="card-img-top" alt="..." width={'100%'} />
+                <img src={MuktiO} className="card-img-top" alt="..." width={'100%'} />
                 <div className="card-body">
                   <h4 className="card-title txt">ORNA</h4>
                 </div>
@@ -55,7 +60,7 @@ export default function Women() {
           <div className="col ">
             <Link to={"/women/salawerkameez"}>
               <div className="card border-0 h-100 text-center shadow">
-                <img src={imgC} className="card-img-top" alt="..." width={'100%'} />
+                <img src={sawlar} className="card-img-top" alt="..." width={'100%'} />
                 <div className="card-body">
                   <h4 className="card-title txt">SALWAR KAMEEZ</h4>
                 </div>
@@ -65,7 +70,7 @@ export default function Women() {
           <div className="col ">
             <Link to={"/women/blouse"}>
               <div className="card border-0 h-100 text-center shadow">
-                <img src={imgC} className="card-img-top" alt="..." width={'100%'} />
+                <img src={AnuB} className="card-img-top" alt="..." width={'100%'} />
                 <div className="card-body">
                   <h4 className="card-title txt">BLOUSE</h4>
                 </div>
