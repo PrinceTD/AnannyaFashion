@@ -17,8 +17,9 @@ export default function Home() {
   return (
     <div>
 
+  
       <Navbar></Navbar>
-      
+     
       {/* <SwiperBanner/> */}
       <Banner></Banner>
       {/* <BootstrapBanner /> */}

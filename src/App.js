@@ -121,7 +121,7 @@ function App() {
             <Route path='/men' element={<Man />}></Route>
 
 
-            <Route path='/gallery' element={<PhotoGallary />}></Route>
+            {/* <Route path='/gallery' element={<PhotoGallary />}></Route> */}
 
             
 

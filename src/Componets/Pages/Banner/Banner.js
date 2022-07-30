@@ -27,7 +27,7 @@ export default function Banner() {
 
 
     return (
-        <div className='container pb-3'>
+        <div className='container pb-3 pt-3'>
             <Slider {...settings}>
 
               

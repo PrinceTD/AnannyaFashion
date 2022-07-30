@@ -2,6 +2,7 @@ import { CircularProgress } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import Footer from '../Footer/Footer';
 import Navbar from '../Header/Navbar';
+import PhotoAllbum from './PhotoAllbum/PhotoAllbum';
 import ShowImage from './ShowImage';
 
 function PhotoGallary() {

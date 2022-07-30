@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
     return (
 
-        <div>
-            {/* color- #006168 & #264653 */}
+        <div >
+            
             <Note></Note>
         
-            <div className='container-fluid  border-bottom'>
+            <div className='container-fluid'>
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container">
 
@@ -71,9 +71,9 @@ export default function Navbar() {
                                         <li><Link className="dropdown-item" to="/package">Surprise Package</Link></li>
                                     </ul>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link className="nav-link" to="/gallery">Gallery</Link>
-                                </li>
+                                </li> */}
                             </ul>
 
                         </div>

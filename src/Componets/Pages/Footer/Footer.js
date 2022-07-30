@@ -7,6 +7,7 @@ import useAuth from '../../../hooks/useAuth'
 import { Link } from 'react-router-dom';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { Button } from '@mui/material'
 
 export default function Footer() {
     const { user } = useAuth();
@@ -43,17 +44,21 @@ export default function Footer() {
                     <div className=' col'>
                         <div>
                             <p className='pt-3'>
-                                ABOUT ANANNYA
+                                <small>ABOUT ANANNYA</small>
+                                <br />
+                                <small><span className='text-light'><Link to='/about'><Button sx={{ color: "white" }} variant="text">WHo WE ARE</Button></Link></span></small>
                             </p>
-                            <span className='text-light'><Link to='/about'>WHO WE ARE</Link></span>
+
                             <hr />
                             <p>SOCIAL LINKS</p>
-                            <small className='pe-3 '>
-                                <a className='text-light' href='https://www.instagram.com/_anannya_online_/' target="_blank"> <InstagramIcon fontSize="small"></InstagramIcon></a>
-                            </small>
-                            <small>
-                                <a className='text-light' href='https://www.facebook.com/anannya74/' target="_blank"> <FacebookIcon fontSize="small" /></a>
-                            </small>
+                            <div className='ps-2'>
+                                <small className='pe-3 '>
+                                    <a className='text-light' href='https://www.instagram.com/_anannya_online_/' target="_blank"> <InstagramIcon fontSize="small"></InstagramIcon></a>
+                                </small>
+                                <small>
+                                    <a className='text-light' href='https://www.facebook.com/anannya74/' target="_blank"> <FacebookIcon fontSize="small" /></a>
+                                </small>
+                            </div>
                         </div>
                     </div>
 
@@ -61,12 +66,8 @@ export default function Footer() {
                 <hr />
                 <small>
                     <span>
-                        ANANNYA © 2022 CREATED BY TEAM ANANNYA.
+                        ANANNYA © 2022 CREATED BY TEAM ANANNYA. 
                     </span>
-                    <span>
-                        SUPPORT "PRINCE_TALUKDER".
-                    </span>
-                    
                 </small>
             </div>
         </div>
