@@ -24,7 +24,7 @@ function WomenProductAdd() {
                         <div className="row row-cols-2 row-cols-md-3 g-3 admin-logo">
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageorder/womenadd/sareeadd'>
+                                    {/* <Link to='/myaccount/admin/manageorder/womenadd/sareeadd'> */}
                                         <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={saree}></img>
@@ -33,7 +33,7 @@ function WomenProductAdd() {
                                                 </div>
                                             </div>
                                         </Button>
-                                    </Link>
+                                    {/* </Link> */}
 
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ function WomenProductAdd() {
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageorder/womenadd/salaweradd'>
+                                    {/* <Link to='/myaccount/admin/manageorder/womenadd/salaweradd'> */}
                                         <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={sawalar}></img>
@@ -63,12 +63,12 @@ function WomenProductAdd() {
                                                 </div>
                                             </div>
                                         </Button>
-                                    </Link>
+                                    {/* </Link> */}
                                 </div>
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageorder/womenadd/blouseadd'>
+                                    {/* <Link to='/myaccount/admin/manageorder/womenadd/blouseadd'> */}
                                         <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={blouse}></img>
@@ -77,13 +77,13 @@ function WomenProductAdd() {
                                                 </div>
                                             </div>
                                         </Button>
-                                    </Link>
+                                    {/* </Link> */}
                                 </div>
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageorder/womenadd/ornaadd'>
-                                        <Button sx={{ color: " black" }} variant="text">
+                                    {/* <Link to='/myaccount/admin/manageorder/womenadd/ornaadd'> */}
+                                        <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={orna}></img>
                                                 <div className="card-body">
@@ -91,7 +91,7 @@ function WomenProductAdd() {
                                                 </div>
                                             </div>
                                         </Button>
-                                    </Link>
+                                    {/* </Link> */}
                                 </div>
                             </div>
                         </div>

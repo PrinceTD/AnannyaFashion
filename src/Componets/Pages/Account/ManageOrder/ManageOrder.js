@@ -82,7 +82,7 @@ function ManageOrder() {
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageorder/packageadd'>
+                                    {/* <Link to='/myaccount/admin/manageorder/packageadd'> */}
                                         <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={surprise}></img>
@@ -91,7 +91,7 @@ function ManageOrder() {
                                                 </div>
                                             </div>
                                         </Button>
-                                    </Link>
+                                    {/* </Link> */}
                                 </div>
                             </div>
 

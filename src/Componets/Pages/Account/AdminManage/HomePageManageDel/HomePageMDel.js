@@ -34,7 +34,7 @@ function HomePageMDel() {
                             <div className="col">
                                 <div className="card h-100">
                                     <Link to='/myaccount/admin/manageproduct/homepmdel/bestspdel'>
-                                        <Button sx={{ color: " black" }} variant="text">
+                                        <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={delF}></img>
                                                 <div className="card-body">

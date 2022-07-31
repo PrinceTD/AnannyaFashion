@@ -34,8 +34,8 @@ function WomenDel() {
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageproduct/womendel/sareedel'>
-                                        <Button sx={{ color: " black" }} variant="text">
+                                    {/* <Link to='/myaccount/admin/manageproduct/womendel/sareedel'> */}
+                                        <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={del}></img>
                                                 <div className="card-body">
@@ -44,13 +44,13 @@ function WomenDel() {
                                                 </div>
                                             </div>
                                         </Button>
-                                    </Link>
+                                    {/* </Link> */}
                                 </div>
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageproduct/womendel/ornadel'>
-                                        <Button sx={{ color: " black" }} variant="text">
+                                    {/* <Link to='/myaccount/admin/manageproduct/womendel/ornadel'> */}
+                                        <Button  disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={del}></img>
                                                 <div className="card-body">
@@ -59,13 +59,13 @@ function WomenDel() {
                                                 </div>
                                             </div>
                                         </Button>
-                                    </Link>
+                                    {/* </Link> */}
                                 </div>
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageproduct/womendel/blousedel'>
-                                        <Button sx={{ color: " black" }} variant="text">
+                                    {/* <Link to='/myaccount/admin/manageproduct/womendel/blousedel'> */}
+                                        <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={del}></img>
                                                 <div className="card-body">
@@ -74,7 +74,7 @@ function WomenDel() {
                                                 </div>
                                             </div>
                                         </Button>
-                                    </Link>
+                                    {/* </Link> */}
                                 </div>
                             </div>
                         </div>

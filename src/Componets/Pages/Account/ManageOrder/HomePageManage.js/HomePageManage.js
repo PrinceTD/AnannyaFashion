@@ -24,7 +24,7 @@ function HomePageManage() {
                         <div className="row row-cols-2 row-cols-md-3 g-3 admin-logo">
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageorder/homepage/bestsellsadd'>
+                                    {/* <Link to='/myaccount/admin/manageorder/homepage/bestsellsadd'> */}
                                         <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={bestSell}></img>
@@ -33,7 +33,7 @@ function HomePageManage() {
                                                 </div>
                                             </div>
                                         </Button>
-                                    </Link>
+                                    {/* </Link> */}
 
                                 </div>
                             </div>
@@ -67,7 +67,7 @@ function HomePageManage() {
                             </div>
                             <div className="col">
                                 <div className="card h-100">
-                                    <Link to='/myaccount/admin/manageorder/homepage/photoadd'>
+                                    {/* <Link to='/myaccount/admin/manageorder/homepage/photoadd'> */}
                                         <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={photo}></img>
@@ -76,7 +76,7 @@ function HomePageManage() {
                                                 </div>
                                             </div>
                                         </Button>
-                                    </Link>
+                                    {/* </Link> */}
                                 </div>
                             </div>
 
