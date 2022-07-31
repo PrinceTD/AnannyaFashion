@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import mukti from '../../../../images/mukti.jpg'
+import rudroB from '../../../../images/images/rudroB.jpg'
+import Trisa from '../../../../images/images/trishaB.jpg'
+import MuktiB from '../../../../images/images/muktiB.jpg'
 import './Title.css'
 
 export default function Title() {
@@ -27,7 +30,7 @@ export default function Title() {
                             <div className="card border-0 h-100 photo-frame">
                                 <Link to={'/men'}>
                                     <div className='photo'>
-                                        <img src={mukti} className="card-img-top" alt="" />
+                                        <img src={rudroB} className="card-img-top" alt="" />
                                     </div>
                                     <div className="photo-detail">
                                         <h1 className="title-photo">MEN</h1>

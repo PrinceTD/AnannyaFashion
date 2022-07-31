@@ -25,7 +25,7 @@ function HomePageManage() {
                             <div className="col">
                                 <div className="card h-100">
                                     <Link to='/myaccount/admin/manageorder/homepage/bestsellsadd'>
-                                        <Button sx={{ color: " black" }} variant="text">
+                                        <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={bestSell}></img>
                                                 <div className="card-body">
@@ -68,7 +68,7 @@ function HomePageManage() {
                             <div className="col">
                                 <div className="card h-100">
                                     <Link to='/myaccount/admin/manageorder/homepage/photoadd'>
-                                        <Button sx={{ color: " black" }} variant="text">
+                                        <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={photo}></img>
                                                 <div className="card-body">

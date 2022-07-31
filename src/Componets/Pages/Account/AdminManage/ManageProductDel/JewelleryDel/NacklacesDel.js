@@ -10,7 +10,7 @@ function NacklacesDel() {
     const [productLoad, setProductLoad] = useState([]);
 
     useEffect(() => {
-        fetch(`https://powerful-wildwood-87881.herokuapp.com/newnacklace`)
+        fetch(`https://powerful-wildwood-87881.herokuapp.com/necklecs`)
             .then((res) => res.json())
             .then((data) => setProductLoad(data));
     }, [])
@@ -18,7 +18,7 @@ function NacklacesDel() {
         const confirm = window.confirm("are u sure")
         if (confirm) {
             fetch(
-                `https://powerful-wildwood-87881.herokuapp.com/newnacklace/${id}`,
+                `https://powerful-wildwood-87881.herokuapp.com/necklecs/${id}`,
                 {
                     method: "DELETE",
                 }

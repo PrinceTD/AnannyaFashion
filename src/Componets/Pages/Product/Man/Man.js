@@ -3,6 +3,9 @@ import Footer from '../../Footer/Footer'
 import Navbar from '../../Header/Navbar'
 import imgC from '../../../../images/mukti.jpg'
 import banner from '../../../../images/bannerT.jpg'
+import rudroT from '../../../../images/images/rudroT.jpg'
+import rudroS from '../../../../images/images/rudroS.jpg'
+import rudroP from '../../../../images/images/rudroP.jpg'
 import { Link } from 'react-router-dom'
 
 function Man() {
@@ -23,7 +26,7 @@ function Man() {
                         <div className="col">
                             <Link to={"/men/panjabi"}>
                                 <div className="card border-0 h-100 text-center shadow ">
-                                    <img src={imgC} className="card-img-top" alt="..." />
+                                    <img src={rudroP} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h4 className="card-title txt">PANJABI</h4>
                                     </div>
@@ -34,7 +37,7 @@ function Man() {
                         <div className="col ">
                             <Link to={"/men/shirt"}>
                                 <div className="card border-0 h-100 text-center shadow">
-                                    <img src={imgC} className="card-img-top" alt="..." />
+                                    <img src={rudroS} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h4 className="card-title txt">SHIRT</h4>
                                     </div>
@@ -44,7 +47,7 @@ function Man() {
                         <div className="col ">
                             <Link to={"/men/tshirt"}>
                                 <div className="card border-0 h-100 text-center shadow">
-                                    <img src={imgC} className="card-img-top" alt="..." />
+                                    <img src={rudroT} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h4 className="card-title txt">T-SHIRT</h4>
                                     </div>

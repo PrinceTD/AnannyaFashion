@@ -34,7 +34,7 @@ function SingleOthers() {
                         <div className="col-md-6">
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <div className="">
-                                    <small><Link to={"/home"}>Home</Link>/<Link to={"/women"}>Women</Link>/<Link to={"/man"}>Man</Link> </small>
+                                    <small><Link to={"/home"}>Home</Link>/<Link to={"/women"}>Women</Link>/<Link to={"/man"}>Man</Link>/<Link to={"/newin"}>NewIn</Link>/<Link to={"/jewellary"}>Jewellary</Link> </small>
                                     <div className=''>
                                         <h2 className="pt-2">{service.name}</h2>
                                         <div>

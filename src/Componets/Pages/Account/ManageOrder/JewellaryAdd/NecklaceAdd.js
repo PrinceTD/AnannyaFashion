@@ -24,7 +24,7 @@ function NecklaceAdd() {
         formData.append('price', price);
         formData.append('img', img);
 
-        fetch("https://powerful-wildwood-87881.herokuapp.com/newnacklace", {
+        fetch("https://powerful-wildwood-87881.herokuapp.com/necklecs", {
             method: "POST",
             body: formData
         })

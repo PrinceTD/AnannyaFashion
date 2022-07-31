@@ -25,7 +25,7 @@ function WomenProductAdd() {
                             <div className="col">
                                 <div className="card h-100">
                                     <Link to='/myaccount/admin/manageorder/womenadd/sareeadd'>
-                                        <Button sx={{ color: " black" }} variant="text">
+                                        <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={saree}></img>
                                                 <div className="card-body">
@@ -55,7 +55,7 @@ function WomenProductAdd() {
                             <div className="col">
                                 <div className="card h-100">
                                     <Link to='/myaccount/admin/manageorder/womenadd/salaweradd'>
-                                        <Button sx={{ color: " black" }} variant="text">
+                                        <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={sawalar}></img>
                                                 <div className="card-body">
@@ -69,7 +69,7 @@ function WomenProductAdd() {
                             <div className="col">
                                 <div className="card h-100">
                                     <Link to='/myaccount/admin/manageorder/womenadd/blouseadd'>
-                                        <Button sx={{ color: " black" }} variant="text">
+                                        <Button disabled sx={{ color: " black" }} variant="text">
                                             <div className='text-center p-2'>
                                                 <img src={blouse}></img>
                                                 <div className="card-body">
